@@ -1,0 +1,225 @@
+{
+  "mcpServers": {
+    "desktop-commander": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@smithery/cli@latest",
+        "run",
+        "@wonderwhy-er/desktop-commander",
+        "--key",
+        "e9820cd5-c518-4f68-8c3b-4ba2e5103a25"
+      ]
+    },
+    "railway-mcp": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@smithery/cli@latest",
+        "run",
+        "@mh8974/railway-mcp",
+        "--key",
+        "e9820cd5-c518-4f68-8c3b-4ba2e5103a25",
+        "--profile",
+        "faithful-sunset-12VagK"
+      ]
+    },
+    "supabase-mcp": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@smithery/cli@latest",
+        "run",
+        "@supabase-community/supabase-mcp",
+        "--key",
+        "e9820cd5-c518-4f68-8c3b-4ba2e5103a25",
+        "--profile",
+        "faithful-sunset-12VagK"
+      ]
+    },
+    "github": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@smithery/cli@latest",
+        "run",
+        "@smithery-ai/github",
+        "--key",
+        "e9820cd5-c518-4f68-8c3b-4ba2e5103a25",
+        "--profile",
+        "faithful-sunset-12VagK"
+      ]
+    },
+    "servers": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@smithery/cli@latest",
+        "run",
+        "@jlia0/servers",
+        "--key",
+        "e9820cd5-c518-4f68-8c3b-4ba2e5103a25"
+      ]
+    },
+    "mcp-redis": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@smithery/cli@latest",
+        "run",
+        "@redis/mcp-redis",
+        "--key",
+        "e9820cd5-c518-4f68-8c3b-4ba2e5103a25"
+      ]
+    },
+    "server-sequential-thinking": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@smithery/cli@latest",
+        "run",
+        "@smithery-ai/server-sequential-thinking",
+        "--key",
+        "e9820cd5-c518-4f68-8c3b-4ba2e5103a25"
+      ]
+    },
+    "toolbox": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@smithery/cli@latest",
+        "run",
+        "@smithery/toolbox",
+        "--key",
+        "e9820cd5-c518-4f68-8c3b-4ba2e5103a25",
+        "--profile",
+        "faithful-sunset-12VagK"
+      ]
+    },
+    "playwright-mcp": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@smithery/cli@latest",
+        "run",
+        "@cloudflare/playwright-mcp",
+        "--key",
+        "e9820cd5-c518-4f68-8c3b-4ba2e5103a25"
+      ]
+    },
+    "tavily-mcp": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@smithery/cli@latest",
+        "run",
+        "@tavily-ai/tavily-mcp",
+        "--key",
+        "e9820cd5-c518-4f68-8c3b-4ba2e5103a25",
+        "--profile",
+        "faithful-sunset-12VagK"
+      ]
+    },
+    "mcp-taskmanager": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@smithery/cli@latest",
+        "run",
+        "@kazuph/mcp-taskmanager",
+        "--key",
+        "e9820cd5-c518-4f68-8c3b-4ba2e5103a25"
+      ]
+    },
+    "DeepResearchMCP": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@smithery/cli@latest",
+        "run",
+        "@ameeralns/DeepResearchMCP",
+        "--key",
+        "e9820cd5-c518-4f68-8c3b-4ba2e5103a25"
+      ]
+    },
+    "code-mcp": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@smithery/cli@latest",
+        "run",
+        "@block/code-mcp",
+        "--key",
+        "e9820cd5-c518-4f68-8c3b-4ba2e5103a25"
+      ]
+    },
+    "browser-tools-mcp": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@smithery/cli@latest",
+        "run",
+        "@diulela/browser-tools-mcp",
+        "--key",
+        "e9820cd5-c518-4f68-8c3b-4ba2e5103a25"
+      ]
+    },
+    "vercel-api-mcp-fork": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@smithery/cli@latest",
+        "run",
+        "@ssdavidai/vercel-api-mcp-fork",
+        "--key",
+        "e9820cd5-c518-4f68-8c3b-4ba2e5103a25",
+        "--profile",
+        "faithful-sunset-12VagK"
+      ]
+    },
+    "ib-mcp-cache-server": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@smithery/cli@latest",
+        "run",
+        "@ibproduct/ib-mcp-cache-server",
+        "--key",
+        "e9820cd5-c518-4f68-8c3b-4ba2e5103a25"
+      ]
+    },
+    "n8n-mcp-server": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@smithery/cli@latest",
+        "run",
+        "@guinness77/n8n-mcp-server",
+        "--key",
+        "e9820cd5-c518-4f68-8c3b-4ba2e5103a25"
+      ]
+    },
+    "filesystem": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@smithery/cli@latest",
+        "run",
+        "@smithery-ai/filesystem",
+        "--key",
+        "e9820cd5-c518-4f68-8c3b-4ba2e5103a25"
+      ]
+    },
+    "context7-mcp": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@smithery/cli@latest",
+        "run",
+        "@upstash/context7-mcp",
+        "--key",
+        "e9820cd5-c518-4f68-8c3b-4ba2e5103a25"
+      ]
+    }
+  }
+}

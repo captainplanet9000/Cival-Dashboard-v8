@@ -1,0 +1,230 @@
+{
+  "$schema": "https://railway.app/railway.schema.json",
+  "build": {
+    "builder": "NIXPACKS",
+    "buildCommand": "pip install --no-cache-dir -r requirements.txt && cd frontend && npm install && npm run build",
+    "watchPatterns": [
+      "**/*.py",
+      "**/*.js",
+      "**/*.ts",
+      "**/*.tsx",
+      "**/*.json",
+      "requirements.txt",
+      "package.json"
+    ]
+  },
+  "deploy": {
+    "numReplicas": 1,
+    "sleepApplication": false,
+    "restartPolicyType": "ON_FAILURE",
+    "restartPolicyMaxRetries": 3
+  },
+  "environments": {
+    "production": {
+      "variables": {
+        "NODE_ENV": "production",
+        "ENVIRONMENT": "production",
+        "DEBUG": "false",
+        "LOG_LEVEL": "info",
+        "APP_PORT": "8000",
+        "APP_HOST": "0.0.0.0",
+        "WORKERS": "4",
+        "WORKER_TIMEOUT": "300",
+        "RAILWAY_ENVIRONMENT": "production",
+        "RAILWAY_STATIC_URL": "/static",
+        "RAILWAY_HEALTH_CHECK_PATH": "/health",
+        "SSL_REDIRECT": "true",
+        "SECURE_COOKIES": "true",
+        "CSRF_PROTECTION": "true",
+        "CORS_ALLOW_CREDENTIALS": "true",
+        "TRADING_ENABLED": "true",
+        "PAPER_TRADING_MODE": "true",
+        "LIVE_TRADING_ENABLED": "false",
+        "MASTER_WALLET_ENABLED": "true",
+        "FARM_SYSTEM_ENABLED": "true",
+        "GOAL_SYSTEM_ENABLED": "true",
+        "AUTONOMOUS_AGENTS_ENABLED": "true",
+        "AG_UI_ENABLED": "true",
+        "MCP_BACKEND_ENABLED": "true",
+        "WEBSOCKET_ENABLED": "true",
+        "SSE_ENABLED": "true",
+        "GENERATIVE_UI_ENABLED": "true",
+        "MULTI_LLM_ENABLED": "true",
+        "AGENT_LEARNING_ENABLED": "true",
+        "SWARM_INTELLIGENCE_ENABLED": "true",
+        "BACKUP_ENABLED": "true",
+        "RATE_LIMIT_ENABLED": "true",
+        "HEALTH_CHECK_INTERVAL": "30",
+        "METRICS_ENABLED": "true",
+        "CACHE_ENABLED": "true",
+        "EMERGENCY_STOP_ENABLED": "false",
+        "KILL_SWITCH_ENABLED": "false",
+        "SYSTEM_MAINTENANCE_MODE": "false"
+      }
+    },
+    "staging": {
+      "variables": {
+        "NODE_ENV": "staging",
+        "ENVIRONMENT": "staging",
+        "DEBUG": "true",
+        "LOG_LEVEL": "debug",
+        "PAPER_TRADING_MODE": "true",
+        "LIVE_TRADING_ENABLED": "false",
+        "TESTING_MODE": "true",
+        "MOCK_EXTERNAL_APIS": "true"
+      }
+    }
+  },
+  "regions": [
+    "us-west1"
+  ],
+  "services": [
+    {
+      "name": "autonomous-trading-system",
+      "source": {
+        "repo": "github.com/yourusername/autonomous-trading-system",
+        "branch": "main"
+      },
+      "variables": {
+        "APP_NAME": "autonomous-trading-system",
+        "APP_VERSION": "1.0.0",
+        "RAILWAY_SERVICE_NAME": "autonomous-trading-system"
+      },
+      "domains": [
+        {
+          "domain": "${{RAILWAY_STATIC_URL}}"
+        }
+      ],
+      "healthcheck": {
+        "path": "/health",
+        "timeout": 10,
+        "interval": 30,
+        "retries": 3
+      },
+      "resources": {
+        "memory": 2048,
+        "cpu": 1000,
+        "disk": 10
+      },
+      "scaling": {
+        "minReplicas": 1,
+        "maxReplicas": 3,
+        "cpuThreshold": 80,
+        "memoryThreshold": 85
+      }
+    }
+  ],
+  "plugins": [
+    {
+      "name": "postgresql",
+      "plan": "hobby",
+      "variables": {
+        "POSTGRES_DB": "autonomous_trading",
+        "POSTGRES_USER": "postgres",
+        "POSTGRES_PASSWORD": "${{POSTGRES_PASSWORD}}"
+      }
+    },
+    {
+      "name": "redis",
+      "plan": "hobby",
+      "variables": {
+        "REDIS_PASSWORD": "${{REDIS_PASSWORD}}"
+      }
+    }
+  ],
+  "volumes": [
+    {
+      "name": "app-data",
+      "size": "1GB",
+      "mountPath": "/app/data"
+    },
+    {
+      "name": "logs",
+      "size": "500MB",
+      "mountPath": "/app/logs"
+    },
+    {
+      "name": "uploads",
+      "size": "2GB",
+      "mountPath": "/app/uploads"
+    }
+  ],
+  "networking": {
+    "serviceDomains": true,
+    "customDomains": []
+  },
+  "monitoring": {
+    "healthChecks": true,
+    "logs": {
+      "level": "info",
+      "format": "json",
+      "retention": "7d"
+    },
+    "metrics": {
+      "enabled": true,
+      "retention": "30d"
+    },
+    "alerts": {
+      "cpu": {
+        "threshold": 85,
+        "duration": "5m"
+      },
+      "memory": {
+        "threshold": 90,
+        "duration": "5m"
+      },
+      "disk": {
+        "threshold": 85,
+        "duration": "10m"
+      },
+      "errorRate": {
+        "threshold": 5,
+        "duration": "5m"
+      }
+    }
+  },
+  "security": {
+    "allowedOrigins": [
+      "${{RAILWAY_STATIC_URL}}",
+      "${{CUSTOM_DOMAIN}}"
+    ],
+    "cors": {
+      "enabled": true,
+      "credentials": true,
+      "maxAge": 86400
+    },
+    "headers": {
+      "xFrameOptions": "DENY",
+      "contentTypeOptions": "nosniff",
+      "xssProtection": "1; mode=block",
+      "strictTransportSecurity": "max-age=31536000; includeSubDomains"
+    }
+  },
+  "cron": [
+    {
+      "name": "health-check",
+      "schedule": "*/5 * * * *",
+      "command": "python -c \"import requests; requests.get('http://localhost:8000/health')\""
+    },
+    {
+      "name": "performance-report",
+      "schedule": "0 */6 * * *",
+      "command": "python scripts/generate_performance_report.py"
+    },
+    {
+      "name": "backup-database",
+      "schedule": "0 2 * * *",
+      "command": "python scripts/backup_database.py"
+    },
+    {
+      "name": "cleanup-logs",
+      "schedule": "0 1 * * 0",
+      "command": "python scripts/cleanup_logs.py"
+    }
+  ],
+  "experimental": {
+    "buildCache": true,
+    "incrementalBuilds": true,
+    "parallelBuilds": true
+  }
+}

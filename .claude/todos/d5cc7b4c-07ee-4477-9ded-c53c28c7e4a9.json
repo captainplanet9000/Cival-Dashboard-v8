@@ -1,0 +1,92 @@
+[
+  {
+    "content": "Add Calendar view to navigation between DeFi and Advanced",
+    "status": "completed",
+    "priority": "high",
+    "id": "1"
+  },
+  {
+    "content": "Create file manager with Supabase dropzone for agent data ingestion",
+    "status": "completed",
+    "priority": "high",
+    "id": "2"
+  },
+  {
+    "content": "Run all Supabase scripts and create database tables for full functionality",
+    "status": "completed",
+    "priority": "high",
+    "id": "3"
+  },
+  {
+    "content": "Create comprehensive documentation (Project Requirements, Tech Stack, App Flow, Backend Structure, Frontend Guidelines)",
+    "status": "completed",
+    "priority": "medium",
+    "id": "4"
+  },
+  {
+    "content": "Fix button contrast and colors for better visibility",
+    "status": "completed",
+    "priority": "high",
+    "id": "5"
+  },
+  {
+    "content": "Improve agent cards separation and robustness",
+    "status": "completed",
+    "priority": "high",
+    "id": "6"
+  },
+  {
+    "content": "Implement AG-UI properly for seamless experience",
+    "status": "completed",
+    "priority": "high",
+    "id": "7"
+  },
+  {
+    "content": "Create production agent decision log with real agent connections",
+    "status": "completed",
+    "priority": "high",
+    "id": "8"
+  },
+  {
+    "content": "Establish real LLM connections for agents",
+    "status": "completed",
+    "priority": "high",
+    "id": "9"
+  },
+  {
+    "content": "Set up paper trading engine for agents with $100 virtual capital",
+    "status": "completed",
+    "priority": "high",
+    "id": "10"
+  },
+  {
+    "content": "Complete all workflows and MCP server infrastructure",
+    "status": "completed",
+    "priority": "high",
+    "id": "11"
+  },
+  {
+    "content": "Test complete pipeline from paper trading to production readiness",
+    "status": "completed",
+    "priority": "high",
+    "id": "12"
+  },
+  {
+    "content": "Final integration verification and production deployment preparation",
+    "status": "completed",
+    "priority": "high",
+    "id": "13"
+  },
+  {
+    "content": "Fix Railway deployment build errors and LLM dependencies",
+    "status": "completed",
+    "priority": "high",
+    "id": "14"
+  },
+  {
+    "content": "Install Enhanced OKLCH Theme for Professional Trading Interface",
+    "status": "completed",
+    "priority": "high",
+    "id": "15"
+  }
+]

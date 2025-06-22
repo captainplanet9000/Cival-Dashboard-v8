@@ -1,0 +1,56 @@
+[
+  {
+    "content": "Create .env.local from template and configure API keys/connections",
+    "status": "pending",
+    "priority": "high",
+    "id": "env-setup"
+  },
+  {
+    "content": "Fix backend-frontend API connectivity issues",
+    "status": "pending",
+    "priority": "high",
+    "id": "backend-frontend-connection"
+  },
+  {
+    "content": "Implement missing Next.js API routes (/api/portfolio/summary, /api/market/overview, etc.)",
+    "status": "pending",
+    "priority": "high",
+    "id": "missing-api-routes"
+  },
+  {
+    "content": "Configure PostgreSQL/Redis connections and run migrations",
+    "status": "pending",
+    "priority": "high",
+    "id": "database-setup"
+  },
+  {
+    "content": "Implement missing service worker to fix PWA errors",
+    "status": "pending",
+    "priority": "medium",
+    "id": "service-worker"
+  },
+  {
+    "content": "Replace mock data with real market data integration",
+    "status": "pending",
+    "priority": "medium",
+    "id": "real-market-data"
+  },
+  {
+    "content": "Complete WebSocket implementation for real-time updates",
+    "status": "pending",
+    "priority": "medium",
+    "id": "websocket-realtime"
+  },
+  {
+    "content": "Build missing Docker microservices (MCP, Vault, Trading API, Viz)",
+    "status": "pending",
+    "priority": "medium",
+    "id": "missing-microservices"
+  },
+  {
+    "content": "Implement user authentication and security system",
+    "status": "pending",
+    "priority": "medium",
+    "id": "authentication"
+  }
+]

@@ -1,0 +1,26 @@
+[
+  {
+    "content": "Fix Function types in src/lib/clients/mcp-client.ts - replace callback parameters",
+    "status": "completed",
+    "priority": "high",
+    "id": "fix_mcp_client_function_types"
+  },
+  {
+    "content": "Fix Function types in src/lib/clients/trading-client.ts - replace eventListeners and callback parameters",
+    "status": "completed",
+    "priority": "high",
+    "id": "fix_trading_client_function_types"
+  },
+  {
+    "content": "Fix Function types in src/lib/mcp/registry.ts - replace eventListeners and callback parameters",
+    "status": "completed",
+    "priority": "high",
+    "id": "fix_mcp_registry_function_types"
+  },
+  {
+    "content": "Search and fix remaining Function types in other important files",
+    "status": "completed",
+    "priority": "medium",
+    "id": "search_additional_function_types"
+  }
+]

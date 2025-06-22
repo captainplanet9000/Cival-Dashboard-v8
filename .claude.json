@@ -1,0 +1,711 @@
+{
+  "numStartups": 15,
+  "promptQueueUseCount": 27,
+  "fallbackAvailableWarningThreshold": 0.2,
+  "projects": {
+    "/home/anthony/agent1000": {
+      "allowedTools": [],
+      "history": [
+        {
+          "display": "npx -y @smithery/cli@latest install @block/code-mcp --client claude --key e9820cd5-c518-4f68-8c3b-4ba2e5103a25",
+          "pastedContents": {}
+        },
+        {
+          "display": "npx -y @smithery/cli@latest install @ameeralns/DeepResearchMCP --client claude --key e9820cd5-c518-4f68-8c3b-4ba2e5103a25",
+          "pastedContents": {}
+        },
+        {
+          "display": "npx -y @smithery/cli@latest install @kazuph/mcp-taskmanager --client claude --key e9820cd5-c518-4f68-8c3b-4ba2e5103a25",
+          "pastedContents": {}
+        },
+        {
+          "display": "npx -y @smithery/cli@latest install @tavily-ai/tavily-mcp --client claude --profile faithful-sunset-12VagK --key e9820cd5-c518-4f68-8c3b-4ba2e5103a25",
+          "pastedContents": {}
+        },
+        {
+          "display": "npx -y @smithery/cli@latest install @cloudflare/playwright-mcp --client claude --key e9820cd5-c518-4f68-8c3b-4ba2e5103a25",
+          "pastedContents": {}
+        },
+        {
+          "display": "npx -y @smithery/cli@latest install @smithery/toolbox --client claude --profile faithful-sunset-12VagK --key e9820cd5-c518-4f68-8c3b-4ba2e5103a25",
+          "pastedContents": {}
+        },
+        {
+          "display": "1",
+          "pastedContents": {}
+        },
+        {
+          "display": "redis-cli -u redis://default:sFVjX2rYkTLYjalcH3b6aKrm1I3CmL5N@redis-13918.c258.us-east-1-4.ec2.redns.redis-cloud.com:13918",
+          "pastedContents": {}
+        },
+        {
+          "display": "npx -y @smithery/cli@latest install @smithery-ai/server-sequential-thinking --client claude --key e9820cd5-c518-4f68-8c3b-4ba2e5103a25",
+          "pastedContents": {}
+        },
+        {
+          "display": "npx -y @smithery/cli@latest install @redis/mcp-redis --client claude --key e9820cd5-c518-4f68-8c3b-4ba2e5103a25",
+          "pastedContents": {}
+        },
+        {
+          "display": "npx -y @smithery/cli@latest install @jlia0/servers --client claude --key e9820cd5-c518-4f68-8c3b-4ba2e5103a25",
+          "pastedContents": {}
+        },
+        {
+          "display": "npx -y @smithery/cli@latest install @smithery-ai/github --client claude --profile faithful-sunset-12VagK --key e9820cd5-c518-4f68-8c3b-4ba2e5103a25",
+          "pastedContents": {}
+        },
+        {
+          "display": "npx -y @smithery/cli@latest install @supabase-community/supabase-mcp --client claude --profile faithful-sunset-12VagK --key e9820cd5-c518-4f68-8c3b-4ba2e5103a25",
+          "pastedContents": {}
+        },
+        {
+          "display": "test railway mcp list projects",
+          "pastedContents": {}
+        },
+        {
+          "display": "npx -y @smithery/cli@latest install @mh8974/railway-mcp --client claude --profile faithful-sunset-12VagK --key e9820cd5-c518-4f68-8c3b-4ba2e5103a25",
+          "pastedContents": {}
+        },
+        {
+          "display": "npx -y @smithery/cli@latest install @wonderwhy-er/desktop-commander --client claude --key e9820cd5-c518-4f68-8c3b-4ba2e5103a25",
+          "pastedContents": {}
+        },
+        {
+          "display": "so I cant link railway?",
+          "pastedContents": {}
+        },
+        {
+          "display": "npx @railway/cli login",
+          "pastedContents": {}
+        },
+        {
+          "display": "2",
+          "pastedContents": {}
+        },
+        {
+          "display": "login with browser",
+          "pastedContents": {}
+        },
+        {
+          "display": "57a46238-9dad-494c-8efc-efee2efa8d2c",
+          "pastedContents": {}
+        },
+        {
+          "display": "run the commands login through browser",
+          "pastedContents": {}
+        },
+        {
+          "display": "log into railway",
+          "pastedContents": {}
+        },
+        {
+          "display": "check repos",
+          "pastedContents": {}
+        },
+        {
+          "display": "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",
+          "pastedContents": {}
+        },
+        {
+          "display": "log into git ",
+          "pastedContents": {}
+        }
+      ],
+      "dontCrawlDirectory": false,
+      "mcpContextUris": [],
+      "mcpServers": {},
+      "enabledMcpjsonServers": [],
+      "disabledMcpjsonServers": [],
+      "hasTrustDialogAccepted": true,
+      "projectOnboardingSeenCount": 1,
+      "hasClaudeMdExternalIncludesApproved": false,
+      "hasClaudeMdExternalIncludesWarningShown": false
+    },
+    "/home/anthony": {
+      "allowedTools": [],
+      "history": [
+        {
+          "display": "continue",
+          "pastedContents": {}
+        },
+        {
+          "display": "> cival-dashboard@0.1.0 build\n> next build\n\n   ▲ Next.js 15.1.8\n\n\n   Creating an optimized production build ...\n\n ✓ Compiled successfully\n\n   Linting and checking validity of types ...\n\nFailed to compile.\n\n./src/lib/auth/auth-service.ts:56:45\nType error: Parameter 'event' implicitly has an 'any' type.\n\n 54 |        \n 55 |// Listen for auth changes[1m 56 |this.[33mauth.[33m session) =>\n    |[1m\n>       [33msupabase.[33monAuthStateChange((event,[33m {                                              ^          console.'Auth state changed:',\n 58 |\n 59 |if\n\nNext.js build worker exited with code: 1 and signal: null\n\nnpm notice\nnpm notice New major version of npm available! 10.8.2 -> 11.4.2\nnpm notice Changelog: https://github.com/npm/cli/releases/tag/v11.4.2\nnpm notice To update run: npm install -g npm@11.4.2\nnpm notice",
+          "pastedContents": {}
+        },
+        {
+          "display": "> cival-dashboard@0.1.0 build\n> next build\n\n   ▲ Next.js 15.1.8\n\n\n   Creating an optimized production build ...\n\n ✓ ",
+          "pastedContents": {}
+        },
+        {
+          "display": " ⚠ Unsupported [Pasted text #1 +78 lines]",
+          "pastedContents": {
+            "1": {
+              "id": 1,
+              "type": "text",
+              "content": "metadata viewport is configured in metadata export in /dashboard/risk. Please move it to viewport export instead.\nRead more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport\n ⚠ Unsupported metadata viewport is configured in metadata export in /dashboard/strategies. Please move it to viewport export instead.\nRead more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport\n\n ⚠ Unsupported metadata viewport is configured in metadata export in /dashboard/agent-trading. Please move it to viewport export instead.\nRead more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport\n ⚠ Unsupported metadata viewport is configured in metadata export in /dashboard/ai-enhanced. Please move it to viewport export instead.\nRead more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport\n\n   Generating static pages (32/43) \n\nServer: Failed to get trading permissions: {\n  message: 'TypeError: fetch failed',\n  details: 'TypeError: fetch failed\\n' +\n    '    at node:internal/deps/undici/undici:12637:11\\n' +\n    '    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\\n' +\n    '    at async Object.getTradingPermissions (/app/.next/server/app/dashboard/agent-trading/page.js:6:76387)\\n' +\n    '    at async aL (/app/.next/server/app/dashboard/agent-trading/page.js:6:78154)',\n  hint: '',\n  code: ''\n}\n ⚠ Unsupported metadata viewport is configured in metadata export in /dashboard/trading. Please move it to viewport export instead.\nRead more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport\n ⚠ Unsupported metadata viewport is configured in metadata export in /dashboard/mcp. Please move it to viewport export instead.\nRead more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport\n ⚠ Unsupported metadata viewport is configured in metadata export in /dashboard/analytics. Please move it to viewport export instead.\nRead more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport\n ⚠ Unsupported metadata viewport is configured in metadata export in /dashboard/data-management. Please move it to viewport export instead.\nRead more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport\n ⚠ Unsupported metadata viewport is configured in metadata export in /dashboard/data-management. Please move it to viewport export instead.\nRead more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport\nError occurred prerendering page \"/dashboard/data-management\". Read more: https://nextjs.org/docs/messages/prerender-error\nError: @supabase/ssr: Your project's URL and API key are required to create a Supabase client!\n\nCheck your Supabase project's API settings to find these values\n\nhttps://supabase.com/dashboard/project/_/settings/api\n    at /app/.next/server/app/dashboard/data-management/page.js:1:53245\n    at 6101 (/app/.next/server/app/dashboard/data-management/page.js:5:4793)\n    at Object.t [as require] (/app/.next/server/webpack-runtime.js:1:143)\n    at require (/app/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:131:7946)\n    at u (/app/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:36:646)\n    at F (/app/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:36:10477)\n    at W (/app/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:36:13033)\n    at /app/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:36:15283\n    at Z._fromJSON (/app/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:36:15317)\n    at JSON.parse (<anonymous>)\nExport encountered an error on /dashboard/data-management/page: /dashboard/data-management, exiting the build.\n\n ⨯ Next.js build worker exited with code: 1 and signal: null\n\nnpm notice\nnpm notice New major version of npm available! 10.8.2 -> 11.4.2\nnpm notice Changelog: https://github.com/npm/cli/releases/tag/v11.4.2\nnpm notice To update run: npm install -g npm@11.4.2\nnpm notice\n\n✕ [builder 4/4] RUN npm run build \nprocess \"/bin/sh -c npm run build\" did not complete successfully: exit code: 1\n \n\nDockerfile:23\n\n-------------------\n\n21 |     ENV NODE_ENV production\n\n22 |\n\n23 | >>> RUN npm run build\n\n24 |\n\n25 |     # Production image, copy all the files and run next\n\n-------------------\n\nERROR: failed to solve: process \"/bin/sh -c npm run build\" did not complete successfully: exit code: 1"
+            }
+          }
+        },
+        {
+          "display": "Read more: https://nextjs.org/docs/app/api-reference/functions/genera[Pasted text #1 +63 lines]",
+          "pastedContents": {
+            "1": {
+              "id": 1,
+              "type": "text",
+              "content": "te-viewport\n ⚠ Unsupported metadata viewport is configured in metadata export in /dashboard/ai-enhanced. Please move it to viewport export instead.\nRead more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport\n\n   Generating static pages (10/43) \n\n ⚠ Unsupported metadata viewport is configured in metadata export in /dashboard/strategies. Please move it to viewport export instead.\nRead more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport\n\n ⚠ Unsupported metadata viewport is configured in metadata export in /test. Please move it to viewport export instead.\nRead more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport\n ⚠ Unsupported metadata viewport is configured in metadata export in /trading. Please move it to viewport export instead.\nRead more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport\n\n ⚠ Unsupported metadata viewport is configured in metadata export in /simple-dashboard. Please move it to viewport export instead.\nRead more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport\n\n ⚠ Unsupported metadata viewport is configured in metadata export in /simple-dashboard. Please move it to viewport export instead.\nRead more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport\nError occurred prerendering page \"/simple-dashboard\". Read more: https://nextjs.org/docs/messages/prerender-error\nError: supabaseUrl is required.\n    at new aE (/app/.next/server/chunks/3771.js:6:71716)\n    at aA (/app/.next/server/chunks/3771.js:6:75962)\n    at i (/app/.next/server/chunks/7872.js:1:16876)\n    at new n (/app/.next/server/chunks/7872.js:1:213)\n    at 89084 (/app/.next/server/chunks/7872.js:1:3887)\n    at t (/app/.next/server/webpack-runtime.js:1:143)\n    at 82007 (/app/.next/server/app/simple-dashboard/page.js:1:5250)\n    at Object.t [as require] (/app/.next/server/webpack-runtime.js:1:143)\n    at require (/app/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:131:7946)\n    at u (/app/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:36:646)\nExport encountered an error on /simple-dashboard/page: /simple-dashboard, exiting the build.\n\n ⨯ Next.js build worker exited with code: 1 and signal: null\n\nnpm notice\nnpm notice New major version of npm available! 10.8.2 -> 11.4.2\nnpm notice Changelog: https://github.com/npm/cli/releases/tag/v11.4.2\nnpm notice To update run: npm install -g npm@11.4.2\nnpm notice\n\n✕ [builder 4/4] RUN npm run build \nprocess \"/bin/sh -c npm run build\" did not complete successfully: exit code: 1\n \n\nDockerfile:23\n\n-------------------\n\n21 |     ENV NODE_ENV production\n\n22 |\n\n23 | >>> RUN npm run build\n\n24 |\n\n25 |     # Production image, copy all the files and run next\n\n-------------------\n\nERROR: failed to solve: process \"/bin/sh -c npm run build\" did not complete successfully: exit code: 1\n\nLoad More"
+            }
+          }
+        },
+        {
+          "display": "npm error While[Pasted text #1 +63 lines]",
+          "pastedContents": {
+            "1": {
+              "id": 1,
+              "type": "text",
+              "content": " resolving: @storybook/addon-essentials@7.6.20\nnpm error Found: react@19.1.0\nnpm error node_modules/react\nnpm error   react@\"^19.0.0\" from the root project\nnpm error   peer react@\">=16.8.0\" from @emotion/use-insertion-effect-with-fallbacks@1.2.0\nnpm error   node_modules/@emotion/use-insertion-effect-with-fallbacks\nnpm error     @emotion/use-insertion-effect-with-fallbacks@\"^1.0.0\" from @storybook/theming@7.6.20\nnpm error     node_modules/@storybook/theming\nnpm error       @storybook/theming@\"7.6.20\" from @storybook/addon-docs@7.6.20\nnpm error       node_modules/@storybook/addon-docs\nnpm error         @storybook/addon-docs@\"7.6.20\" from @storybook/addon-essentials@7.6.20\nnpm error         node_modules/@storybook/addon-essentials\nnpm error       3 more (@storybook/blocks, @storybook/components, @storybook/manager-api)\nnpm error   83 more (@floating-ui/react-dom, @hello-pangea/dnd, ...)\nnpm error\nnpm error Could not resolve dependency:\nnpm error peer react@\"^16.8.0 || ^17.0.0 || ^18.0.0\" from @storybook/addon-essentials@7.6.20\nnpm error node_modules/@storybook/addon-essentials\nnpm error   dev @storybook/addon-essentials@\"^7.6.0\" from the root project\nnpm error\nnpm error Conflicting peer dependency: react@18.3.1\nnpm error node_modules/react\nnpm error   peer react@\"^16.8.0 || ^17.0.0 || ^18.0.0\" from @storybook/addon-essentials@7.6.20\nnpm error   node_modules/@storybook/addon-essentials\nnpm error     dev @storybook/addon-essentials@\"^7.6.0\" from the root project\nnpm error\nnpm error Fix the upstream dependency conflict, or retry\nnpm error this command with --force or --legacy-peer-deps\nnpm error to accept an incorrect (and potentially broken) dependency resolution.\n\nnpm error\nnpm error\nnpm error For a full report see:\nnpm error /root/.npm/_logs/2025-06-22T20_41_29_786Z-eresolve-report.txt\n\nnpm notice\nnpm notice New major version of npm available! 10.8.2 -> 11.4.2\nnpm notice Changelog: https://github.com/npm/cli/releases/tag/v11.4.2\nnpm notice To update run: npm install -g npm@11.4.2\nnpm notice\n\nnpm error A complete log of this run can be found in: /root/.npm/_logs/2025-06-22T20_41_29_786Z-debug-0.log\n\n✕ [deps 4/4] RUN npm ci \nprocess \"/bin/sh -c npm ci\" did not complete successfully: exit code: 1\n \n\nDockerfile:11\n\n-------------------\n\n9 |     # Install dependencies based on the preferred package manager\n\n10 |     COPY package.json package-lock.json* ./\n\n11 | >>> RUN npm ci\n\n12 |\n\n13 |     # Rebuild the source code only when needed\n\n-------------------\n\nERROR: failed to solve: process \"/bin/sh -c npm ci\" did not complete successfully: exit code: 1"
+            }
+          }
+        },
+        {
+          "display": "https://github.com/captainplanet9000/Cival-Dashboard-v7 push to maiin branch",
+          "pastedContents": {}
+        },
+        {
+          "display": "push to git",
+          "pastedContents": {}
+        },
+        {
+          "display": "deps 2/4] WORKDIR /app  ✔ 0ms – CACHED\n\n[deps 3/4] COPY package.json package-lock.json* ./  ✔ 0ms – CACHED\n\n[deps 4/4] RUN npm ci\n\nnpm error code ERESOLVE\n\nnpm error ERESOLVE unable to resolve dependency tree\n\nnpm error\n\nnpm error While resolving: cival-dashboard@0.1.0\nnpm error Found: react@19.1.0\nnpm error node_modules/react\nnpm error   react@\"^19.0.0\" from the root project\nnpm error\nnpm error Could not resolve dependency:\nnpm error peer react@\"^18.0.0\" from cmdk@0.2.1\nnpm error node_modules/cmdk\nnpm error   cmdk@\"^0.2.0\" from the root project\nnpm error\nnpm error Fix the upstream dependency conflict, or retry\nnpm error this command with --force or --legacy-peer-deps\nnpm error to accept an incorrect (and potentially broken) dependency resolution.\n\nnpm error\nnpm error\nnpm error For a full report see:\nnpm error /root/.npm/_logs/2025-06-22T20_35_05_223Z-eresolve-report.txt\n\nnpm notice\nnpm notice New major version of npm available! 10.8.2 -> 11.4.2\nnpm notice Changelog: https://github.com/npm/cli/releases/tag/v11.4.2\nnpm notice To update run: npm install -g npm@11.4.2\nnpm notice\n\nnpm error A complete log of this run can be found in: /root/.npm/_logs/2025-06-22T20_35_05_223Z-debug-0.log\n\n✕ [deps 4/4] RUN npm ci \nprocess \"/bin/sh -c npm ci\" did not complete successfully: exit code: 1\n \n\nDockerfile:11\n\n-------------------\n\n9 |     # Install dependencies based on the preferred package manager\n\n10 |     COPY package.json package-lock.json* ./\n\n11 | >>> RUN npm ci\n\n12 |\n\n13 |     # Rebuild the source code only when needed\n\n-------------------\n\nERROR: failed to solve: process \"/bin/sh -c npm ci\" did not complete successfully: exit code: 1\n\nLoad More",
+          "pastedContents": {}
+        },
+        {
+          "display": "still failed push everythng to man barnach and get main branch upt o date ",
+          "pastedContents": {}
+        },
+        {
+          "display": "continue",
+          "pastedContents": {}
+        },
+        {
+          "display": "contionue",
+          "pastedContents": {}
+        },
+        {
+          "display": "✕ [builder 4/4] RUN npm run build \nprocess \"/bin/sh -c npm run build\" did not complete successfully: exit code: 1\n \n\nDockerfile:23\n\n-------------------\n\n21 |     ENV NODE_ENV production\n\n22 |\n\n23 | >>> RUN npm run build\n\n24 |\n\n25 |     # Production image, copy all the files and run next\n\n-------------------\n\nERROR: failed to solve: process \"/bin/sh -c npm run build\" did not complete successfully: exit code: 1\n\nLoad More",
+          "pastedContents": {}
+        },
+        {
+          "display": "https://github.com/captainplanet9000/Cival-Dashboard-v7",
+          "pastedContents": {}
+        },
+        {
+          "display": "swtitch the the main branch and macke sure your working on main branch ",
+          "pastedContents": {}
+        },
+        {
+          "display": "push updates to git so it redeploys on railway",
+          "pastedContents": {}
+        },
+        {
+          "display": "merge all the updaste sto main branch",
+          "pastedContents": {}
+        },
+        {
+          "display": "push all updatses to https://github.com/captainplanet9000/Cival-Dashboard-v7",
+          "pastedContents": {}
+        },
+        {
+          "display": "./src/components[Pasted text #1 +41 lines]",
+          "pastedContents": {
+            "1": {
+              "id": 1,
+              "type": "text",
+              "content": "/auto-form/AutoForm.tsx:18:10\nType error: Module '\"@/lib/ag-ui-protocol-v2\"' has no exported member 'useAGUIProtocol'.\n\n  16 | import { Separator } from '@/components/ui/separator'\n  17 | import { useAppStore } from '@/lib/stores/app-store'\n> 18 | import { useAGUIProtocol } from '@/lib/ag-ui-protocol-v2'\n     |          ^\n  19 | import { backendApi } from '@/lib/api/backend-client'\n  20 | import { cn } from '@/lib/utils'\n  21 | import { \n\nNext.js build worker exited with code: 1 and signal: null\n\nnpm notice\nnpm notice New major version of npm available! 10.8.2 -> 11.4.2\nnpm notice Changelog: https://github.com/npm/cli/releases/tag/v11.4.2\nnpm notice To update run: npm install -g npm@11.4.2\nnpm notice\n\n✕ [builder 4/4] RUN npm run build \nprocess \"/bin/sh -c npm run build\" did not complete successfully: exit code: 1\n \n\nDockerfile:23\n\n-------------------\n\n21 |     ENV NODE_ENV production\n\n22 |\n\n23 | >>> RUN npm run build\n\n24 |\n\n25 |     # Production image, copy all the files and run next\n\n-------------------\n\nERROR: failed to solve: process \"/bin/sh -c npm run build\" did not complete successfully: exit code: 1\n\nLoad More"
+            }
+          }
+        },
+        {
+          "display": "copmlete all phases I dont want accountts or anyuy of that gettig in my way im a solo operator ",
+          "pastedContents": {}
+        },
+        {
+          "display": "> next build\n\n   ▲ Next.js 15.1.8\n\n\n   Creating an optimized production build ...\n\n ✓ Compiled successfully\n\n   Linting and checking validity of types ...\n\nFailed to compile.\n\n./src/components/auto-form/AutoForm.tsx:18:10\nType error: Module '\"@/lib/ag-ui-protocol-v2\"' has no exported member 'useAGUIProtocol'.\n\n 16 |import[33m }  \n> next build\n\n   ▲ Next.js 15.1.8\n\n\n   Creating an optimized production build ...\n\n ✓ Compiled successfully\n\n   Linting and checking validity of types ...\n\nFailed to compile.\n\n./src/comp   { Separatorfrom'@/components/ui/separator'   { useAppStore }  \n>  { useAGUIProtocol }  \n    |[1m\n 17 |importfrom'@/lib/stores/app-store'[1m 18 |importfrom'@/lib/ag-ui-protocol-v2'           ^   { backendApi }  \n 20 |import { cn }  \n 21 |import\n\nNext.js build worker exited with code: 1 and signal: null\n\nnpm notice\nnpm notice New major version of npm available! 10.8.2 -> 11.4.2\nnpm notice Changelog: https://github.com/npm/cli/releases/tag/v11.4.2\nnpm notice To update run: npm install -g npm@11.4.2\nnpm notice",
+          "pastedContents": {}
+        },
+        {
+          "display": "/compact ",
+          "pastedContents": {}
+        },
+        {
+          "display": "continue",
+          "pastedContents": {}
+        },
+        {
+          "display": "process \"/bin/sh -c npm run build\" did not complete successfully: exit code: 1\n\nView in context\n\n> cival-dashboard@0.1.0 build\n> next build\n\n   ▲ Next.js 15.1.8\n\n\n   Creating an optimized production build ...\n\nFailed to compile.\n\n./src/components/premium/hooks/usePerformanceMonitor.tsx\nModule parse failed: Identifier 'React' has already been declared (314:7)\n\nFile was processed with these loaders:\n * ./node_modules/next/dist/build/webpack/loaders/next-flight-client-module-loader.js\n * ./node_modules/next/dist/build/webpack/loaders/next-swc-loader.js\nYou may need an additional loader to handle the result of these loaders.\n|     return context;\n| }\n> import React, { useContext } from 'react';\n| \nImport trace for requested module:\n./src/components/premium/hooks/usePerformanceMonitor.tsx\n./src/lib/performance/optimization.tsx\n./src/components/performance/PerformanceMonitor.tsx\n./src/app/dashboard-v2/page.tsx\n\n\n> Build failed because of webpack errors\n\nnpm notice\nnpm notice New major version of npm available! 10.8.2 -> 11.4.2\nnpm notice Changelog: https://github.com/npm/cli/releases/tag/v11.4.2\nnpm notice To update run: npm install -g npm@11.4.2\nnpm notice",
+          "pastedContents": {}
+        },
+        {
+          "display": "/src/components/[Pasted text #1 +50 lines]",
+          "pastedContents": {
+            "1": {
+              "id": 1,
+              "type": "text",
+              "content": "dropzone.tsx\n110:17  Warning: Using `<img>` could result in slower LCP and higher bandwidth. Consider using `<Image />` from `next/image` or a custom image loader to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element\n\n./src/components/image-upload/ImageUpload.tsx\n491:21  Warning: Using `<img>` could result in slower LCP and higher bandwidth. Consider using `<Image />` from `next/image` or a custom image loader to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element\n571:15  Warning: Using `<img>` could result in slower LCP and higher bandwidth. Consider using `<Image />` from `next/image` or a custom image loader to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element\n\n./src/components/premium/advanced/APIIntegration.tsx\n456:22  Error: 'PlusIcon' is not defined.  react/jsx-no-undef\n605:22  Error: 'PlusIcon' is not defined.  react/jsx-no-undef\n\n./src/components/premium/agents/RiskAnalysis.tsx\n652:24  Error: 'CheckCircleIcon' is not defined.  react/jsx-no-undef\n\n./src/components/premium/hooks/usePerformanceMonitor.ts\n305:29  Error: Parsing error: '>' expected.\n\n./src/lib/hooks/useSupabase.ts\n295:1  Warning: Assign object to a variable before exporting as module default  import/no-anonymous-default-export\n\ninfo  - Need to disable some ESLint rules? Learn more here: https://nextjs.org/docs/app/api-reference/config/eslint#disabling-rules\n\nnpm notice\nnpm notice New major version of npm available! 10.8.2 -> 11.4.2\nnpm notice Changelog: https://github.com/npm/cli/releases/tag/v11.4.2\nnpm notice To update run: npm install -g npm@11.4.2\nnpm notice\n\n✕ [builder 4/4] RUN npm run build \nprocess \"/bin/sh -c npm run build\" did not complete successfully: exit code: 1\n \n\nDockerfile:23\n\n-------------------\n\n21 |     ENV NODE_ENV production\n\n22 |\n\n23 | >>> RUN npm run build\n\n24 |\n\n25 |     # Production image, copy all the files and run next\n\n-------------------\n\nERROR: failed to solve: process \"/bin/sh -c npm run build\" did not complete successfully: exit code: 1\n\nLoad More"
+            }
+          }
+        },
+        {
+          "display": "cival-mc[Pasted text #1 +207 lines]",
+          "pastedContents": {
+            "1": {
+              "id": 1,
+              "type": "text",
+              "content": "p-trading-platform\n\n\nproduction\nArchitecture\nObservability\nLogs\nSettings\n\nShare\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nActivity\n\n\nCival-Dashboard-v7\nDeployments\nVariables\nMetrics\nSettings\ncival-dashboard-v7-production.up.railway.app\nus-west2\n1 Replica\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nHistory\n\n\n\nCival-Dashboard-v7\n/\na939257\nJun 21, 2025 6:28 PM\n\nFailed\n\ncival-dashboard-v7-production.up.railway.app\nGet Help\n\nDetails\nBuild Logs\nDeploy Logs\nHTTP Logs\n\nFilter\nFilter logs using \"\", (), AND, OR, -\n\n\n\n\nLoad More\n\n\n> cival-dashboard@0.1.0 install\n> npm install --legacy-peer-deps\n\n\n\n> cival-dashboard@0.1.0 install\n> npm install --legacy-peer-deps\n\n\n\n> cival-dashboard@0.1.0 install\n> npm install --legacy-peer-deps\n\n\n\n> cival-dashboard@0.1.0 install\n> npm install --legacy-peer-deps\n\n\n\n> cival-dashboard@0.1.0 install\n> npm install --legacy-peer-deps\n\n\n\n> cival-dashboard@0.1.0 install\n> npm install --legacy-peer-deps\n\n\n\n> cival-dashboard@0.1.0 install\n> npm install --legacy-peer-deps\n\n\n\n> cival-dashboard@0.1.0 install\n> npm install --legacy-peer-deps\n\n\n\n> cival-dashboard@0.1.0 install\n> npm install --legacy-peer-deps\n\n\n\n> cival-dashboard@0.1.0 install\n> npm install --legacy-peer-deps\n\n\n\n> cival-dashboard@0.1.0 install\n> npm install --legacy-peer-deps\n\n\n\n> cival-dashboard@0.1.0 install\n> npm install --legacy-peer-deps\n\n\n\n> cival-dashboard@0.1.0 install\n> npm install --legacy-peer-deps\n\n\n\n> cival-dashboard@0.1.0 install\n> npm install --legacy-peer-deps\n\n\n\n> cival-dashboard@0.1.0 install\n> npm install --legacy-peer-deps\n\n\n\n> cival-dashboard@0.1.0 install\n> npm install --legacy-peer-deps\n\n\n\n> cival-dashboard@0.1.0 install\n> npm install --legacy-peer-deps\n\n\n\n> cival-dashboard@0.1.0 install\n> npm install --legacy-peer-deps\n\n\n\n> cival-dashboard@0.1.0 install\n> npm install --legacy-peer-deps\n\n\n\n> cival-dashboard@0.1.0 install\n> npm install --legacy-peer-deps\n\n\n\n> cival-dashboard@0.1.0 install\n> npm install --legacy-peer-deps\n\n\n\n> cival-dashboard@0.1.0 install\n> npm install --legacy-peer-deps\n\n\n\n> cival-dashboard@0.1.0 install\n> npm install --legacy-peer-deps\n\n\n\n> cival-dashboard@0.1.0 install\n> npm install --legacy-peer-deps\n\n\n \n\nBuild timed out\n\n\nCival-Dashboard-v7 | Railway"
+            }
+          }
+        },
+        {
+          "display": "continue completa all phases ",
+          "pastedContents": {}
+        },
+        {
+          "display": "/exit ",
+          "pastedContents": {}
+        },
+        {
+          "display": "/exitupdate claude.md with all improtant inoformaiton on the dashboard and codebase ",
+          "pastedContents": {}
+        },
+        {
+          "display": "update claude.md with all improtant inoformaiton on the dashboard and codebase ",
+          "pastedContents": {}
+        },
+        {
+          "display": "https://github.com/captainplanet9000/Cival-Dashboard-v7 push to this git ",
+          "pastedContents": {}
+        },
+        {
+          "display": "push to git so railway sutodeploys ",
+          "pastedContents": {}
+        },
+        {
+          "display": "scan the codebase and see what needds to be done for agent-zero",
+          "pastedContents": {}
+        },
+        {
+          "display": "cival-mcp-tradin[Pasted text #1 +222 lines]",
+          "pastedContents": {
+            "1": {
+              "id": 1,
+              "type": "text",
+              "content": "g-platform\n\n\nproduction\nArchitecture\nObservability\nLogs\nSettings\n\nShare\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nActivity\n\n\nCival-Dashboard-v7\nDeployments\nVariables\nMetrics\nSettings\nUnexposed service\nus-west2\n1 Replica\n\n\n\n\n\n\n\n\n\n\n\nCival-Dashboard-v7\n/\nbbad1f1\nJun 21, 2025 6:21 PM\n\nFailed\n\nGet Help\n\nDetails\nBuild Logs\nDeploy Logs\n\nFilter\nFilter logs using \"\", (), AND, OR, -\n\n\n\n\nLoad More\n\n[internal] load .dockerignore  ✔ 17ms\n\n[builder 4/4] RUN npm run build\n\n[builder 3/4] COPY . .\n\n[builder 2/4] COPY --from=deps /app/node_modules ./node_modules\n\n[deps 4/4] RUN npm ci\n\n[deps 3/4] COPY package.json package-lock.json* ./\n\n[runner 5/8] RUN mkdir .next\n\n[deps 2/4] WORKDIR /app\n\n[deps 1/4] RUN apk add --no-cache libc6-compat\n\n[runner 3/8] RUN adduser --system --uid 1001 nextjs\n\n[runner 2/8] RUN addgroup --system --gid 1001 nodejs\n\n[builder 1/4] WORKDIR /app\n\n[runner 4/8] COPY --from=builder /app/public ./public\n\n[base 1/1] FROM docker.io/library/node:18-alpine@sha256:8d6421d663b4c28fd3ebc498332f249011d118945588d0a35cb9bc4b8ca09d9e\n\n[internal] load build context\n\n[runner 8/8] COPY --from=builder --chown=nextjs:nodejs /app/.next/static ./.next/static\n\n[runner 7/8] COPY --from=builder --chown=nextjs:nodejs /app/.next/standalone ./\n\n[runner 6/8] RUN chown nextjs:nodejs .next\n\n[internal] load build context  ✔ 0ms\n\n[base 1/1] FROM docker.io/library/node:18-alpine@sha256:8d6421d663b4c28fd3ebc498332f249011d118945588d0a35cb9bc4b8ca09d9e\n\n[base 1/1] FROM docker.io/library/node:18-alpine@sha256:8d6421d663b4c28fd3ebc498332f249011d118945588d0a35cb9bc4b8ca09d9e  ✔ 0ms\n\n[internal] load build context\n\n[base 1/1] FROM docker.io/library/node:18-alpine@sha256:8d6421d663b4c28fd3ebc498332f249011d118945588d0a35cb9bc4b8ca09d9e\n\n[base 1/1] FROM docker.io/library/node:18-alpine@sha256:8d6421d663b4c28fd3ebc498332f249011d118945588d0a35cb9bc4b8ca09d9e  ✔ 27ms\n\n[base 1/1] FROM docker.io/library/node:18-alpine@sha256:8d6421d663b4c28fd3ebc498332f249011d118945588d0a35cb9bc4b8ca09d9e\n\n[base 1/1] FROM docker.io/library/node:18-alpine@sha256:8d6421d663b4c28fd3ebc498332f249011d118945588d0a35cb9bc4b8ca09d9e  ✔ 456ms\n\n[internal] load build context  ✔ 644ms\n\n[builder 1/4] WORKDIR /app\n\n[deps 1/4] RUN apk add --no-cache libc6-compat\n\nfetch https://dl-cdn.alpinelinux.org/alpine/v3.21/main/x86_64/APKINDEX.tar.gz\n\n[builder 1/4] WORKDIR /app  ✔ 140ms\n\n[runner 2/8] RUN addgroup --system --gid 1001 nodejs\n\nfetch https://dl-cdn.alpinelinux.org/alpine/v3.21/community/x86_64/APKINDEX.tar.gz\n\n[runner 2/8] RUN addgroup --system --gid 1001 nodejs  ✔ 147ms\n\n[runner 3/8] RUN adduser --system --uid 1001 nextjs\n\n[runner 3/8] RUN adduser --system --uid 1001 nextjs  ✔ 76ms\n\n(1/3) Installing musl-obstack (1.2.3-r2)\n\n(2/3) Installing libucontext (1.3.2-r0)\n\n(3/3) Installing gcompat (1.1.0-r4)\n\nOK: 10 MiB in 20 packages\n\n[deps 1/4] RUN apk add --no-cache libc6-compat  ✔ 679ms\n\n[deps 2/4] WORKDIR /app\n\n[deps 2/4] WORKDIR /app  ✔ 11ms\n\n[deps 3/4] COPY package.json package-lock.json* ./\n\n[deps 3/4] COPY package.json package-lock.json* ./  ✔ 16ms\n\n[deps 4/4] RUN npm ci\n\nnpm error code ERESOLVE\n\nnpm error ERESOLVE unable to resolve dependency tree\n\nnpm error\n\nnpm error While resolving: cival-dashboard@0.1.0\nnpm error Found: apexcharts@3.54.1\nnpm error node_modules/apexcharts\nnpm error   apexcharts@\"^3.44.0\" from the root project\nnpm error\nnpm error Could not resolve dependency:\nnpm error peer apexcharts@\">=4.0.0\" from react-apexcharts@1.7.0\nnpm error node_modules/react-apexcharts\nnpm error   react-apexcharts@\"^1.4.1\" from the root project\nnpm error\nnpm error Fix the upstream dependency conflict, or retry\nnpm error this command with --force or --legacy-peer-deps\nnpm error to accept an incorrect (and potentially broken) dependency resolution.\n\nnpm error\nnpm error\nnpm error For a full report see:\nnpm error /root/.npm/_logs/2025-06-22T01_22_01_871Z-eresolve-report.txt\n\nnpm notice\nnpm notice New major version of npm available! 10.8.2 -> 11.4.2\nnpm notice Changelog: https://github.com/npm/cli/releases/tag/v11.4.2\nnpm notice To update run: npm install -g npm@11.4.2\nnpm notice\n\nnpm error A complete log of this run can be found in: /root/.npm/_logs/2025-06-22T01_22_01_871Z-debug-0.log\n\n✕ [deps 4/4] RUN npm ci \nprocess \"/bin/sh -c npm ci\" did not complete successfully: exit code: 1\n \n\nDockerfile:11\n\n-------------------\n\n9 |     # Install dependencies based on the preferred package manager\n\n10 |     COPY package.json package-lock.json* ./\n\n11 | >>> RUN npm ci\n\n12 |\n\n13 |     # Rebuild the source code only when needed\n\n-------------------\n\nERROR: failed to solve: process \"/bin/sh -c npm ci\" did not complete successfully: exit code: 1\n\nLoad More\n\n\nCival-Dashboard-v7 | Railway"
+            }
+          }
+        },
+        {
+          "display": "push the updated dashbaord to clean repo https://github.com/captainplanet9000/Cival-Dashboard-v7",
+          "pastedContents": {}
+        },
+        {
+          "display": "continue complete all phases ",
+          "pastedContents": {}
+        },
+        {
+          "display": "continue",
+          "pastedContents": {}
+        },
+        {
+          "display": "/compact ",
+          "pastedContents": {}
+        },
+        {
+          "display": "cotninue",
+          "pastedContents": {}
+        },
+        {
+          "display": "/exit ",
+          "pastedContents": {}
+        },
+        {
+          "display": "continue",
+          "pastedContents": {}
+        },
+        {
+          "display": "/compact ",
+          "pastedContents": {}
+        },
+        {
+          "display": "continue",
+          "pastedContents": {}
+        },
+        {
+          "display": "yes comleete all phaese one after th eother",
+          "pastedContents": {}
+        },
+        {
+          "display": "complete all the phasees",
+          "pastedContents": {}
+        },
+        {
+          "display": "[stage-0 8/10] R[Pasted text #1 +20 lines] \nRun `n[Pasted text #2 +54 lines]",
+          "pastedContents": {
+            "1": {
+              "id": 1,
+              "type": "text",
+              "content": "UN --mount=type=cache,id=s/a734b0e3-d5a3-4971-8cd6-d3b6f7cd6752-next/cache,target=/app/.next/cache --mount=type=cache,id=s/a734b0e3-d5a3-4971-8cd6-d3b6f7cd6752-node_modules/cache,target=/app/node_modules/.cache npm run build\n\"npm run build\" did not complete successfully: exit code: 1\n\nView in context\n\nnpm warn config production Use `--omit=dev` instead.\n\n> cival-dashboard@0.1.0 build\n> next build\n\nAttention: Next.js now collects completely anonymous telemetry regarding usage.\n\nThis information is used to shape Next.js' roadmap and prioritize features.\nYou can learn more, including how to opt-out if you'd not like to participate in this anonymous program, by visiting the following URL:\n\nhttps://nextjs.org/telemetry\n\n\n> Build error occurred\n\n[Error: > Couldn't find any `pages` or `app` directory. Please create one under the project root]"
+            },
+            "2": {
+              "id": 2,
+              "type": "text",
+              "content": "pm audit` for details.\n\n[stage-0  6/10] RUN --mount=type=cache,id=s/a734b0e3-d5a3-4971-8cd6-d3b6f7cd6752-/root/npm,target=/root/.npm npm i  ✔ 1m 43s\n\n[stage-0  7/10] COPY . /app/.\n\n[stage-0  7/10] COPY . /app/.  ✔ 440ms\n\n[stage-0  8/10] RUN --mount=type=cache,id=s/a734b0e3-d5a3-4971-8cd6-d3b6f7cd6752-next/cache,target=/app/.next/cache --mount=type=cache,id=s/a734b0e3-d5a3-4971-8cd6-d3b6f7cd6752-node_modules/cache,target=/app/node_modules/.cache npm run build\n\nnpm warn config production Use `--omit=dev` instead.\n\n\n> cival-dashboard@0.1.0 build\n> next build\n\n\nAttention: Next.js now collects completely anonymous telemetry regarding usage.\n\nThis information is used to shape Next.js' roadmap and prioritize features.\nYou can learn more, including how to opt-out if you'd not like to participate in this anonymous program, by visiting the following URL:\n\nhttps://nextjs.org/telemetry\n\n\n\n\n> Build error occurred\n\n[Error: > Couldn't find any `pages` or `app` directory. Please create one under the project root]\n\n✕ [stage-0  8/10] RUN --mount=type=cache,id=s/a734b0e3-d5a3-4971-8cd6-d3b6f7cd6752-next/cache,target=/app/.next/cache --mount=type=cache,id=s/a734b0e3-d5a3-4971-8cd6-d3b6f7cd6752-node_modules/cache,target=/app/node_modules/.cache npm run build \nprocess \"/bin/bash -ol pipefail -c npm run build\" did not complete successfully: exit code: 1\n \n\nDockerfile:24\n\n-------------------\n\n22 |     # build phase\n\n23 |     COPY . /app/.\n\n24 | >>> RUN --mount=type=cache,id=s/a734b0e3-d5a3-4971-8cd6-d3b6f7cd6752-next/cache,target=/app/.next/cache --mount=type=cache,id=s/a734b0e3-d5a3-4971-8cd6-d3b6f7cd6752-node_modules/cache,target=/app/node_modules/.cache npm run build\n\n25 |\n\n26 |\n\n-------------------\n\nERROR: failed to solve: process \"/bin/bash -ol pipefail -c npm run build\" did not complete successfully: exit code: 1\n\nError: Docker build failed\n"
+            }
+          }
+        },
+        {
+          "display": "create a updated phased pan ",
+          "pastedContents": {}
+        },
+        {
+          "display": "https://www.material-tailwind.com/docs/react/crypto/crypto-chart",
+          "pastedContents": {}
+        },
+        {
+          "display": "npm error While[Pasted text #1 +47 lines]",
+          "pastedContents": {
+            "1": {
+              "id": 1,
+              "type": "text",
+              "content": " resolving: cival-dashboard@0.1.0\nnpm error Found: next@15.1.8\nnpm error node_modules/next\nnpm error   next@\"15.1.8\" from the root project\nnpm error   peer next@\"*\" from @next/font@14.2.15\nnpm error   node_modules/@next/font\nnpm error     peerOptional @next/font@\"^13.0.0|| ^14.0.0\" from @storybook/nextjs@7.6.20\nnpm error     node_modules/@storybook/nextjs\nnpm error       dev @storybook/nextjs@\"^7.6.0\" from the root project\nnpm error\nnpm error Could not resolve dependency:\nnpm error peer next@\"^9.0.0 || ^10.0.0 || ^11.0.0 || ^12.0.0 || ^13.0.0 || ^14.0.0\" from @storybook/nextjs@7.6.20\nnpm error node_modules/@storybook/nextjs\nnpm error   dev @storybook/nextjs@\"^7.6.0\" from the root project\nnpm error\nnpm error Fix the upstream dependency conflict, or retry\nnpm error this command with --force or --legacy-peer-deps\nnpm error to accept an incorrect (and potentially broken) dependency resolution.\nnpm error\nnpm error\nnpm error For a full report see:\nnpm error /root/.npm/_logs/2025-06-21T18_53_17_529Z-eresolve-report.txt\n\nnpm error A complete log of this run can be found in: /root/.npm/_logs/2025-06-21T18_53_17_529Z-debug-0.log\n\n✕ [stage-0  6/10] RUN --mount=type=cache,id=s/a734b0e3-d5a3-4971-8cd6-d3b6f7cd6752-/root/npm,target=/root/.npm npm i \nprocess \"/bin/bash -ol pipefail -c npm i\" did not complete successfully: exit code: 1\n \n\nDockerfile:20\n\n-------------------\n\n18 |     ENV NIXPACKS_PATH=/app/node_modules/.bin:$NIXPACKS_PATH\n\n19 |     COPY . /app/.\n\n20 | >>> RUN --mount=type=cache,id=s/a734b0e3-d5a3-4971-8cd6-d3b6f7cd6752-/root/npm,target=/root/.npm npm i\n\n21 |\n\n22 |     # build phase\n\n-------------------\n\nERROR: failed to solve: process \"/bin/bash -ol pipefail -c npm i\" did not complete successfully: exit code: 1\n\nError: Docker build failed"
+            }
+          }
+        },
+        {
+          "display": "I doont want to pay anytyhing anaylesee each of the compmnent librarires and create them for the dashboard. go through all of hem and the codebase and use what we have built and axpand so agui mcp etc ",
+          "pastedContents": {}
+        },
+        {
+          "display": "crypto-charts  rypto charts made for shadcn/ui using PythNetwork    Real-time crypto price charts\nlinked-chart    Chart component linked with data-table    Portfolio visualization + table data\nbig-calendar    Modern, feature-rich calendar application    Event scheduling for trades\nauto-form    Automatically creates forms based on a zod schema    Trade entry forms\nenhanced-button    Extended button component    Custom trade action buttons\nimage-upload-shadcn    Image upload component    Document upload for compliance\nfancy-area    Textarea with @mention support    Trade notes or chat\nfile-uploader    File uploader with shadcn/crypto-charts  rypto charts made for shadcn/ui using PythNetwork    Real-time crypto price charts\nlinked-chart    Chart component linked with data-table    Portfolio visualization + table data\nbig-calendar    Modern, feature-rich calendar application    Event scheduling for trades\nauto-form    Automatically creates forms based on a zod schema    Trade entry forms\nenhanced-button    Extended button component    Custom trade action buttons\nimage-upload-shadcn    Image upload component    Document upload for compliance\nfancy-area    Textarea with @mention support    Trade notes or chat\nfile-uploader    File uploader with shadcn/ui and react-dropzone    Document management\n  Cui and react-dropzone    Document management\n  C",
+          "pastedContents": {}
+        },
+        {
+          "display": "complete phaes 2 - 5",
+          "pastedContents": {}
+        },
+        {
+          "display": "npm error ERE[Pasted text #1 +46 lines]",
+          "pastedContents": {
+            "1": {
+              "id": 1,
+              "type": "text",
+              "content": "SOLVE unable to resolve dependency tree\nnpm error\n\nnpm error While resolving: cival-dashboard@0.1.0\nnpm error Found: react@19.1.0\nnpm error node_modules/react\nnpm error   react@\"^19.0.0\" from the root project\nnpm error\nnpm error Could not resolve dependency:\nnpm error peer react@\"^18.0.0\" from cmdk@0.2.1\nnpm error node_modules/cmdk\nnpm error   cmdk@\"^0.2.0\" from the root project\nnpm error\nnpm error Fix the upstream dependency conflict, or retry\nnpm error this command with --force or --legacy-peer-deps\nnpm error to accept an incorrect (and potentially broken) dependency resolution.\n\nnpm error\nnpm error\nnpm error For a full report see:\nnpm error /root/.npm/_logs/2025-06-21T18_38_35_706Z-eresolve-report.txt\n\nnpm error A complete log of this run can be found in: /root/.npm/_logs/2025-06-21T18_38_35_706Z-debug-0.log\n\n✕ [stage-0  6/10] RUN --mount=type=cache,id=s/a734b0e3-d5a3-4971-8cd6-d3b6f7cd6752-/root/npm,target=/root/.npm npm i \nprocess \"/bin/bash -ol pipefail -c npm i\" did not complete successfully: exit code: 1\n \n\nDockerfile:20\n\n-------------------\n\n18 |     ENV NIXPACKS_PATH=/app/node_modules/.bin:$NIXPACKS_PATH\n\n19 |     COPY . /app/.\n\n20 | >>> RUN --mount=type=cache,id=s/a734b0e3-d5a3-4971-8cd6-d3b6f7cd6752-/root/npm,target=/root/.npm npm i\n\n21 |\n\n22 |     # build phase\n\n-------------------\n\nERROR: failed to solve: process \"/bin/bash -ol pipefail -c npm i\" did not complete successfully: exit code: 1\n\nError: Docker build failed"
+            }
+          }
+        },
+        {
+          "display": "https://github.com/captainplanet9000/Cival-Dashboard-v5 make sure your pushing ito this git",
+          "pastedContents": {}
+        },
+        {
+          "display": "cinokete all of the phases ",
+          "pastedContents": {}
+        },
+        {
+          "display": "create a phased plan to complete and integrate 100% of the copmonents completed ",
+          "pastedContents": {}
+        },
+        {
+          "display": "all the other options that are iun the paiid I want you to create for us so whatever ones that the 499 package has I want to develop",
+          "pastedContents": {}
+        },
+        {
+          "display": " mc6ke5fme9b1o3zw9qk error ist not udating or fixerd push to git so autoredeploys on rialway",
+          "pastedContents": {}
+        },
+        {
+          "display": "https://github.com/origin-space/ui-experiments/tree/main",
+          "pastedContents": {}
+        },
+        {
+          "display": "https://originui.com/layouts",
+          "pastedContents": {}
+        },
+        {
+          "display": "npx -y @smithery/cli@latest install @upstash/context7-mcp --client claude --key e9820cd5-c518-4f68-8c3b-4ba2e5103a25",
+          "pastedContents": {}
+        },
+        {
+          "display": "/mcp ",
+          "pastedContents": {}
+        },
+        {
+          "display": "push to git",
+          "pastedContents": {}
+        },
+        {
+          "display": "npx -y @smithery/cli@latest install @upstash/context7-mcp --client claude --key e9820cd5-c518-4f68-8c3b-4ba2e5103a25",
+          "pastedContents": {}
+        },
+        {
+          "display": "can the dashboard benefit from grafna https://grafana.com/docs/ or does it add too much colexity I need the tables to bedynamic and live and as things are created and deleted fo rthe tables to be updated and wokr instead of beingm ock images. what about tanstack and shadcn is it better to build it  ",
+          "pastedContents": {}
+        },
+        {
+          "display": "the calender tab is erroring out and charachoong ",
+          "pastedContents": {}
+        },
+        {
+          "display": "fix the mcp servers  MCP_DOCKER · failed                                                                                                │\n│   supabase ·",
+          "pastedContents": {}
+        },
+        {
+          "display": "/mcp ",
+          "pastedContents": {}
+        },
+        {
+          "display": "with the valuation in mind analayse the dashboard and figure  out what else needs to be done to get the dahboard 100% functional and able t o generaste these amounts ",
+          "pastedContents": {}
+        },
+        {
+          "display": "Continue complete teverytubg",
+          "pastedContents": {}
+        },
+        {
+          "display": "push upadatrs to git",
+          "pastedContents": {}
+        },
+        {
+          "display": "Ultra-deep thin[Pasted text #1 +4 lines]",
+          "pastedContents": {
+            "1": {
+              "id": 1,
+              "type": "text",
+              "content": "king mode. Greater rigor, attention to detail, and multi-angle verification. Start by outlining the task and breaking down the problem into subtasks. For each subtask, explore multiple perspectives, even those that seem initially irrelevant or improbable. Purposefully attempt to disprove or challenge your own assumptions at every step. Triple-verify everything. Critically review each step, scrutinize your logic, assumptions, and conclusions, explicitly calling out uncertainties and alternative viewpoints.  Independently verify your reasoning using alternative methodologies or tools, cross-checking every fact, inference, and conclusion against external data, calculation, or authoritative sources. Deliberately seek out and employ at least twice as many verification tools or methods as you typically would. Use mathematical validations, web searches, logic evaluation frameworks, and additional resources explicitly and liberally to cross-verify your claims. Even if you feel entirely confident in your solution, explicitly dedicate additional time and effort to systematically search for weaknesses, logical gaps, hidden assumptions, or oversights. Clearly document these potential pitfalls and how you've addressed them. Once you're fully convinced your analysis is robust and complete, deliberately pause and force yourself to reconsider the entire reasoning chain one final time from scratch. Explicitly detail this last reflective step.\n\n<task>\nGo over the entire codebase and give me a dollar value on the farm ip and the projected earnings once the dashboard and features are running with farms going and goals being achieved how much money are we talking about and what is this ip worth \n</task>"
+            }
+          }
+        },
+        {
+          "display": "whers the mock data in the liive trading tab",
+          "pastedContents": {}
+        },
+        {
+          "display": "push to git",
+          "pastedContents": {}
+        },
+        {
+          "display": "in the trading tab bring back the simlulated p&l in the dashboard from the agents trades adn positions use the paper trading system weve built to simulate tthe positions and dynamaically summ the toalatl of the paper trades in the trading panel",
+          "pastedContents": {}
+        },
+        {
+          "display": "theres no boxes for the days how a a calnder looks and inside tohse boxesa show theprofits or losses",
+          "pastedContents": {}
+        },
+        {
+          "display": "https://ui.shadcn.com/docs/components/accordionhttps://ui.shadcn.com/docs/components/accordion nothings changed in the calnder tab it should look like a calnde and each dday shows a value of how much the agents made and other info throuhg mocules as well ",
+          "pastedContents": {}
+        },
+        {
+          "display": "the calnder function that we built where it tracks data and trades and profits reinorporate that  intho the calnder tab bring bakck all of that functioanlity and make it fully funtional ",
+          "pastedContents": {}
+        },
+        {
+          "display": "install theme",
+          "pastedContents": {}
+        },
+        {
+          "display": ":root {\n  --ba[Pasted text #1 +144 lines]",
+          "pastedContents": {
+            "1": {
+              "id": 1,
+              "type": "text",
+              "content": "ckground: oklch(1.0000 0 0);\n  --foreground: oklch(0.1884 0.0128 248.5103);\n  --card: oklch(0.9784 0.0011 197.1387);\n  --card-foreground: oklch(0.1884 0.0128 248.5103);\n  --popover: oklch(1.0000 0 0);\n  --popover-foreground: oklch(0.1884 0.0128 248.5103);\n  --primary: oklch(0.6723 0.1606 244.9955);\n  --primary-foreground: oklch(1.0000 0 0);\n  --secondary: oklch(0.1884 0.0128 248.5103);\n  --secondary-foreground: oklch(1.0000 0 0);\n  --muted: oklch(0.9222 0.0013 286.3737);\n  --muted-foreground: oklch(0.1884 0.0128 248.5103);\n  --accent: oklch(0.9392 0.0166 250.8453);\n  --accent-foreground: oklch(0.6723 0.1606 244.9955);\n  --destructive: oklch(0.6188 0.2376 25.7658);\n  --destructive-foreground: oklch(1.0000 0 0);\n  --border: oklch(0.9317 0.0118 231.6594);\n  --input: oklch(0.9809 0.0025 228.7836);\n  --ring: oklch(0.6818 0.1584 243.3540);\n  --chart-1: oklch(0.6723 0.1606 244.9955);\n  --chart-2: oklch(0.6907 0.1554 160.3454);\n  --chart-3: oklch(0.8214 0.1600 82.5337);\n  --chart-4: oklch(0.7064 0.1822 151.7125);\n  --chart-5: oklch(0.5919 0.2186 10.5826);\n  --sidebar: oklch(0.9784 0.0011 197.1387);\n  --sidebar-foreground: oklch(0.1884 0.0128 248.5103);\n  --sidebar-primary: oklch(0.6723 0.1606 244.9955);\n  --sidebar-primary-foreground: oklch(1.0000 0 0);\n  --sidebar-accent: oklch(0.9392 0.0166 250.8453);\n  --sidebar-accent-foreground: oklch(0.6723 0.1606 244.9955);\n  --sidebar-border: oklch(0.9271 0.0101 238.5177);\n  --sidebar-ring: oklch(0.6818 0.1584 243.3540);\n  --font-sans: Open Sans, sans-serif;\n  --font-serif: Georgia, serif;\n  --font-mono: Menlo, monospace;\n  --radius: 1.3rem;\n  --shadow-2xs: 0px 2px 0px 0px hsl(202.8169 89.1213% 53.1373% / 0.00);\n  --shadow-xs: 0px 2px 0px 0px hsl(202.8169 89.1213% 53.1373% / 0.00);\n  --shadow-sm: 0px 2px 0px 0px hsl(202.8169 89.1213% 53.1373% / 0.00), 0px 1px 2px -1px hsl(202.8169 89.1213% 53.1373% / 0.00);\n  --shadow: 0px 2px 0px 0px hsl(202.8169 89.1213% 53.1373% / 0.00), 0px 1px 2px -1px hsl(202.8169 89.1213% 53.1373% / 0.00);\n  --shadow-md: 0px 2px 0px 0px hsl(202.8169 89.1213% 53.1373% / 0.00), 0px 2px 4px -1px hsl(202.8169 89.1213% 53.1373% / 0.00);\n  --shadow-lg: 0px 2px 0px 0px hsl(202.8169 89.1213% 53.1373% / 0.00), 0px 4px 6px -1px hsl(202.8169 89.1213% 53.1373% / 0.00);\n  --shadow-xl: 0px 2px 0px 0px hsl(202.8169 89.1213% 53.1373% / 0.00), 0px 8px 10px -1px hsl(202.8169 89.1213% 53.1373% / 0.00);\n  --shadow-2xl: 0px 2px 0px 0px hsl(202.8169 89.1213% 53.1373% / 0.00);\n}\n\n.dark {\n  --background: oklch(0 0 0);\n  --foreground: oklch(0.9328 0.0025 228.7857);\n  --card: oklch(0.2097 0.0080 274.5332);\n  --card-foreground: oklch(0.8853 0 0);\n  --popover: oklch(0 0 0);\n  --popover-foreground: oklch(0.9328 0.0025 228.7857);\n  --primary: oklch(0.6692 0.1607 245.0110);\n  --primary-foreground: oklch(1.0000 0 0);\n  --secondary: oklch(0.9622 0.0035 219.5331);\n  --secondary-foreground: oklch(0.1884 0.0128 248.5103);\n  --muted: oklch(0.2090 0 0);\n  --muted-foreground: oklch(0.5637 0.0078 247.9662);\n  --accent: oklch(0.1928 0.0331 242.5459);\n  --accent-foreground: oklch(0.6692 0.1607 245.0110);\n  --destructive: oklch(0.6188 0.2376 25.7658);\n  --destructive-foreground: oklch(1.0000 0 0);\n  --border: oklch(0.2674 0.0047 248.0045);\n  --input: oklch(0.3020 0.0288 244.8244);\n  --ring: oklch(0.6818 0.1584 243.3540);\n  --chart-1: oklch(0.6723 0.1606 244.9955);\n  --chart-2: oklch(0.6907 0.1554 160.3454);\n  --chart-3: oklch(0.8214 0.1600 82.5337);\n  --chart-4: oklch(0.7064 0.1822 151.7125);\n  --chart-5: oklch(0.5919 0.2186 10.5826);\n  --sidebar: oklch(0.2097 0.0080 274.5332);\n  --sidebar-foreground: oklch(0.8853 0 0);\n  --sidebar-primary: oklch(0.6818 0.1584 243.3540);\n  --sidebar-primary-foreground: oklch(1.0000 0 0);\n  --sidebar-accent: oklch(0.1928 0.0331 242.5459);\n  --sidebar-accent-foreground: oklch(0.6692 0.1607 245.0110);\n  --sidebar-border: oklch(0.3795 0.0220 240.5943);\n  --sidebar-ring: oklch(0.6818 0.1584 243.3540);\n  --font-sans: Open Sans, sans-serif;\n  --font-serif: Georgia, serif;\n  --font-mono: Menlo, monospace;\n  --radius: 1.3rem;\n  --shadow-2xs: 0px 2px 0px 0px hsl(202.8169 89.1213% 53.1373% / 0.00);\n  --shadow-xs: 0px 2px 0px 0px hsl(202.8169 89.1213% 53.1373% / 0.00);\n  --shadow-sm: 0px 2px 0px 0px hsl(202.8169 89.1213% 53.1373% / 0.00), 0px 1px 2px -1px hsl(202.8169 89.1213% 53.1373% / 0.00);\n  --shadow: 0px 2px 0px 0px hsl(202.8169 89.1213% 53.1373% / 0.00), 0px 1px 2px -1px hsl(202.8169 89.1213% 53.1373% / 0.00);\n  --shadow-md: 0px 2px 0px 0px hsl(202.8169 89.1213% 53.1373% / 0.00), 0px 2px 4px -1px hsl(202.8169 89.1213% 53.1373% / 0.00);\n  --shadow-lg: 0px 2px 0px 0px hsl(202.8169 89.1213% 53.1373% / 0.00), 0px 4px 6px -1px hsl(202.8169 89.1213% 53.1373% / 0.00);\n  --shadow-xl: 0px 2px 0px 0px hsl(202.8169 89.1213% 53.1373% / 0.00), 0px 8px 10px -1px hsl(202.8169 89.1213% 53.1373% / 0.00);\n  --shadow-2xl: 0px 2px 0px 0px hsl(202.8169 89.1213% 53.1373% / 0.00);\n}\n\n@theme inline {\n  --color-background: var(--background);\n  --color-foreground: var(--foreground);\n  --color-card: var(--card);\n  --color-card-foreground: var(--card-foreground);\n  --color-popover: var(--popover);\n  --color-popover-foreground: var(--popover-foreground);\n  --color-primary: var(--primary);\n  --color-primary-foreground: var(--primary-foreground);\n  --color-secondary: var(--secondary);\n  --color-secondary-foreground: var(--secondary-foreground);\n  --color-muted: var(--muted);\n  --color-muted-foreground: var(--muted-foreground);\n  --color-accent: var(--accent);\n  --color-accent-foreground: var(--accent-foreground);\n  --color-destructive: var(--destructive);\n  --color-destructive-foreground: var(--destructive-foreground);\n  --color-border: var(--border);\n  --color-input: var(--input);\n  --color-ring: var(--ring);\n  --color-chart-1: var(--chart-1);\n  --color-chart-2: var(--chart-2);\n  --color-chart-3: var(--chart-3);\n  --color-chart-4: var(--chart-4);\n  --color-chart-5: var(--chart-5);\n  --color-sidebar: var(--sidebar);\n  --color-sidebar-foreground: var(--sidebar-foreground);\n  --color-sidebar-primary: var(--sidebar-primary);\n  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);\n  --color-sidebar-accent: var(--sidebar-accent);\n  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);\n  --color-sidebar-border: var(--sidebar-border);\n  --color-sidebar-ring: var(--sidebar-ring);\n\n  --font-sans: var(--font-sans);\n  --font-mono: var(--font-mono);\n  --font-serif: var(--font-serif);\n\n  --radius-sm: calc(var(--radius) - 4px);\n  --radius-md: calc(var(--radius) - 2px);\n  --radius-lg: var(--radius);\n  --radius-xl: calc(var(--radius) + 4px);\n\n  --shadow-2xs: var(--shadow-2xs);\n  --shadow-xs: var(--shadow-xs);\n  --shadow-sm: var(--shadow-sm);\n  --shadow: var(--shadow);\n  --shadow-md: var(--shadow-md);\n  --shadow-lg: var(--shadow-lg);\n  --shadow-xl: var(--shadow-xl);\n  --shadow-2xl: var(--shadow-2xl);\n}"
+            }
+          }
+        },
+        {
+          "display": "deleting '/nix/s[Pasted text #1 +58 lines]",
+          "pastedContents": {
+            "1": {
+              "id": 1,
+              "type": "text",
+              "content": "tore/7hsml574k621n842nwnl8qhix3i2q6mv-update-autotools-gnu-config-scripts-hook'\n\ndeleting '/nix/store/vcwb5qr1yjn3pwbm9gnmvqmn1gwg9a1y-gnu-config-2024-01-01'\n\ndeleting '/nix/store/cqyjb712c5q3axw9qjij05dnji2a7z48-gnutar-1.35'\n\ndeleting '/nix/store/0kxxaix9l5dbih90491mv96zajsac57q-bzip2-1.0.8-bin'\n\ndeleting '/nix/store/g0ih6cb93dm4n18bah982gsmayah3amy-xz-5.6.3-bin'\n\ndeleting unused links...\n\nnote: currently hard linking saves 13.86 MiB\n\n23 store paths deleted, 245.16 MiB freed\n\n[stage-0 4/8] RUN nix-env -if .nixpacks/nixpkgs-bc8f8d1be58e8c8383e683a06e1e1e57893fff87.nix && nix-collect-garbage -d  ✔ 35s\n\n[stage-0 5/8] COPY . /app/.\n\n[stage-0 5/8] COPY . /app/.  ✔ 217ms\n\n[stage-0 6/8] RUN --mount=type=cache,id=s/81fb7055-8e83-408d-b133-07fe3b7ca2f2-/root/cache/pip,target=/root/.cache/pip pip install -r requirements.txt\n\nerror: externally-managed-environment\n\n× This environment is externally managed\n╰─> This command has been disabled as it tries to modify the immutable\n    `/nix/store` filesystem.\n    \n    To use Python with Nix and nixpkgs, have a look at the online documentation:\n    <https://nixos.org/manual/nixpkgs/stable/#python>;.\n\nnote: If you believe this is a mistake, please contact your Python installation or OS distribution provider. You can override this, at the risk of breaking your Python installation or OS, by passing --break-system-packages.\nhint: See PEP 668 for the detailed specification.\n\n✕ [stage-0 6/8] RUN --mount=type=cache,id=s/81fb7055-8e83-408d-b133-07fe3b7ca2f2-/root/cache/pip,target=/root/.cache/pip pip install -r requirements.txt \nprocess \"/bin/bash -ol pipefail -c pip install -r requirements.txt\" did not complete successfully: exit code: 1\n \n\nDockerfile:23\n\n-------------------\n\n21 |     ENV NIXPACKS_PATH=/opt/venv/bin:$NIXPACKS_PATH\n\n22 |     COPY . /app/.\n\n23 | >>> RUN --mount=type=cache,id=s/81fb7055-8e83-408d-b133-07fe3b7ca2f2-/root/cache/pip,target=/root/.cache/pip pip install -r requirements.txt\n\n24 |\n\n25 |\n\n-------------------\n\nERROR: failed to solve: process \"/bin/bash -ol pipefail -c pip install -r requirements.txt\" did not complete successfully: exit code: 1\n\nError: Docker build failed"
+            }
+          }
+        },
+        {
+          "display": "Activity\n\n\nagen[Pasted text #1 +78 lines]",
+          "pastedContents": {
+            "1": {
+              "id": 1,
+              "type": "text",
+              "content": "t-zero\nDeployments\nVariables\nMetrics\nSettings\nUnexposed service\nus-west2\n1 Replica\n\n\n\n\n\n\n\n\n\n\n\nagent-zero\n/\n190d454\nJun 20, 2025 7:24 PM\n\nFailed\n\nGet Help\n\nDetails\nBuild Logs\nDeploy Logs\n\nFilter\nFilter logs using \"\", (), AND, OR, -\n\n\n\nYou reached the start of the range → Jun 20, 2025 7:24 PM\n\n[Region: us-west1]\n\n==============\n\nUsing Nixpacks\n\n==============\n\n\ncontext: k27w-T1BZ\n\nNixpacks build failed\n\n \n\n \n\n╔══════════════════════════════ Nixpacks v1.38.0 ══════════════════════════════╗\n\n║ setup      │ python3, poppler_utils, gcc                                     ║\n\n║──────────────────────────────────────────────────────────────────────────────║\n\n║ install    │ python -m venv --copies /opt/venv && . /opt/venv/bin/activate   ║\n\n║            │ && pip install -r requirements.txt                              ║\n\n║──────────────────────────────────────────────────────────────────────────────║\n\n║ start      │                                                                 ║\n\n╚══════════════════════════════════════════════════════════════════════════════╝\n\n \n\nError: \nNo start command could be found\n\n\n "
+            }
+          }
+        },
+        {
+          "display": "I cival-mcp-trading-platform\n\n\nproduction\nArchitecture\nObservability\nLogs\nSettings\n\nShare\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nActivity\n\n\nCival-Dashboard-v5\nDeployments\nVariables\nMetrics\nSettings\ncival-dashboard-v5-production.up.railway.app\nus-west2\n1 Replica\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nHistory\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nCival-Dashboard-v5\n/\n5d4803d\nJun 20, 2025 7:56 PM\n\nFailed\n\ncival-dashboard-v5-production.up.railway.app\nGet Help\n\nDetails\nBuild Logs\nDeploy Logs\nHTTP Logs\n\nFilter\nFilter logs using \"\", (), AND, OR, -\n\n\n\nYou reached the start of the range → Jun 20, 2025 7:56 PM\n\n[internal] load .dockerignore\n\n[internal] load .dockerignore  ✔ 0ms\n\n[internal] load .dockerignore\n\n[internal] load .dockeri[Pasted text #1 +162 lines]",
+          "pastedContents": {
+            "1": {
+              "id": 1,
+              "type": "text",
+              "content": "gnore  ✔ 11ms\n\n[internal] load build context  ✔ 0ms\n\n[internal] load build context\n\n[internal] load build context  ✔ 762ms\n\n[stage-0  2/15] WORKDIR /app/  ✔ 0ms – CACHED\n\n[stage-0  3/10] COPY .nixpacks/nixpkgs-ffeebf0acf3ae8b29f8c7049cd911b9636efd7e7.nix .nixpacks/nixpkgs-ffeebf0acf3ae8b29f8c7049cd911b9636efd7e7.nix  ✔ 0ms – CACHED\n\n[stage-0  4/10] RUN nix-env -if .nixpacks/nixpkgs-ffeebf0acf3ae8b29f8c7049cd911b9636efd7e7.nix && nix-collect-garbage -d  ✔ 0ms – CACHED\n\n[stage-0  5/10] COPY . /app/.\n\n[stage-0  5/10] COPY . /app/.  ✔ 255ms\n\n[stage-0  6/10] RUN --mount=type=cache,id=s/a734b0e3-d5a3-4971-8cd6-d3b6f7cd6752-/root/npm,target=/root/.npm npm ci\n\nnpm warn config production Use `--omit=dev` instead.\n\nnpm warn deprecated inflight@1.0.6: This module is not supported, and leaks memory. Do not use it. Check out lru-cache if you want a good and tested way to coalesce async requests by a key value, which is much more comprehensive and powerful.\n\nnpm warn deprecated rimraf@3.0.2: Rimraf versions prior to v4 are no longer supported\n\nnpm warn deprecated glob@7.2.3: Glob versions prior to v9 are no longer supported\n\nnpm warn deprecated @storybook/testing-library@0.2.2: In Storybook 8, this package functionality has been integrated to a new package called @storybook/test, which uses Vitest APIs for an improved experience. When upgrading to Storybook 8 with 'npx storybook@latest upgrade', you will get prompted and will get an automigration for the new package. Please migrate when you can.\n\n\nadded 1556 packages, and audited 1557 packages in 31s\n\n\n320 packages are looking for funding\n\n  run `npm fund` for details\n\n\n6 vulnerabilities (1 low, 4 moderate, 1 critical)\n\nTo address issues that do not require attention, run:\n  npm audit fix\n\nTo address all issues (including breaking changes), run:\n  npm audit fix --force\n\nRun `npm audit` for details.\n\n[stage-0  6/10] RUN --mount=type=cache,id=s/a734b0e3-d5a3-4971-8cd6-d3b6f7cd6752-/root/npm,target=/root/.npm npm ci  ✔ 32s\n\n[stage-0  7/10] COPY . /app/.\n\n[stage-0  7/10] COPY . /app/.  ✔ 857ms\n\n[stage-0  8/10] RUN --mount=type=cache,id=s/a734b0e3-d5a3-4971-8cd6-d3b6f7cd6752-next/cache,target=/app/.next/cache --mount=type=cache,id=s/a734b0e3-d5a3-4971-8cd6-d3b6f7cd6752-node_modules/cache,target=/app/node_modules/.cache npm run build\n\nnpm warn config production Use `--omit=dev` instead.\n\n\n> cival-dashboard@0.1.0 build\n> next build\n\n\n   ▲ Next.js 15.1.8\n\n\n\n   Creating an optimized production build ...\n\nFailed to compile.\n\n\n./src/lib/llm/llm-service.ts\nModule not found: Can't resolve 'openai'\n\nhttps://nextjs.org/docs/messages/module-not-found\n\nImport trace for requested module:\n./src/components/agent/AgentPaperTradingDashboard.tsx\n./src/components/dashboard-library/DynamicComponentLoader.tsx\n./src/components/dashboard/AdvancedDashboardTab.tsx\n./src/components/dashboard/EnhancedDashboard.tsx\n\n./src/lib/llm/llm-service.ts\nModule not found: Can't resolve '@anthropic-ai/sdk'\n\nhttps://nextjs.org/docs/messages/module-not-found\n\nImport trace for requested module:\n./src/components/agent/AgentPaperTradingDashboard.tsx\n./src/components/dashboard-library/DynamicComponentLoader.tsx\n./src/components/dashboard/AdvancedDashboardTab.tsx\n./src/components/dashboard/EnhancedDashboard.tsx\n\n\n\n\n> Build failed because of webpack errors\n\n✕ [stage-0  8/10] RUN --mount=type=cache,id=s/a734b0e3-d5a3-4971-8cd6-d3b6f7cd6752-next/cache,target=/app/.next/cache --mount=type=cache,id=s/a734b0e3-d5a3-4971-8cd6-d3b6f7cd6752-node_modules/cache,target=/app/node_modules/.cache npm run build \nprocess \"/bin/bash -ol pipefail -c npm run build\" did not complete successfully: exit code: 1\n \n\nDockerfile:24\n\n-------------------\n\n22 |     # build phase\n\n23 |     COPY . /app/.\n\n24 | >>> RUN --mount=type=cache,id=s/a734b0e3-d5a3-4971-8cd6-d3b6f7cd6752-next/cache,target=/app/.next/cache --mount=type=cache,id=s/a734b0e3-d5a3-4971-8cd6-d3b6f7cd6752-node_modules/cache,target=/app/node_modules/.cache npm run build\n\n25 |\n\n26 |\n\n-------------------\n\nERROR: failed to solve: process \"/bin/bash -ol pipefail -c npm run build\" did not complete successfully: exit code: 1\n\nError: Docker build failed\n\n\nBuild failed with 1 error\n[stage-0 8/10] RUN --mount=type=cache,id=s/a734b0e3-d5a3-4971-8cd6-d3b6f7cd6752-next/cache,target=/app/.next/cache --mount=type=cache,id=s/a734b0e3-d5a3-4971-8cd6-d3b6f7cd6752-node_modules/cache,target=/app/node_modules/.cache npm run build\n\"npm run build\" did not complete successfully: exit code: 1\n\nView in context\n\nnpm warn config production Use `--omit=dev` instead.\n\n> cival-dashboard@0.1.0 build\n> next build\n\n   ▲ Next.js 15.1.8\n\n\n   Creating an optimized production build ...\n\nFailed to compile.\n\n./src/lib/llm/llm-service.ts\nModule not found: Can't resolve 'openai'\nhttps://nextjs.org/docs/messages/module-not-found\nImport trace for requested module:\n./src/components/agent/AgentPaperTradingDashboard.tsx\n./src/components/dashboard-library/DynamicComponentLoader.tsx\n./src/components/dashboard/AdvancedDashboardTab.tsx\n./src/components/dashboard/EnhancedDashboard.tsx\n./src/lib/llm/llm-service.ts\nModule not found: Can't resolve '@anthropic-ai/sdk'\nhttps://nextjs.org/docs/messages/module-not-found\nImport trace for requested module:\n./src/components/agent/AgentPaperTradingDashboard.tsx\n./src/components/dashboard-library/DynamicComponentLoader.tsx\n./src/components/dashboard/AdvancedDashboardTab.tsx\n./src/components/dashboard/EnhancedDashboard.tsx\n\n\n> Build failed because of webpack errors\nCival-Dashboard-v5 | Railway"
+            }
+          }
+        },
+        {
+          "display": "cival-mcp-trading-platfo[Pasted text #1 +284 lines]",
+          "pastedContents": {
+            "1": {
+              "id": 1,
+              "type": "text",
+              "content": "rm\n\n\nproduction\nArchitecture\nObservability\nLogs\nSettings\n\nShare\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nActivity\n\n\nCival-Dashboard-v5\nDeployments\nVariables\nMetrics\nSettings\ncival-dashboard-v5-production.up.railway.app\nus-west2\n1 Replica\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nHistory\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nCival-Dashboard-v5\n/\n5d4803d\nJun 20, 2025 7:56 PM\n\nFailed\n\ncival-dashboard-v5-production.up.railway.app\nGet Help\n\nDetails\nBuild Logs\nDeploy Logs\nHTTP Logs\n\nFilter\nFilter logs using \"\", (), AND, OR, -\n\n\n\nYou reached the start of the range → Jun 20, 2025 7:56 PM\n\n[internal] load .dockerignore\n\n[internal] load .dockerignore  ✔ 0ms\n\n[internal] load .dockerignore\n\n[internal] load .dockerignore  ✔ 11ms\n\n[internal] load build context  ✔ 0ms\n\n[internal] load build context\n\n[internal] load build context  ✔ 762ms\n\n[stage-0  2/15] WORKDIR /app/  ✔ 0ms – CACHED\n\n[stage-0  3/10] COPY .nixpacks/nixpkgs-ffeebf0acf3ae8b29f8c7049cd911b9636efd7e7.nix .nixpacks/nixpkgs-ffeebf0acf3ae8b29f8c7049cd911b9636efd7e7.nix  ✔ 0ms – CACHED\n\n[stage-0  4/10] RUN nix-env -if .nixpacks/nixpkgs-ffeebf0acf3ae8b29f8c7049cd911b9636efd7e7.nix && nix-collect-garbage -d  ✔ 0ms – CACHED\n\n[stage-0  5/10] COPY . /app/.\n\n[stage-0  5/10] COPY . /app/.  ✔ 255ms\n\n[stage-0  6/10] RUN --mount=type=cache,id=s/a734b0e3-d5a3-4971-8cd6-d3b6f7cd6752-/root/npm,target=/root/.npm npm ci\n\nnpm warn config production Use `--omit=dev` instead.\n\nnpm warn deprecated inflight@1.0.6: This module is not supported, and leaks memory. Do not use it. Check out lru-cache if you want a good and tested way to coalesce async requests by a key value, which is much more comprehensive and powerful.\n\nnpm warn deprecated rimraf@3.0.2: Rimraf versions prior to v4 are no longer supported\n\nnpm warn deprecated glob@7.2.3: Glob versions prior to v9 are no longer supported\n\nnpm warn deprecated @storybook/testing-library@0.2.2: In Storybook 8, this package functionality has been integrated to a new package called @storybook/test, which uses Vitest APIs for an improved experience. When upgrading to Storybook 8 with 'npx storybook@latest upgrade', you will get prompted and will get an automigration for the new package. Please migrate when you can.\n\n\nadded 1556 packages, and audited 1557 packages in 31s\n\n\n320 packages are looking for funding\n\n  run `npm fund` for details\n\n\n6 vulnerabilities (1 low, 4 moderate, 1 critical)\n\nTo address issues that do not require attention, run:\n  npm audit fix\n\nTo address all issues (including breaking changes), run:\n  npm audit fix --force\n\nRun `npm audit` for details.\n\n[stage-0  6/10] RUN --mount=type=cache,id=s/a734b0e3-d5a3-4971-8cd6-d3b6f7cd6752-/root/npm,target=/root/.npm npm ci  ✔ 32s\n\n[stage-0  7/10] COPY . /app/.\n\n[stage-0  7/10] COPY . /app/.  ✔ 857ms\n\n[stage-0  8/10] RUN --mount=type=cache,id=s/a734b0e3-d5a3-4971-8cd6-d3b6f7cd6752-next/cache,target=/app/.next/cache --mount=type=cache,id=s/a734b0e3-d5a3-4971-8cd6-d3b6f7cd6752-node_modules/cache,target=/app/node_modules/.cache npm run build\n\nnpm warn config production Use `--omit=dev` instead.\n\n\n> cival-dashboard@0.1.0 build\n> next build\n\n\n   ▲ Next.js 15.1.8\n\n\n\n   Creating an optimized production build ...\n\nFailed to compile.\n\n\n./src/lib/llm/llm-service.ts\nModule not found: Can't resolve 'openai'\n\nhttps://nextjs.org/docs/messages/module-not-found\n\nImport trace for requested module:\n./src/components/agent/AgentPaperTradingDashboard.tsx\n./src/components/dashboard-library/DynamicComponentLoader.tsx\n./src/components/dashboard/AdvancedDashboardTab.tsx\n./src/components/dashboard/EnhancedDashboard.tsx\n\n./src/lib/llm/llm-service.ts\nModule not found: Can't resolve '@anthropic-ai/sdk'\n\nhttps://nextjs.org/docs/messages/module-not-found\n\nImport trace for requested module:\n./src/components/agent/AgentPaperTradingDashboard.tsx\n./src/components/dashboard-library/DynamicComponentLoader.tsx\n./src/components/dashboard/AdvancedDashboardTab.tsx\n./src/components/dashboard/EnhancedDashboard.tsx\n\n\n\n\n> Build failed because of webpack errors\n\n✕ [stage-0  8/10] RUN --mount=type=cache,id=s/a734b0e3-d5a3-4971-8cd6-d3b6f7cd6752-next/cache,target=/app/.next/cache --mount=type=cache,id=s/a734b0e3-d5a3-4971-8cd6-d3b6f7cd6752-node_modules/cache,target=/app/node_modules/.cache npm run build \nprocess \"/bin/bash -ol pipefail -c npm run build\" did not complete successfully: exit code: 1\n \n\nDockerfile:24\n\n-------------------\n\n22 |     # build phase\n\n23 |     COPY . /app/.\n\n24 | >>> RUN --mount=type=cache,id=s/a734b0e3-d5a3-4971-8cd6-d3b6f7cd6752-next/cache,target=/app/.next/cache --mount=type=cache,id=s/a734b0e3-d5a3-4971-8cd6-d3b6f7cd6752-node_modules/cache,target=/app/node_modules/.cache npm run build\n\n25 |\n\n26 |\n\n-------------------\n\nERROR: failed to solve: process \"/bin/bash -ol pipefail -c npm run build\" did not complete successfully: exit code: 1\n\nError: Docker build failed\n\n\nBuild failed with 1 error\n[stage-0 8/10] RUN --mount=type=cache,id=s/a734b0e3-d5a3-4971-8cd6-d3b6f7cd6752-next/cache,target=/app/.next/cache --mount=type=cache,id=s/a734b0e3-d5a3-4971-8cd6-d3b6f7cd6752-node_modules/cache,target=/app/node_modules/.cache npm run build\n\"npm run build\" did not complete successfully: exit code: 1\n\nView in context\n\nnpm warn config production Use `--omit=dev` instead.\n\n> cival-dashboard@0.1.0 build\n> next build\n\n   ▲ Next.js 15.1.8\n\n\n   Creating an optimized production build ...\n\nFailed to compile.\n\n./src/lib/llm/llm-service.ts\nModule not found: Can't resolve 'openai'\nhttps://nextjs.org/docs/messages/module-not-found\nImport trace for requested module:\n./src/components/agent/AgentPaperTradingDashboard.tsx\n./src/components/dashboard-library/DynamicComponentLoader.tsx\n./src/components/dashboard/AdvancedDashboardTab.tsx\n./src/components/dashboard/EnhancedDashboard.tsx\n./src/lib/llm/llm-service.ts\nModule not found: Can't resolve '@anthropic-ai/sdk'\nhttps://nextjs.org/docs/messages/module-not-found\nImport trace for requested module:\n./src/components/agent/AgentPaperTradingDashboard.tsx\n./src/components/dashboard-library/DynamicComponentLoader.tsx\n./src/components/dashboard/AdvancedDashboardTab.tsx\n./src/components/dashboard/EnhancedDashboard.tsx\n\n\n> Build failed because of webpack errors\nCival-Dashboard-v5 | Railway"
+            }
+          }
+        },
+        {
+          "display": "push all updates to git ",
+          "pastedContents": {}
+        },
+        {
+          "display": "test tthe context7 mcp tool ",
+          "pastedContents": {}
+        },
+        {
+          "display": "{\n  \"mcpServers\": {\n    \"MCP_DOCKER\": {\n      \"command\": \"docker\",\n      \"args\": [\n        \"run\",\n        \"-i\",\n        \"--rm\",\n        \"alpine/socat\",\n        \"STDIO\",\n        \"TCP:host.docker.internal:8811\"\n      ]\n    }\n  }\n}",
+          "pastedContents": {}
+        },
+        {
+          "display": "copmlete the rest of the work",
+          "pastedContents": {}
+        },
+        {
+          "display": "install the mcp server ",
+          "pastedContents": {}
+        },
+        {
+          "display": "npx -y @smithery/cli@latest install @supabase-community/supabase-mcp --client claude --profile faithful-sunset-12VagK --key e9820cd5-c518-4f68-8c3b-4ba2e5103a25",
+          "pastedContents": {}
+        },
+        {
+          "display": "/mcp ",
+          "pastedContents": {}
+        },
+        {
+          "display": "cival-mcp-tradin[Pasted text #1 +220 lines]",
+          "pastedContents": {
+            "1": {
+              "id": 1,
+              "type": "text",
+              "content": "g-platform\n\n\nproduction\nArchitecture\nObservability\nLogs\nSettings\n\nShare\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nActivity\n\n\nagent-zero\nDeployments\nVariables\nMetrics\nSettings\nUnexposed service\nus-west2\n1 Replica\n\n\n\n\n\n\n\n\n\n\n\nagent-zero\n/\n190d454\nJun 20, 2025 7:24 PM\n\nFailed\n\nGet Help\n\nDetails\nBuild Logs\nDeploy Logs\n\nFilter\nFilter logs using \"\", (), AND, OR, -\n\n\n\nYou reached the start of the range → Jun 20, 2025 7:24 PM\n\n[Region: us-west1]\n\n==============\n\nUsing Nixpacks\n\n==============\n\n\ncontext: k27w-T1BZ\n\nNixpacks build failed\n\n \n\n \n\n╔══════════════════════════════ Nixpacks v1.38.0 ══════════════════════════════╗\n\n║ setup      │ python3, poppler_utils, gcc                                     ║\n\n║──────────────────────────────────────────────────────────────────────────────║\n\n║ install    │ python -m venv --copies /opt/venv && . /opt/venv/bin/activate   ║\n\n║            │ && pip install -r requirements.txt                              ║\n\n║──────────────────────────────────────────────────────────────────────────────║\n\n║ start      │                                                                 ║\n\n╚══════════════════════════════════════════════════════════════════════════════╝\n\n \n\nError: \nNo start command could be found\n\n\n \n\n\nagent-zero | Railwaycival-mcp-trading-platform\n\n\nproduction\nArchitecture\nObservability\nLogs\nSettings\n\nShare\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nActivity\n\n\nagent-zero\nDeployments\nVariables\nMetrics\nSettings\nUnexposed service\nus-west2\n1 Replica\n\n\n\n\n\n\n\n\n\n\n\nagent-zero\n/\n190d454\nJun 20, 2025 7:24 PM\n\nFailed\n\nGet Help\n\nDetails\nBuild Logs\nDeploy Logs\n\nFilter\nFilter logs using \"\", (), AND, OR, -\n\n\n\nYou reached the start of the range → Jun 20, 2025 7:24 PM\n\n[Region: us-west1]\n\n==============\n\nUsing Nixpacks\n\n==============\n\n\ncontext: k27w-T1BZ\n\nNixpacks build failed\n\n \n\n \n\n╔══════════════════════════════ Nixpacks v1.38.0 ══════════════════════════════╗\n\n║ setup      │ python3, poppler_utils, gcc                                     ║\n\n║──────────────────────────────────────────────────────────────────────────────║\n\n║ install    │ python -m venv --copies /opt/venv && . /opt/venv/bin/activate   ║\n\n║            │ && pip install -r requirements.txt                              ║\n\n║──────────────────────────────────────────────────────────────────────────────║\n\n║ start      │                                                                 ║\n\n╚══════════════════════════════════════════════════════════════════════════════╝\n\n \n\nError: \nNo start command could be found\n\n\n \n\n\nagent-zero | Railway"
+            }
+          }
+        },
+        {
+          "display": "claude mcp",
+          "pastedContents": {}
+        },
+        {
+          "display": "/mcp ",
+          "pastedContents": {}
+        },
+        {
+          "display": "I want the calendar view to be in the navigation following defi and before advanced in the nav. I also want the file manager to have suapabsse dropzone to ingest informtaion inot  the dashabord for the agents unding whjat weve built. make sure supabse scruipts are all ran and tables created for full funcitonality of the dahaboard.. Create new \n- Project Requirements Doc\n- Tech Stack & APIs Doc\n- App flow Doc.\n- Backend Structure (schema, database tables etc)\n- Frontend Guidelines\n with the dahsborad and waht ewwe have buittl in the entire  codebbase the contrast on the buttons is the same as the background fix it by giving the buttons colors and make sure the text is legible I need more seperation of the agents cards either build cardds or dmodules whatever acan be m or erobust using what ereve built I need agui levergerd properly so we can have seemless experivccne I also want the logs nad chats actually for example the agent decision log I want a production agent decicsion lgfgo thata actually connects to agents. i need the agentts to llm connection to be ral so I can trun on the firs agent. I want to ingets $100 into the dsahbad and have an agent persform the trades following the stragegies ioor personiltytss. I jjust want it funciutonisin so real wallets reall connected. I want the paper tradign engine set up for agnet so we cna get the entrtrie pipeleine completed and testing real strategies then turn to live and yuses real money. so build and ocmplete all owrkflows and connectiosn inctluding mll the mcp ser infastuructteuure everything in the codebase currently is eneough to get the dashboard complete. so use the paper tradign system to figure out what needs to be done  then do it all the way to the paper engine working and integgrated 100% then we can just finish the live mode and have the 100 used in real trades ",
+          "pastedContents": {}
+        },
+        {
+          "display": "cival-mcp-tradin[Pasted text #1 +253 lines]",
+          "pastedContents": {
+            "1": {
+              "id": 1,
+              "type": "text",
+              "content": "g-platform\n\n\nproduction\nArchitecture\nObservability\nLogs\nSettings\n\nShare\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nActivity\n\n\nCival-Dashboard-v5\nDeployments\nVariables\nMetrics\nSettings\ncival-dashboard-v5-production.up.railway.app\nus-west2\n1 Replica\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nHistory\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nCival-Dashboard-v5\n/\na9b613b\nJun 20, 2025 6:43 PM\n\nFailed\n\ncival-dashboard-v5-production.up.railway.app\nGet Help\n\nDetails\nBuild Logs\nDeploy Logs\nHTTP Logs\n\nFilter\nFilter logs using \"\", (), AND, OR, -\n\n\n\nYou reached the start of the range → Jun 20, 2025 6:43 PM\n\nRoute (app)                                  Size     First Load JS\n┌ ○ /                                        232 B           107 kB\n├ ○ /_not-found                              994 B           108 kB\n├ ○ /agents                                  3.54 kB         155 kB\n├ ○ /analytics                               6.92 kB         258 kB\n├ ƒ /api/agents                              232 B           107 kB\n├ ƒ /api/agents/trading                      232 B           107 kB\n├ ƒ /api/agents/trading/execute              232 B           107 kB\n├ ƒ /api/agents/trading/history              232 B           107 kB\n├ ƒ /api/agents/trading/market-data          232 B           107 kB\n├ ƒ /api/agents/trading/register             232 B           107 kB\n├ ƒ /api/agents/trading/status               232 B           107 kB\n├ ƒ /api/ai-analysis                         232 B           107 kB\n├ ƒ /api/ai/trading                          232 B           107 kB\n├ ƒ /api/analytics                           232 B           107 kB\n├ ƒ /api/calendar                            232 B           107 kB\n├ ƒ /api/calendar/daily                      232 B           107 kB\n├ ƒ /api/flashloans                          232 B           107 kB\n├ ƒ /api/health                              232 B           107 kB\n├ ƒ /api/hyperlend                           232 B           107 kB\n├ ƒ /api/market                              232 B           107 kB\n├ ƒ /api/market/overview                     232 B           107 kB\n├ ƒ /api/market/quotes                       232 B           107 kB\n├ ƒ /api/market/technical-analysis/[symbol]  232 B           107 kB\n├ ƒ /api/market/trading-signals/[symbol]     232 B           107 kB\n├ ƒ /api/memory/agent-statuses               232 B           107 kB\n├ ƒ /api/memory/analytics                    232 B           107 kB\n├ ƒ /api/memory/optimize/[agentId]           232 B           107 kB\n├ ƒ /api/portfolio                           232 B           107 kB\n├ ƒ /api/profit-tracking                     232 B           107 kB\n├ ƒ /api/strategies                          232 B           107 kB\n├ ƒ /api/system/errors                       232 B           107 kB\n├ ƒ /api/system/logs                         232 B           107 kB\n├ ƒ /api/trading                             232 B           107 kB\n├ ƒ /api/wallets                             232 B           107 kB\n├ ○ /calendar                                15.5 kB         143 kB\n├ ○ /dashboard                               121 kB          397 kB\n├ ○ /dashboard-v2                            37.2 kB         155 kB\n├ ○ /dashboard/agent-data-access             7.02 kB         149 kB\n├ ○ /dashboard/agent-trading                 4.17 kB         160 kB\n├ ○ /dashboard/agents                        6.64 kB         272 kB\n├ ○ /dashboard/ai-enhanced                   7.16 kB         121 kB\n├ ○ /dashboard/analytics                     23.4 kB         188 kB\n├ ○ /dashboard/comprehensive-analytics       7.56 kB         131 kB\n├ ○ /dashboard/data-management               11.2 kB         175 kB\n├ ○ /dashboard/defi-lending                  5.16 kB         125 kB\n├ ○ /dashboard/eliza                         6.43 kB         121 kB\n├ ○ /dashboard/farms                         7.74 kB         129 kB\n├ ○ /dashboard/goals                         13.2 kB         165 kB\n├ ○ /dashboard/knowledge-graph               7.51 kB         131 kB\n├ ○ /dashboard/mcp                           6.1 kB          120 kB\n├ ○ /dashboard/overview                      392 B           107 kB\n├ ○ /dashboard/persistence                   11.1 kB         199 kB\n├ ○ /dashboard/phase8                        33.4 kB         144 kB\n├ ○ /dashboard/python-analysis               6.87 kB         127 kB\n├ ○ /dashboard/risk                          232 B           107 kB\n├ ○ /dashboard/strategies                    232 B           107 kB\n├ ○ /dashboard/trading                       8.34 kB         165 kB\n├ ○ /dashboard/vault                         10.5 kB         132 kB\n├ ○ /portfolio                               6.45 kB         235 kB\n├ ○ /risk                                    11.1 kB         236 kB\n├ ○ /simple-dashboard                        4.28 kB         127 kB\n├ ○ /test                                    1.21 kB         108 kB\n└ ○ /trading                                 9.34 kB         157 kB\n+ First Load JS shared by all                107 kB\n  ├ chunks/1517-9cd0a963dcddebd6.js          50.6 kB\n  ├ chunks/4bd1b696-f6f5afebbad1e68b.js      53 kB\n  └ other shared chunks (total)              3 kB\n\n\n\n○  (Static)   prerendered as static content\nƒ  (Dynamic)  server-rendered on demand\n\n\n[stage-0  8/10] RUN --mount=type=cache,id=s/a734b0e3-d5a3-4971-8cd6-d3b6f7cd6752-next/cache,target=/app/.next/cache --mount=type=cache,id=s/a734b0e3-d5a3-4971-8cd6-d3b6f7cd6752-node_modules/cache,target=/app/node_modules/.cache npm run build  ✔ 57s\n\n[stage-0  9/10] RUN printf '\\nPATH=/app/node_modules/.bin:$PATH' >> /root/.profile\n\n[stage-0  9/10] RUN printf '\\nPATH=/app/node_modules/.bin:$PATH' >> /root/.profile  ✔ 111ms\n\n[stage-0 10/10] COPY . /app\n\n[stage-0 10/10] COPY . /app  ✔ 250ms\n\n[auth] sharing credentials for production-us-west2.railway-registry.com\n\n[auth] sharing credentials for production-us-west2.railway-registry.com  ✔ 0ms\n\nerror: failed commit on ref \"layer-sha256:f8e7e87043f3eeb5bf1c04286ac60715e01444598094dc5595d23e854a194c0b\": unexpected status from PUT request to https://production-us-west2.railway-registry.com/v2/a734b0e3-d5a3-4971-8cd6-d3b6f7cd6752/blobs/uploads/5b176fbb-f321-4557-9acf-400894fb6578?_state=Ase7Q5JvWkPAI7pybVjrdi2DEWfxHBe2S9fE-ard3sF7Ik5hbWUiOiJhNzM0YjBlMy1kNWEzLTQ5NzEtOGNkNi1kM2I2ZjdjZDY3NTIiLCJVVUlEIjoiNWIxNzZmYmItZjMyMS00NTU3LTlhY2YtNDAwODk0ZmI2NTc4IiwiT2Zmc2V0IjowLCJTdGFydGVkQXQiOiIyMDI1LTA2LTIxVDAxOjQ2OjExLjAxNDU2OTcwNloifQ%3D%3D&digest=sha256%3Af8e7e87043f3eeb5bf1c04286ac60715e01444598094dc5595d23e854a194c0b: 500 Internal Server Error\n\nretrying in 1s\n\nerror: unexpected status from HEAD request to https://production-us-west2.railway-registry.com/v2/a734b0e3-d5a3-4971-8cd6-d3b6f7cd6752/blobs/sha256:a662191b25b96fec3dcbc6ecefeddd76a18592ba5be0a7b865c80d39e8cf3a1b: 503 Service Unavailable\n\nretrying in 1s\n\nerror: unexpected status from HEAD request to https://production-us-west2.railway-registry.com/v2/a734b0e3-d5a3-4971-8cd6-d3b6f7cd6752/blobs/sha256:1fa35f08e1c8751cbf4ffa2f178f1e2b8c3c76705d074ef35275c7a1c6cc7196: 503 Service Unavailable\n\nretrying in 1s\n\nerror: unexpected status from HEAD request to https://production-us-west2.railway-registry.com/v2/a734b0e3-d5a3-4971-8cd6-d3b6f7cd6752/blobs/sha256:2adf70da168b3b58e77c17060be0025d9701889bcbea8a22b846c20ee5be4810: 503 Service Unavailable\n\nretrying in 1s\n\nerror: unexpected status from HEAD request to https://production-us-west2.railway-registry.com/v2/a734b0e3-d5a3-4971-8cd6-d3b6f7cd6752/blobs/sha256:b4ff1466eb2e11434f66d49e3699f1a0ce8c4a621f70c8bde1665a7e98f532ad: 503 Service Unavailable\n\nretrying in 1s\n\nerror: unexpected status from HEAD request to https://production-us-west2.railway-registry.com/v2/a734b0e3-d5a3-4971-8cd6-d3b6f7cd6752/blobs/sha256:f8e7e87043f3eeb5bf1c04286ac60715e01444598094dc5595d23e854a194c0b: 503 Service Unavailable\n\nretrying in 2s\n\nerror: unexpected status from HEAD request to https://production-us-west2.railway-registry.com/v2/a734b0e3-d5a3-4971-8cd6-d3b6f7cd6752/blobs/sha256:a662191b25b96fec3dcbc6ecefeddd76a18592ba5be0a7b865c80d39e8cf3a1b: 503 Service Unavailable\n\nretrying in 2s\n\nerror: unexpected status from HEAD request to https://production-us-west2.railway-registry.com/v2/a734b0e3-d5a3-4971-8cd6-d3b6f7cd6752/blobs/sha256:1fa35f08e1c8751cbf4ffa2f178f1e2b8c3c76705d074ef35275c7a1c6cc7196: 503 Service Unavailable\n\nretrying in 2s\n\nerror: unexpected status from HEAD request to https://production-us-west2.railway-registry.com/v2/a734b0e3-d5a3-4971-8cd6-d3b6f7cd6752/blobs/sha256:2adf70da168b3b58e77c17060be0025d9701889bcbea8a22b846c20ee5be4810: 503 Service Unavailable\n\nretrying in 2s\n\nerror: unexpected status from HEAD request to https://production-us-west2.railway-registry.com/v2/a734b0e3-d5a3-4971-8cd6-d3b6f7cd6752/blobs/sha256:b4ff1466eb2e11434f66d49e3699f1a0ce8c4a621f70c8bde1665a7e98f532ad: 503 Service Unavailable\n\nretrying in 2s\n\nerror: unexpected status from HEAD request to https://production-us-west2.railway-registry.com/v2/a734b0e3-d5a3-4971-8cd6-d3b6f7cd6752/blobs/sha256:f8e7e87043f3eeb5bf1c04286ac60715e01444598094dc5595d23e854a194c0b: 503 Service Unavailable\n\nretrying in 4s\n\nerror: unexpected status from HEAD request to https://production-us-west2.railway-registry.com/v2/a734b0e3-d5a3-4971-8cd6-d3b6f7cd6752/blobs/sha256:a662191b25b96fec3dcbc6ecefeddd76a18592ba5be0a7b865c80d39e8cf3a1b: 503 Service Unavailable\n\nretrying in 4s\n\nerror: unexpected status from HEAD request to https://production-us-west2.railway-registry.com/v2/a734b0e3-d5a3-4971-8cd6-d3b6f7cd6752/blobs/sha256:1fa35f08e1c8751cbf4ffa2f178f1e2b8c3c76705d074ef35275c7a1c6cc7196: 503 Service Unavailable\n\nretrying in 4s\n\nerror: unexpected status from HEAD request to https://production-us-west2.railway-registry.com/v2/a734b0e3-d5a3-4971-8cd6-d3b6f7cd6752/blobs/sha256:2adf70da168b3b58e77c17060be0025d9701889bcbea8a22b846c20ee5be4810: 503 Service Unavailable\n\nretrying in 4s\n\nerror: unexpected status from HEAD request to https://production-us-west2.railway-registry.com/v2/a734b0e3-d5a3-4971-8cd6-d3b6f7cd6752/blobs/sha256:b4ff1466eb2e11434f66d49e3699f1a0ce8c4a621f70c8bde1665a7e98f532ad: 503 Service Unavailable\n\nretrying in 4s\n\nerror: unexpected status from HEAD request to https://production-us-west2.railway-registry.com/v2/a734b0e3-d5a3-4971-8cd6-d3b6f7cd6752/blobs/sha256:f8e7e87043f3eeb5bf1c04286ac60715e01444598094dc5595d23e854a194c0b: 503 Service Unavailable\n\nERROR: failed to solve: failed to push production-us-west2.railway-registry.com/a734b0e3-d5a3-4971-8cd6-d3b6f7cd6752:a9b613bd-cc5a-48d9-8c3d-140370463857: unexpected status from HEAD request to https://production-us-west2.railway-registry.com/v2/a734b0e3-d5a3-4971-8cd6-d3b6f7cd6752/blobs/sha256:f8e7e87043f3eeb5bf1c04286ac60715e01444598094dc5595d23e854a194c0b: 503 Service Unavailable\n\nError: Docker build failed\n\n\nCival-Dashboard-v5 | Railway"
+            }
+          }
+        },
+        {
+          "display": "cival-mcp-tradin[Pasted text #1 +298 lines]",
+          "pastedContents": {
+            "1": {
+              "id": 1,
+              "type": "text",
+              "content": "g-platform\n\n\nproduction\nArchitecture\nObservability\nLogs\nSettings\n\nShare\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nActivity\n\n\nCival-Dashboard-v5\nDeployments\nVariables\nMetrics\nSettings\ncival-dashboard-v5-production.up.railway.app\nus-west2\n1 Replica\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nHistory\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nCival-Dashboard-v5\n/\nee73c37\nJun 20, 2025 5:08 PM\n\nFailed\n\ncival-dashboard-v5-production.up.railway.app\nGet Help\n\nDetails\nBuild Logs\nDeploy Logs\nHTTP Logs\n\nFilter\nFilter logs using \"\", (), AND, OR, -\n\n\n\nYou reached the start of the range → Jun 20, 2025 5:08 PM\n\n[Region: us-west1]\n\n==============\n\nUsing Nixpacks\n\n==============\n\n\ncontext: 1jvk-NysL\n\n╔═══════════ Nixpacks v1.38.0 ══════════╗\n\n║ setup      │ nodejs-18_x              ║\n\n║───────────────────────────────────────║\n\n║ install    │ npm ci                   ║\n\n║───────────────────────────────────────║\n\n║ build      │ npm run build            ║\n\n║───────────────────────────────────────║\n\n║ start      │ npm run start:production ║\n\n╚═══════════════════════════════════════╝\n\n[internal] load build definition from Dockerfile\n\n[internal] load build definition from Dockerfile  ✔ 0ms\n\n[internal] load build definition from Dockerfile\n\n[internal] load build definition from Dockerfile  ✔ 11ms\n\n[internal] load metadata for ghcr.io/railwayapp/nixpacks:ubuntu-1745885067\n\n[internal] load metadata for ghcr.io/railwayapp/nixpacks:ubuntu-1745885067  ✔ 104ms\n\n[internal] load .dockerignore\n\n[internal] load .dockerignore\n\n[internal] load .dockerignore  ✔ 0ms\n\n[internal] load .dockerignore\n\n[internal] load .dockerignore  ✔ 9ms\n\n[internal] load build context  ✔ 0ms\n\n[internal] load build context\n\n[internal] load build context  ✔ 876ms\n\n[stage-0 2/8] WORKDIR /app/  ✔ 0ms – CACHED\n\n[stage-0  3/10] COPY .nixpacks/nixpkgs-ffeebf0acf3ae8b29f8c7049cd911b9636efd7e7.nix .nixpacks/nixpkgs-ffeebf0acf3ae8b29f8c7049cd911b9636efd7e7.nix  ✔ 0ms – CACHED\n\n[stage-0  4/10] RUN nix-env -if .nixpacks/nixpkgs-ffeebf0acf3ae8b29f8c7049cd911b9636efd7e7.nix && nix-collect-garbage -d  ✔ 0ms – CACHED\n\n[stage-0  5/10] COPY . /app/.\n\n[stage-0  5/10] COPY . /app/.  ✔ 299ms\n\n[stage-0  6/10] RUN --mount=type=cache,id=s/a734b0e3-d5a3-4971-8cd6-d3b6f7cd6752-/root/npm,target=/root/.npm npm ci\n\nnpm warn config production Use `--omit=dev` instead.\n\nnpm error code EUSAGE\n\nnpm error\nnpm error `npm ci` can only install packages when your package.json and package-lock.json or npm-shrinkwrap.json are in sync. Please update your lock file with `npm install` before continuing.\nnpm error\nnpm error Missing: socket.io@4.8.1 from lock file\nnpm error Missing: accepts@1.3.8 from lock file\nnpm error Missing: base64id@2.0.0 from lock file\nnpm error Missing: cors@2.8.5 from lock file\nnpm error Missing: debug@4.3.7 from lock file\nnpm error Missing: engine.io@6.6.4 from lock file\nnpm error Missing: socket.io-adapter@2.5.5 from lock file\nnpm error Missing: negotiator@0.6.3 from lock file\nnpm error Missing: vary@1.1.2 from lock file\nnpm error Missing: @types/cors@2.8.19 from lock file\nnpm error Missing: cookie@0.7.2 from lock file\nnpm error Missing: debug@4.3.7 from lock file\nnpm error Missing: ws@8.17.1 from lock file\nnpm error Missing: debug@4.3.7 from lock file\nnpm error Missing: ws@8.17.1 from lock file\nnpm error\nnpm error Clean install a project\nnpm error\nnpm error Usage:\nnpm error npm ci\nnpm error\nnpm error Options:\nnpm error [--install-strategy <hoisted|nested|shallow|linked>] [--legacy-bundling]\nnpm error [--global-style] [--omit <dev|optional|peer> [--omit <dev|optional|peer> ...]]\nnpm error [--include <prod|dev|optional|peer> [--include <prod|dev|optional|peer> ...]]\nnpm error [--strict-peer-deps] [--foreground-scripts] [--ignore-scripts] [--no-audit]\nnpm error [--no-bin-links] [--no-fund] [--dry-run]\nnpm error [-w|--workspace <workspace-name> [-w|--workspace <workspace-name> ...]]\nnpm error [-ws|--workspaces] [--include-workspace-root] [--install-links]\nnpm error\nnpm error aliases: clean-install, ic, install-clean, isntall-clean\nnpm error\nnpm error Run \"npm help ci\" for more info\n\nnpm error A complete log of this run can be found in: /root/.npm/_logs/2025-06-21T00_09_10_570Z-debug-0.log\n\n✕ [stage-0  6/10] RUN --mount=type=cache,id=s/a734b0e3-d5a3-4971-8cd6-d3b6f7cd6752-/root/npm,target=/root/.npm npm ci \nprocess \"/bin/bash -ol pipefail -c npm ci\" did not complete successfully: exit code: 1\n \n\nDockerfile:20\n\n-------------------\n\n18 |     ENV NIXPACKS_PATH=/app/node_modules/.bin:$NIXPACKS_PATH\n\n19 |     COPY . /app/.\n\n20 | >>> RUN --mount=type=cache,id=s/a734b0e3-d5a3-4971-8cd6-d3b6f7cd6752-/root/npm,target=/root/.npm npm ci\n\n21 |\n\n22 |     # build phase\n\n-------------------\n\nERROR: failed to solve: process \"/bin/bash -ol pipefail -c npm ci\" did not complete successfully: exit code: 1\n\nError: Docker build failed\n\n\nBuild failed with 1 error\n[stage-0 6/10] RUN --mount=type=cache,id=s/a734b0e3-d5a3-4971-8cd6-d3b6f7cd6752-/root/npm,target=/root/.npm npm ci\n\"npm ci\" did not complete successfully: exit code: 1\n\nView in context\n\nnpm warn config production Use `--omit=dev` instead.\n\nnpm error code EUSAGE\n\nnpm error\nnpm error `npm ci` can only install packages when your package.json and package-lock.json or npm-shrinkwrap.json are in sync. Please update your lock file with `npm install` before continuing.\n\nnpm error\nnpm error Missing: socket.io@4.8.1 from lock file\n\nnpm error Missing: accepts@1.3.8 from lock file\n\nnpm error Missing: base64id@2.0.0 from lock file\n\nnpm error Missing: cors@2.8.5 from lock file\n\nnpm error Missing: debug@4.3.7 from lock file\n\nnpm error Missing: engine.io@6.6.4 from lock file\n\nnpm error Missing: socket.io-adapter@2.5.5 from lock file\n\nnpm error Missing: negotiator@0.6.3 from lock file\n\nnpm error Missing: vary@1.1.2 from lock file\n\nnpm error Missing: @types/cors@2.8.19 from lock file\n\nnpm error Missing: cookie@0.7.2 from lock file\n\nnpm error Missing: debug@4.3.7 from lock file\n\nnpm error Missing: ws@8.17.1 from lock file\n\nnpm error Missing: debug@4.3.7 from lock file\n\nnpm error Missing: ws@8.17.1 from lock file\n\nnpm error\nnpm error Clean install a project\nnpm error\nnpm error Usage:\nnpm error npm ci\nnpm error\nnpm error Options:\nnpm error [--install-strategy <hoisted|nested|shallow|linked>] [--legacy-bundling]\nnpm error [--global-style] [--omit <dev|optional|peer> [--omit <dev|optional|peer> ...]]\nnpm error [--include <prod|dev|optional|peer> [--include <prod|dev|optional|peer> ...]]\nnpm error [--strict-peer-deps] [--foreground-scripts] [--ignore-scripts] [--no-audit]\nnpm error [--no-bin-links] [--no-fund] [--dry-run]\nnpm error [-w|--workspace <workspace-name> [-w|--workspace <workspace-name> ...]]\nnpm error [-ws|--workspaces] [--include-workspace-root] [--install-links]\nnpm error\nnpm error aliases: clean-install, ic, install-clean, isntall-clean\nnpm error\nnpm error Run \"npm help ci\" for more info\n\nnpm error A complete log of this run can be found in: /root/.npm/_logs/2025-06-21T00_09_10_570Z-debug-0.log\nCival-Dashboard-v5 | Railway"
+            }
+          }
+        },
+        {
+          "display": "cival-mcp-trading-platfo[Pasted text #1 +224 lines]",
+          "pastedContents": {
+            "1": {
+              "id": 1,
+              "type": "text",
+              "content": "rm\n\n\nproduction\nArchitecture\nObservability\nLogs\nSettings\n\nShare\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nActivity\n\n\nCival-Dashboard-v5\nDeployments\nVariables\nMetrics\nSettings\ncival-dashboard-v5-production.up.railway.app\nus-west2\n1 Replica\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nHistory\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nCival-Dashboard-v5\n/\n414ba88\nJun 20, 2025 4:43 PM\n\nFailed\n\ncival-dashboard-v5-production.up.railway.app\nGet Help\n\nDetails\nBuild Logs\nDeploy Logs\nHTTP Logs\n\nFilter\nFilter logs using \"\", (), AND, OR, -\n\n\n\nYou reached the start of the range → Jun 20, 2025 4:43 PM\n\nRoute (app)                                  Size     First Load JS\n┌ ○ /                                        232 B           107 kB\n├ ○ /_not-found                              994 B           108 kB\n├ ○ /agents                                  3.54 kB         155 kB\n├ ○ /analytics                               6.92 kB         258 kB\n├ ƒ /api/agents                              232 B           107 kB\n├ ƒ /api/agents/trading                      232 B           107 kB\n├ ƒ /api/agents/trading/execute              232 B           107 kB\n├ ƒ /api/agents/trading/history              232 B           107 kB\n├ ƒ /api/agents/trading/market-data          232 B           107 kB\n├ ƒ /api/agents/trading/register             232 B           107 kB\n├ ƒ /api/agents/trading/status               232 B           107 kB\n├ ƒ /api/ai-analysis                         232 B           107 kB\n├ ƒ /api/ai/trading                          232 B           107 kB\n├ ƒ /api/analytics                           232 B           107 kB\n├ ƒ /api/calendar                            232 B           107 kB\n├ ƒ /api/calendar/daily                      232 B           107 kB\n├ ƒ /api/flashloans                          232 B           107 kB\n├ ƒ /api/health                              232 B           107 kB\n├ ƒ /api/hyperlend                           232 B           107 kB\n├ ƒ /api/market                              232 B           107 kB\n├ ƒ /api/market/overview                     232 B           107 kB\n├ ƒ /api/market/quotes                       232 B           107 kB\n├ ƒ /api/market/technical-analysis/[symbol]  232 B           107 kB\n├ ƒ /api/market/trading-signals/[symbol]     232 B           107 kB\n├ ƒ /api/memory/agent-statuses               232 B           107 kB\n├ ƒ /api/memory/analytics                    232 B           107 kB\n├ ƒ /api/memory/optimize/[agentId]           232 B           107 kB\n├ ƒ /api/portfolio                           232 B           107 kB\n├ ƒ /api/profit-tracking                     232 B           107 kB\n├ ƒ /api/strategies                          232 B           107 kB\n├ ƒ /api/system/errors                       232 B           107 kB\n├ ƒ /api/system/logs                         232 B           107 kB\n├ ƒ /api/trading                             232 B           107 kB\n├ ƒ /api/wallets                             232 B           107 kB\n├ ○ /calendar                                15.5 kB         143 kB\n├ ○ /dashboard                               121 kB          397 kB\n├ ○ /dashboard-v2                            37.2 kB         155 kB\n├ ○ /dashboard/agent-data-access             7.02 kB         149 kB\n├ ○ /dashboard/agent-trading                 4.17 kB         160 kB\n├ ○ /dashboard/agents                        6.64 kB         272 kB\n├ ○ /dashboard/ai-enhanced                   7.16 kB         121 kB\n├ ○ /dashboard/analytics                     23.4 kB         188 kB\n├ ○ /dashboard/comprehensive-analytics       7.56 kB         131 kB\n├ ○ /dashboard/data-management               11.2 kB         175 kB\n├ ○ /dashboard/defi-lending                  5.16 kB         125 kB\n├ ○ /dashboard/eliza                         6.43 kB         121 kB\n├ ○ /dashboard/farms                         7.74 kB         129 kB\n├ ○ /dashboard/goals                         13.2 kB         165 kB\n├ ○ /dashboard/knowledge-graph               7.51 kB         131 kB\n├ ○ /dashboard/mcp                           6.1 kB          120 kB\n├ ○ /dashboard/overview                      392 B           107 kB\n├ ○ /dashboard/persistence                   11.1 kB         199 kB\n├ ○ /dashboard/phase8                        33.4 kB         144 kB\n├ ○ /dashboard/python-analysis               6.87 kB         127 kB\n├ ○ /dashboard/risk                          232 B           107 kB\n├ ○ /dashboard/strategies                    232 B           107 kB\n├ ○ /dashboard/trading                       8.34 kB         165 kB\n├ ○ /dashboard/vault                         10.5 kB         132 kB\n├ ○ /portfolio                               6.45 kB         235 kB\n├ ○ /risk                                    11.1 kB         236 kB\n├ ○ /simple-dashboard                        4.28 kB         127 kB\n├ ○ /test                                    1.21 kB         108 kB\n└ ○ /trading                                 9.34 kB         157 kB\n+ First Load JS shared by all                107 kB\n  ├ chunks/1517-9cd0a963dcddebd6.js          50.6 kB\n  ├ chunks/4bd1b696-f6f5afebbad1e68b.js      53 kB\n  └ other shared chunks (total)              3 kB\n\n\n\n○  (Static)   prerendered as static content\nƒ  (Dynamic)  server-rendered on demand\n\n\n[stage-0  8/10] RUN --mount=type=cache,id=s/a734b0e3-d5a3-4971-8cd6-d3b6f7cd6752-next/cache,target=/app/.next/cache --mount=type=cache,id=s/a734b0e3-d5a3-4971-8cd6-d3b6f7cd6752-node_modules/cache,target=/app/node_modules/.cache npm run build  ✔ 1m 1s\n\n[stage-0  9/10] RUN printf '\\nPATH=/app/node_modules/.bin:$PATH' >> /root/.profile\n\n[stage-0  9/10] RUN printf '\\nPATH=/app/node_modules/.bin:$PATH' >> /root/.profile  ✔ 143ms\n\n[stage-0 10/10] COPY . /app\n\n[stage-0 10/10] COPY . /app  ✔ 311ms\n\n[auth] sharing credentials for production-us-west2.railway-registry.com\n\n[auth] sharing credentials for production-us-west2.railway-registry.com  ✔ 0ms\n\n=== Successfully Built! ===\n\nRun:\n\ndocker run -it production-us-west2.railway-registry.com/a734b0e3-d5a3-4971-8cd6-d3b6f7cd6752:414ba881-77fc-48fe-b4b6-0958deb9ffcc\n\nBuild time: 154.61 seconds\n\n \n\n====================\n\nStarting Healthcheck\n\n====================\n\n\nPath: /api/health\n\nRetry window: 30s\n\n \n\nAttempt #1 failed with service unavailable. Continuing to retry for 29s\n\nAttempt #2 failed with service unavailable. Continuing to retry for 18s\n\nAttempt #3 failed with service unavailable. Continuing to retry for 16s\n\nAttempt #4 failed with service unavailable. Continuing to retry for 2s\n\n \n\n1/1 replicas never became healthy!\n\nHealthcheck failed!\n\n\nCival-Dashboard-v5 | Railway"
+            }
+          }
+        },
+        {
+          "display": "cival-mcp-tradin[Pasted text #1 +224 lines]",
+          "pastedContents": {
+            "1": {
+              "id": 1,
+              "type": "text",
+              "content": "g-platform\n\n\nproduction\nArchitecture\nObservability\nLogs\nSettings\n\nShare\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nActivity\n\n\nCival-Dashboard-v5\nDeployments\nVariables\nMetrics\nSettings\ncival-dashboard-v5-production.up.railway.app\nus-west2\n1 Replica\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nHistory\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nCival-Dashboard-v5\n/\n414ba88\nJun 20, 2025 4:43 PM\n\nFailed\n\ncival-dashboard-v5-production.up.railway.app\nGet Help\n\nDetails\nBuild Logs\nDeploy Logs\nHTTP Logs\n\nFilter\nFilter logs using \"\", (), AND, OR, -\n\n\n\nYou reached the start of the range → Jun 20, 2025 4:43 PM\n\nRoute (app)                                  Size     First Load JS\n┌ ○ /                                        232 B           107 kB\n├ ○ /_not-found                              994 B           108 kB\n├ ○ /agents                                  3.54 kB         155 kB\n├ ○ /analytics                               6.92 kB         258 kB\n├ ƒ /api/agents                              232 B           107 kB\n├ ƒ /api/agents/trading                      232 B           107 kB\n├ ƒ /api/agents/trading/execute              232 B           107 kB\n├ ƒ /api/agents/trading/history              232 B           107 kB\n├ ƒ /api/agents/trading/market-data          232 B           107 kB\n├ ƒ /api/agents/trading/register             232 B           107 kB\n├ ƒ /api/agents/trading/status               232 B           107 kB\n├ ƒ /api/ai-analysis                         232 B           107 kB\n├ ƒ /api/ai/trading                          232 B           107 kB\n├ ƒ /api/analytics                           232 B           107 kB\n├ ƒ /api/calendar                            232 B           107 kB\n├ ƒ /api/calendar/daily                      232 B           107 kB\n├ ƒ /api/flashloans                          232 B           107 kB\n├ ƒ /api/health                              232 B           107 kB\n├ ƒ /api/hyperlend                           232 B           107 kB\n├ ƒ /api/market                              232 B           107 kB\n├ ƒ /api/market/overview                     232 B           107 kB\n├ ƒ /api/market/quotes                       232 B           107 kB\n├ ƒ /api/market/technical-analysis/[symbol]  232 B           107 kB\n├ ƒ /api/market/trading-signals/[symbol]     232 B           107 kB\n├ ƒ /api/memory/agent-statuses               232 B           107 kB\n├ ƒ /api/memory/analytics                    232 B           107 kB\n├ ƒ /api/memory/optimize/[agentId]           232 B           107 kB\n├ ƒ /api/portfolio                           232 B           107 kB\n├ ƒ /api/profit-tracking                     232 B           107 kB\n├ ƒ /api/strategies                          232 B           107 kB\n├ ƒ /api/system/errors                       232 B           107 kB\n├ ƒ /api/system/logs                         232 B           107 kB\n├ ƒ /api/trading                             232 B           107 kB\n├ ƒ /api/wallets                             232 B           107 kB\n├ ○ /calendar                                15.5 kB         143 kB\n├ ○ /dashboard                               121 kB          397 kB\n├ ○ /dashboard-v2                            37.2 kB         155 kB\n├ ○ /dashboard/agent-data-access             7.02 kB         149 kB\n├ ○ /dashboard/agent-trading                 4.17 kB         160 kB\n├ ○ /dashboard/agents                        6.64 kB         272 kB\n├ ○ /dashboard/ai-enhanced                   7.16 kB         121 kB\n├ ○ /dashboard/analytics                     23.4 kB         188 kB\n├ ○ /dashboard/comprehensive-analytics       7.56 kB         131 kB\n├ ○ /dashboard/data-management               11.2 kB         175 kB\n├ ○ /dashboard/defi-lending                  5.16 kB         125 kB\n├ ○ /dashboard/eliza                         6.43 kB         121 kB\n├ ○ /dashboard/farms                         7.74 kB         129 kB\n├ ○ /dashboard/goals                         13.2 kB         165 kB\n├ ○ /dashboard/knowledge-graph               7.51 kB         131 kB\n├ ○ /dashboard/mcp                           6.1 kB          120 kB\n├ ○ /dashboard/overview                      392 B           107 kB\n├ ○ /dashboard/persistence                   11.1 kB         199 kB\n├ ○ /dashboard/phase8                        33.4 kB         144 kB\n├ ○ /dashboard/python-analysis               6.87 kB         127 kB\n├ ○ /dashboard/risk                          232 B           107 kB\n├ ○ /dashboard/strategies                    232 B           107 kB\n├ ○ /dashboard/trading                       8.34 kB         165 kB\n├ ○ /dashboard/vault                         10.5 kB         132 kB\n├ ○ /portfolio                               6.45 kB         235 kB\n├ ○ /risk                                    11.1 kB         236 kB\n├ ○ /simple-dashboard                        4.28 kB         127 kB\n├ ○ /test                                    1.21 kB         108 kB\n└ ○ /trading                                 9.34 kB         157 kB\n+ First Load JS shared by all                107 kB\n  ├ chunks/1517-9cd0a963dcddebd6.js          50.6 kB\n  ├ chunks/4bd1b696-f6f5afebbad1e68b.js      53 kB\n  └ other shared chunks (total)              3 kB\n\n\n\n○  (Static)   prerendered as static content\nƒ  (Dynamic)  server-rendered on demand\n\n\n[stage-0  8/10] RUN --mount=type=cache,id=s/a734b0e3-d5a3-4971-8cd6-d3b6f7cd6752-next/cache,target=/app/.next/cache --mount=type=cache,id=s/a734b0e3-d5a3-4971-8cd6-d3b6f7cd6752-node_modules/cache,target=/app/node_modules/.cache npm run build  ✔ 1m 1s\n\n[stage-0  9/10] RUN printf '\\nPATH=/app/node_modules/.bin:$PATH' >> /root/.profile\n\n[stage-0  9/10] RUN printf '\\nPATH=/app/node_modules/.bin:$PATH' >> /root/.profile  ✔ 143ms\n\n[stage-0 10/10] COPY . /app\n\n[stage-0 10/10] COPY . /app  ✔ 311ms\n\n[auth] sharing credentials for production-us-west2.railway-registry.com\n\n[auth] sharing credentials for production-us-west2.railway-registry.com  ✔ 0ms\n\n=== Successfully Built! ===\n\nRun:\n\ndocker run -it production-us-west2.railway-registry.com/a734b0e3-d5a3-4971-8cd6-d3b6f7cd6752:414ba881-77fc-48fe-b4b6-0958deb9ffcc\n\nBuild time: 154.61 seconds\n\n \n\n====================\n\nStarting Healthcheck\n\n====================\n\n\nPath: /api/health\n\nRetry window: 30s\n\n \n\nAttempt #1 failed with service unavailable. Continuing to retry for 29s\n\nAttempt #2 failed with service unavailable. Continuing to retry for 18s\n\nAttempt #3 failed with service unavailable. Continuing to retry for 16s\n\nAttempt #4 failed with service unavailable. Continuing to retry for 2s\n\n \n\n1/1 replicas never became healthy!\n\nHealthcheck failed!\n\n\nCival-Dashboard-v5 | Railway"
+            }
+          }
+        },
+        {
+          "display": "cival-dashboard-v5-production.up.railway.app port 8000",
+          "pastedContents": {}
+        }
+      ],
+      "dontCrawlDirectory": true,
+      "mcpContextUris": [],
+      "mcpServers": {
+        "supabase": {
+          "command": "npx",
+          "args": [
+            "-y",
+            "@supabase-community/supabase-mcp"
+          ],
+          "env": {
+            "SUPABASE_URL": "https://nmzuamwzbjlfhbqbvvpf.supabase.co",
+            "SUPABASE_ANON_KEY": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im5tenVhbXd6YmpsZmhicWJ2dnBmIiwicm9sZSI6ImFub24iLCJpYXQiOjE3MzQ1NTU2MDAsImV4cCI6MjA1MDEzMTYwMH0.demo_key"
+          }
+        },
+        "MCP_DOCKER": {
+          "command": "docker",
+          "args": [
+            "run",
+            "-i",
+            "--rm",
+            "alpine/socat",
+            "STDIO",
+            "TCP:host.docker.internal:8811"
+          ]
+        }
+      },
+      "enabledMcpjsonServers": [],
+      "disabledMcpjsonServers": [],
+      "hasTrustDialogAccepted": false,
+      "projectOnboardingSeenCount": 5,
+      "hasClaudeMdExternalIncludesApproved": false,
+      "hasClaudeMdExternalIncludesWarningShown": false,
+      "hasCompletedProjectOnboarding": true
+    }
+  },
+  "userID": "69577213b219f50cd6812cd26a8ee33463f0726d544874022f5dad2bb6913a66",
+  "cachedChangelog": "# Changelog\n\n## 1.0.27\n\n- Streamable HTTP MCP servers are now supported\n- Remote MCP servers (SSE and HTTP) now support OAuth\n- MCP resources can now be @-mentioned\n\n## 1.0.25\n\n- Slash commands: moved \"project\" and \"user\" prefixes to descriptions\n- Slash commands: improved reliability for command discovery\n- Improved support for Ghostty\n- Improved web search reliability\n\n## 1.0.24\n\n- Improved /mcp output\n- Fixed a bug where settings arrays got overwritten instead of merged\n\n## 1.0.23\n\n- Released TypeScript SDK: import @anthropic-ai/claude-code to get started\n- Released Python SDK: pip install claude-code-sdk to get started\n\n## 1.0.22\n\n- SDK: Renamed `total_cost` to `total_cost_usd`\n\n## 1.0.21\n\n- Improved editing of files with tab-based indentation\n- Fix for tool_use without matching tool_result errors\n- Fixed a bug where stdio MCP server processes would linger after quitting Claude Code\n\n## 1.0.18\n\n- Added --add-dir CLI argument for specifying additional working directories\n- Added streaming input support without require -p flag\n- Improved startup performance and session storage performance\n- Added CLAUDE_BASH_MAINTAIN_PROJECT_WORKING_DIR environment variable to freeze working directory for bash commands\n- Added detailed MCP server tools display (/mcp)\n- MCP authentication and permission improvements\n- Added auto-reconnection for MCP SSE connections on disconnect\n- Fixed issue where pasted content was lost when dialogs appeared\n\n## 1.0.17\n\n- We now emit messages from sub-tasks in -p mode (look for the parent_tool_use_id property)\n- Fixed crashes when the VS Code diff tool is invoked multiple times quickly\n- MCP server list UI improvements\n- Update Claude Code process title to display \"claude\" instead of \"node\"\n\n## 1.0.11\n\n- Claude Code can now also be used with a Claude Pro subscription\n- Added /upgrade for smoother switching to Claude Max plans\n- Improved UI for authentication from API keys and Bedrock/Vertex/external auth tokens\n- Improved shell configuration error handling\n- Improved todo list handling during compaction\n\n## 1.0.10\n\n- Added markdown table support\n- Improved streaming performance\n\n## 1.0.8\n\n- Fixed Vertex AI region fallback when using CLOUD_ML_REGION\n- Increased default otel interval from 1s -> 5s\n- Fixed edge cases where MCP_TIMEOUT and MCP_TOOL_TIMEOUT weren't being respected\n- Fixed a regression where search tools unnecessarily asked for permissions\n- Added support for triggering thinking non-English languages\n- Improved compacting UI\n\n## 1.0.7\n\n- Renamed /allowed-tools -> /permissions\n- Migrated allowedTools and ignorePatterns from .claude.json -> settings.json\n- Deprecated claude config commands in favor of editing settings.json\n- Fixed a bug where --dangerously-skip-permissions sometimes didn't work in --print mode\n- Improved error handling for /install-github-app\n- Bugfixes, UI polish, and tool reliability improvements\n\n## 1.0.6\n\n- Improved edit reliability for tab-indented files\n- Respect CLAUDE_CONFIG_DIR everywhere\n- Reduced unnecessary tool permission prompts\n- Added support for symlinks in @file typeahead\n- Bugfixes, UI polish, and tool reliability improvements\n\n## 1.0.4\n\n- Fixed a bug where MCP tool errors weren't being parsed correctly\n\n## 1.0.1\n\n- Added `DISABLE_INTERLEAVED_THINKING` to give users the option to opt out of interleaved thinking.\n- Improved model references to show provider-specific names (Sonnet 3.7 for Bedrock, Sonnet 4 for Console)\n- Updated documentation links and OAuth process descriptions\n\n## 1.0.0\n\n- Claude Code is now generally available\n- Introducing Sonnet 4 and Opus 4 models\n\n## 0.2.125\n\n- Breaking change: Bedrock ARN passed to `ANTHROPIC_MODEL` or `ANTHROPIC_SMALL_FAST_MODEL` should no longer contain an escaped slash (specify `/` instead of `%2F`)\n- Removed `DEBUG=true` in favor of `ANTHROPIC_LOG=debug`, to log all requests\n\n## 0.2.117\n\n- Breaking change: --print JSON output now returns nested message objects, for forwards-compatibility as we introduce new metadata fields\n- Introduced settings.cleanupPeriodDays\n- Introduced CLAUDE_CODE_API_KEY_HELPER_TTL_MS env var\n- Introduced --debug mode\n\n## 0.2.108\n\n- You can now send messages to Claude while it works to steer Claude in real-time\n- Introduced BASH_DEFAULT_TIMEOUT_MS and BASH_MAX_TIMEOUT_MS env vars\n- Fixed a bug where thinking was not working in -p mode\n- Fixed a regression in /cost reporting\n- Deprecated MCP wizard interface in favor of other MCP commands\n- Lots of other bugfixes and improvements\n\n## 0.2.107\n\n- CLAUDE.md files can now import other files. Add @path/to/file.md to ./CLAUDE.md to load additional files on launch\n\n## 0.2.106\n\n- MCP SSE server configs can now specify custom headers\n- Fixed a bug where MCP permission prompt didn't always show correctly\n\n## 0.2.105\n\n- Claude can now search the web\n- Moved system & account status to /status\n- Added word movement keybindings for Vim\n- Improved latency for startup, todo tool, and file edits\n\n## 0.2.102\n\n- Improved thinking triggering reliability\n- Improved @mention reliability for images and folders\n- You can now paste multiple large chunks into one prompt\n\n## 0.2.100\n\n- Fixed a crash caused by a stack overflow error\n- Made db storage optional; missing db support disables --continue and --resume\n\n## 0.2.98\n\n- Fixed an issue where auto-compact was running twice\n\n## 0.2.96\n\n- Claude Code can now also be used with a Claude Max subscription (https://claude.ai/upgrade)\n\n## 0.2.93\n\n- Resume conversations from where you left off from with \"claude --continue\" and \"claude --resume\"\n- Claude now has access to a Todo list that helps it stay on track and be more organized\n\n## 0.2.82\n\n- Added support for --disallowedTools\n- Renamed tools for consistency: LSTool -> LS, View -> Read, etc.\n\n## 0.2.75\n\n- Hit Enter to queue up additional messages while Claude is working\n- Drag in or copy/paste image files directly into the prompt\n- @-mention files to directly add them to context\n- Run one-off MCP servers with `claude --mcp-config <path-to-file>`\n- Improved performance for filename auto-complete\n\n## 0.2.74\n\n- Added support for refreshing dynamically generated API keys (via apiKeyHelper), with a 5 minute TTL\n- Task tool can now perform writes and run bash commands\n\n## 0.2.72\n\n- Updated spinner to indicate tokens loaded and tool usage\n\n## 0.2.70\n\n- Network commands like curl are now available for Claude to use\n- Claude can now run multiple web queries in parallel\n- Pressing ESC once immediately interrupts Claude in Auto-accept mode\n\n## 0.2.69\n\n- Fixed UI glitches with improved Select component behavior\n- Enhanced terminal output display with better text truncation logic\n\n## 0.2.67\n\n- Shared project permission rules can be saved in .claude/settings.json\n\n## 0.2.66\n\n- Print mode (-p) now supports streaming output via --output-format=stream-json\n- Fixed issue where pasting could trigger memory or bash mode unexpectedly\n\n## 0.2.63\n\n- Fixed an issue where MCP tools were loaded twice, which caused tool call errors\n\n## 0.2.61\n\n- Navigate menus with vim-style keys (j/k) or bash/emacs shortcuts (Ctrl+n/p) for faster interaction\n- Enhanced image detection for more reliable clipboard paste functionality\n- Fixed an issue where ESC key could crash the conversation history selector\n\n## 0.2.59\n\n- Copy+paste images directly into your prompt\n- Improved progress indicators for bash and fetch tools\n- Bugfixes for non-interactive mode (-p)\n\n## 0.2.54\n\n- Quickly add to Memory by starting your message with '#'\n- Press ctrl+r to see full output for long tool results\n- Added support for MCP SSE transport\n\n## 0.2.53\n\n- New web fetch tool lets Claude view URLs that you paste in\n- Fixed a bug with JPEG detection\n\n## 0.2.50\n\n- New MCP \"project\" scope now allows you to add MCP servers to .mcp.json files and commit them to your repository\n\n## 0.2.49\n\n- Previous MCP server scopes have been renamed: previous \"project\" scope is now \"local\" and \"global\" scope is now \"user\"\n\n## 0.2.47\n\n- Press Tab to auto-complete file and folder names\n- Press Shift + Tab to toggle auto-accept for file edits\n- Automatic conversation compaction for infinite conversation length (toggle with /config)\n\n## 0.2.44\n\n- Ask Claude to make a plan with thinking mode: just say 'think' or 'think harder' or even 'ultrathink'\n\n## 0.2.41\n\n- MCP server startup timeout can now be configured via MCP_TIMEOUT environment variable\n- MCP server startup no longer blocks the app from starting up\n\n## 0.2.37\n\n- New /release-notes command lets you view release notes at any time\n- `claude config add/remove` commands now accept multiple values separated by commas or spaces\n\n## 0.2.36\n\n- Import MCP servers from Claude Desktop with `claude mcp add-from-claude-desktop`\n- Add MCP servers as JSON strings with `claude mcp add-json <n> <json>`\n\n## 0.2.34\n\n- Vim bindings for text input - enable with /vim or /config\n\n## 0.2.32\n\n- Interactive MCP setup wizard: Run \"claude mcp add\" to add MCP servers with a step-by-step interface\n- Fix for some PersistentShell issues\n\n## 0.2.31\n\n- Custom slash commands: Markdown files in .claude/commands/ directories now appear as custom slash commands to insert prompts into your conversation\n- MCP debug mode: Run with --mcp-debug flag to get more information about MCP server errors\n\n## 0.2.30\n\n- Added ANSI color theme for better terminal compatibility\n- Fixed issue where slash command arguments weren't being sent properly\n- (Mac-only) API keys are now stored in macOS Keychain\n\n## 0.2.26\n\n- New /approved-tools command for managing tool permissions\n- Word-level diff display for improved code readability\n- Fuzzy matching for slash commands\n\n## 0.2.21\n\n- Fuzzy matching for /commands\n",
+  "changelogLastFetched": 1750569604879,
+  "firstStartTime": "2025-06-22T05:18:42.977Z",
+  "hasCompletedOnboarding": true,
+  "lastOnboardingVersion": "1.0.17",
+  "oauthAccount": {
+    "accountUuid": "214f4710-577c-4552-a5a2-eba814ec669e",
+    "emailAddress": "civallee4@gmail.com",
+    "organizationUuid": "8b6df7ed-5408-42ff-8f26-6f4f1cd93f7e",
+    "organizationRole": "admin",
+    "workspaceRole": null,
+    "organizationName": "civallee4@gmail.com's Organization"
+  },
+  "lastReleaseNotesSeen": "1.0.17",
+  "subscriptionNoticeCount": 0,
+  "hasAvailableSubscription": false
+}

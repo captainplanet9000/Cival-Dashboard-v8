@@ -1,0 +1,210 @@
+# =============================================================================
+# NIXPACKS CONFIGURATION - AUTONOMOUS TRADING SYSTEM
+# Optimized build configuration for Railway deployment
+# =============================================================================
+
+[variables]
+# Python version and environment
+PYTHON_VERSION = "3.11"
+NODE_VERSION = "18"
+NIXPACKS_METADATA = "autonomous-trading-system"
+
+# Build optimization
+NIXPACKS_BUILD_CPU_LIMIT = "2"
+NIXPACKS_BUILD_MEMORY_LIMIT = "4096"
+
+# Cache optimization
+NIXPACKS_CACHE_UPLOAD_ENABLED = "1"
+NIXPACKS_NO_CACHE = "0"
+
+[phases.setup]
+# System dependencies and optimization
+nixPkgs = [
+    "python311",
+    "python311Packages.pip",
+    "python311Packages.setuptools",
+    "python311Packages.wheel",
+    "nodejs_18",
+    "npm",
+    "git",
+    "gcc",
+    "pkg-config",
+    "cairo",
+    "pango",
+    "gdk-pixbuf",
+    "libffi",
+    "shared-mime-info",
+    "curl",
+    "wget",
+    "postgresql",
+    "redis"
+]
+
+# Environment setup
+onlyIncludeFiles = [
+    "requirements.txt",
+    "package.json",
+    "package-lock.json",
+    "main_consolidated.py",
+    "core/",
+    "services/",
+    "models/",
+    "api/",
+    "agents/",
+    "farms/",
+    "goals/",
+    "dashboard/",
+    "frontend/",
+    "scripts/",
+    "static/",
+    "templates/",
+    "Procfile",
+    "railway.json",
+    ".env.railway"
+]
+
+[phases.install]
+# Python dependencies installation with optimization
+cmds = [
+    "python -m pip install --upgrade pip setuptools wheel",
+    "pip install --no-cache-dir --compile -r requirements.txt",
+    "pip install --no-cache-dir gunicorn uvicorn[standard]"
+]
+
+[phases.build]
+# Frontend build and optimization
+cmds = [
+    "cd frontend && npm ci --production=false",
+    "cd frontend && npm run build",
+    "cd frontend && npm prune --production",
+    "python -m compileall -b .",
+    "find . -name '*.py' -delete",
+    "find . -name '__pycache__' -type d -exec rm -rf {} +",
+    "python scripts/optimize_static_files.py"
+]
+
+[phases.start]
+# Production startup optimization
+cmd = "python main_consolidated.py"
+
+# Alternative start commands
+# cmd = "gunicorn main_consolidated:app --bind 0.0.0.0:$PORT --workers 4 --worker-class uvicorn.workers.UvicornWorker --timeout 300 --preload"
+
+[staticAssets]
+# Static file serving configuration
+"frontend/build" = "/"
+"static" = "/static"
+"uploads" = "/uploads"
+
+[buildImage]
+# Build optimization settings
+name = "autonomous-trading-system-build"
+tag = "latest"
+
+[providers]
+# Provider-specific optimizations
+files = [".env.railway"]
+
+[build]
+# Build-time environment variables
+environment = [
+    "NODE_ENV=production",
+    "PYTHON_ENV=production",
+    "BUILD_ENV=production",
+    "FRONTEND_BUILD=true"
+]
+
+# Build optimization flags
+flags = [
+    "--platform=linux/amd64",
+    "--build-arg BUILDKIT_INLINE_CACHE=1",
+    "--cache-from type=registry",
+    "--cache-to type=registry,mode=max"
+]
+
+[runtime]
+# Runtime optimization
+environment = [
+    "PYTHONUNBUFFERED=1",
+    "PYTHONOPTIMIZE=2",
+    "PYTHONDONTWRITEBYTECODE=1",
+    "NODE_ENV=production"
+]
+
+# Memory and CPU limits
+limits = {
+    memory = "2GB",
+    cpu = "1000m"
+}
+
+# Health checks
+health = {
+    path = "/health",
+    interval = "30s",
+    timeout = "10s",
+    retries = 3,
+    start_period = "60s"
+}
+
+[security]
+# Security optimization
+nonroot = true
+readonly = false
+
+# Capability restrictions
+capabilities = {
+    drop = ["ALL"],
+    add = ["NET_BIND_SERVICE"]
+}
+
+[optimization]
+# Performance optimization
+cache = {
+    directories = [
+        "~/.cache/pip",
+        "frontend/node_modules",
+        "frontend/.next/cache",
+        "__pycache__"
+    ]
+}
+
+# Compression settings
+compression = {
+    enabled = true,
+    level = 6,
+    types = ["text/*", "application/json", "application/javascript"]
+}
+
+# Asset optimization
+assets = {
+    minify = true,
+    gzip = true,
+    brotli = true
+}
+
+[logging]
+# Logging optimization
+level = "info"
+format = "json"
+timestamp = true
+
+[monitoring]
+# Monitoring integration
+prometheus = {
+    enabled = true,
+    port = 9090,
+    path = "/metrics"
+}
+
+health_check = {
+    enabled = true,
+    endpoint = "/health",
+    interval = "30s"
+}
+
+[experimental]
+# Experimental features for better performance
+incremental_builds = true
+parallel_builds = true
+build_cache = true
+layer_caching = true

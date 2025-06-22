@@ -1,0 +1,32 @@
+[
+  {
+    "content": "Create comprehensive ShadCN migration plan",
+    "status": "in_progress",
+    "priority": "high",
+    "id": "create-migration-plan"
+  },
+  {
+    "content": "Audit current component architecture",
+    "status": "pending",
+    "priority": "high",
+    "id": "audit-components"
+  },
+  {
+    "content": "Plan ShadCN Form integration",
+    "status": "pending",
+    "priority": "high",
+    "id": "plan-form-integration"
+  },
+  {
+    "content": "Plan Motion Primitives integration",
+    "status": "pending",
+    "priority": "high",
+    "id": "plan-motion-integration"
+  },
+  {
+    "content": "Plan ShadCN UI Expansions integration",
+    "status": "pending",
+    "priority": "high",
+    "id": "plan-expansions-integration"
+  }
+]

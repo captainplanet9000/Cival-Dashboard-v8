@@ -1,0 +1,92 @@
+[
+  {
+    "content": "Complete build fixes and remove all compilation errors",
+    "status": "completed",
+    "priority": "high",
+    "id": "build-fixes"
+  },
+  {
+    "content": "Setup environment configuration (.env.local)",
+    "status": "completed",
+    "priority": "high",
+    "id": "env-setup"
+  },
+  {
+    "content": "Establish backend-frontend API connectivity",
+    "status": "completed",
+    "priority": "high",
+    "id": "api-connectivity"
+  },
+  {
+    "content": "Add missing API routes and endpoints",
+    "status": "completed",
+    "priority": "high",
+    "id": "missing-api-routes"
+  },
+  {
+    "content": "Configure database setup and persistence",
+    "status": "in_progress",
+    "priority": "high",
+    "id": "database-config"
+  },
+  {
+    "content": "Push all changes to git with clean deployment",
+    "status": "completed",
+    "priority": "high",
+    "id": "git-deployment"
+  },
+  {
+    "content": "Verify Railway deployment with zero errors",
+    "status": "in_progress",
+    "priority": "high",
+    "id": "railway-deployment"
+  },
+  {
+    "content": "Install and configure Redis for caching and sessions",
+    "status": "pending",
+    "priority": "high",
+    "id": "redis-setup"
+  },
+  {
+    "content": "Complete Supabase Auth integration with JWT tokens",
+    "status": "pending",
+    "priority": "high",
+    "id": "auth-implementation"
+  },
+  {
+    "content": "Implement real exchange connector (Hyperliquid + IB)",
+    "status": "pending",
+    "priority": "high",
+    "id": "exchange-connectors"
+  },
+  {
+    "content": "Add WebSocket real-time trading capabilities",
+    "status": "pending",
+    "priority": "medium",
+    "id": "websocket-realtime"
+  },
+  {
+    "content": "Build N8N workflow automation for trading strategies",
+    "status": "pending",
+    "priority": "medium",
+    "id": "n8n-automation"
+  },
+  {
+    "content": "Add service worker for PWA functionality (fix missing /sw.js)",
+    "status": "pending",
+    "priority": "medium",
+    "id": "service-worker-pwa"
+  },
+  {
+    "content": "Integrate real market data feeds (replace mock data)",
+    "status": "pending",
+    "priority": "medium",
+    "id": "real-market-data"
+  },
+  {
+    "content": "Build missing microservices (Docker services)",
+    "status": "pending",
+    "priority": "medium",
+    "id": "missing-microservices"
+  }
+]

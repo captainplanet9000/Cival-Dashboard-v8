@@ -1,0 +1,56 @@
+[
+  {
+    "content": "Complete build and test the integrated system",
+    "status": "completed",
+    "priority": "high",
+    "id": "build-and-test-current"
+  },
+  {
+    "content": "Deploy current functional version",
+    "status": "completed",
+    "priority": "high",
+    "id": "deploy-current-version"
+  },
+  {
+    "content": "Phase 1: Add DeFi Lending tab and Python trading libraries",
+    "status": "completed",
+    "priority": "high",
+    "id": "phase1-defi-lending"
+  },
+  {
+    "content": "Phase 2: Real data integration with backend services",
+    "status": "in_progress",
+    "priority": "high",
+    "id": "phase2-real-data"
+  },
+  {
+    "content": "Phase 3: Convert all frontend tabs to real data",
+    "status": "pending",
+    "priority": "high",
+    "id": "phase3-frontend-real-data"
+  },
+  {
+    "content": "Phase 4: Implement agent auto-profit security system",
+    "status": "pending",
+    "priority": "high",
+    "id": "phase4-auto-profit-security"
+  },
+  {
+    "content": "Phase 5: UI/UX modernization with latest components",
+    "status": "pending",
+    "priority": "medium",
+    "id": "phase5-ui-modernization"
+  },
+  {
+    "content": "Phase 6: Eliza OS natural language integration",
+    "status": "pending",
+    "priority": "medium",
+    "id": "phase6-eliza-integration"
+  },
+  {
+    "content": "Final testing and optimization",
+    "status": "pending",
+    "priority": "medium",
+    "id": "final-testing"
+  }
+]

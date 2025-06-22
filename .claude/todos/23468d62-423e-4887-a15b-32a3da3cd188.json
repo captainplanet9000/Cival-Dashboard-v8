@@ -1,0 +1,20 @@
+[
+  {
+    "content": "Fix viewport metadata in layout.tsx - move to viewport export",
+    "status": "completed",
+    "priority": "high",
+    "id": "fix-viewport-layout"
+  },
+  {
+    "content": "Fix Building import issue causing build failure in dashboard components",
+    "status": "completed",
+    "priority": "high",
+    "id": "fix-building-import"
+  },
+  {
+    "content": "Fix viewport metadata in all page files - move to viewport export",
+    "status": "completed",
+    "priority": "medium",
+    "id": "fix-viewport-pages"
+  }
+]

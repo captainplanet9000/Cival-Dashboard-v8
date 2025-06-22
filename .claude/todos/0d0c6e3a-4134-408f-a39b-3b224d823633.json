@@ -1,0 +1,62 @@
+[
+  {
+    "content": "Analyze current dashboard structure and all tabs/features",
+    "status": "completed",
+    "priority": "high",
+    "id": "analyze-dashboard"
+  },
+  {
+    "content": "Move DeFi Lending and Calendar to main sidebar navigation",
+    "status": "completed",
+    "priority": "high",
+    "id": "move-defi-calendar"
+  },
+  {
+    "content": "Complete Overview tab with real functionality",
+    "status": "completed",
+    "priority": "high",
+    "id": "complete-overview"
+  },
+  {
+    "content": "Complete Agents tab with all 5 sub-features",
+    "status": "completed",
+    "priority": "high",
+    "id": "complete-agents"
+  },
+  {
+    "content": "Complete Farms tab with all 4 sub-features",
+    "status": "completed",
+    "priority": "high",
+    "id": "complete-farms"
+  },
+  {
+    "content": "Complete Goals tab with all 4 sub-features",
+    "status": "in_progress",
+    "priority": "high",
+    "id": "complete-goals"
+  },
+  {
+    "content": "Complete DeFi Lending with real functionality",
+    "status": "pending",
+    "priority": "high",
+    "id": "complete-defi"
+  },
+  {
+    "content": "Complete Calendar with real functionality",
+    "status": "pending",
+    "priority": "high",
+    "id": "complete-calendar"
+  },
+  {
+    "content": "Complete Advanced tab remaining features",
+    "status": "pending",
+    "priority": "high",
+    "id": "complete-advanced"
+  },
+  {
+    "content": "Test all functionality and deploy",
+    "status": "pending",
+    "priority": "high",
+    "id": "test-deploy"
+  }
+]

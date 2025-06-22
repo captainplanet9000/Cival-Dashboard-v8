@@ -1,0 +1,38 @@
+[
+  {
+    "content": "Phase 4: Motion Primitives animations",
+    "status": "completed",
+    "priority": "high",
+    "id": "phase-4-motion"
+  },
+  {
+    "content": "Integrate AG-UI infrastructure",
+    "status": "completed",
+    "priority": "high",
+    "id": "integrate-agui"
+  },
+  {
+    "content": "Fix motion component imports",
+    "status": "completed",
+    "priority": "high",
+    "id": "fix-motion-imports"
+  },
+  {
+    "content": "Phase 5: UI Expansions implementation",
+    "status": "completed",
+    "priority": "high",
+    "id": "phase-5-expansions"
+  },
+  {
+    "content": "Phase 6: Polish and optimization",
+    "status": "completed",
+    "priority": "high",
+    "id": "phase-6-polish"
+  },
+  {
+    "content": "Commit all ShadCN migration changes",
+    "status": "completed",
+    "priority": "high",
+    "id": "commit-changes"
+  }
+]

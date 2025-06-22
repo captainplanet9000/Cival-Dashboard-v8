@@ -1,0 +1,74 @@
+[
+  {
+    "content": "Audit current dashboard tabs and identify mock data usage",
+    "status": "pending",
+    "priority": "high",
+    "id": "audit-dashboard"
+  },
+  {
+    "content": "Upgrade shadcn/ui to latest version and modernize styling",
+    "status": "pending",
+    "priority": "high",
+    "id": "upgrade-shadcn"
+  },
+  {
+    "content": "Convert Overview tab to real data with live portfolio metrics",
+    "status": "pending",
+    "priority": "high",
+    "id": "overview-real-data"
+  },
+  {
+    "content": "Convert Trading tab to real data with live market feeds",
+    "status": "pending",
+    "priority": "high",
+    "id": "trading-real-data"
+  },
+  {
+    "content": "Convert Agents tab to real data with live agent status",
+    "status": "pending",
+    "priority": "high",
+    "id": "agents-real-data"
+  },
+  {
+    "content": "Convert Strategies tab to real data with actual strategy performance",
+    "status": "pending",
+    "priority": "high",
+    "id": "strategies-real-data"
+  },
+  {
+    "content": "Convert Portfolio tab to real data with live positions",
+    "status": "pending",
+    "priority": "high",
+    "id": "portfolio-real-data"
+  },
+  {
+    "content": "Convert Analytics tab to real data with actual trading metrics",
+    "status": "pending",
+    "priority": "high",
+    "id": "analytics-real-data"
+  },
+  {
+    "content": "Convert Risk tab to real data with live risk calculations",
+    "status": "pending",
+    "priority": "high",
+    "id": "risk-real-data"
+  },
+  {
+    "content": "Upgrade wallet integration with real balance tracking",
+    "status": "pending",
+    "priority": "high",
+    "id": "wallet-real-data"
+  },
+  {
+    "content": "Test all tabs for functionality and data connectivity",
+    "status": "pending",
+    "priority": "medium",
+    "id": "test-functionality"
+  },
+  {
+    "content": "Polish UI/UX with modern design patterns",
+    "status": "pending",
+    "priority": "medium",
+    "id": "polish-design"
+  }
+]

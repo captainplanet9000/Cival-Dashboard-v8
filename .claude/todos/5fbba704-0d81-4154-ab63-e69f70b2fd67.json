@@ -1,0 +1,122 @@
+[
+  {
+    "content": "Phase 1: Create Goals Management API endpoints",
+    "status": "completed",
+    "priority": "high",
+    "id": "goals-api-endpoints"
+  },
+  {
+    "content": "Phase 1: Create Farms Management API endpoints",
+    "status": "completed",
+    "priority": "high",
+    "id": "farms-api-endpoints"
+  },
+  {
+    "content": "Phase 1: Create Vault/Wallet Management API endpoints",
+    "status": "completed",
+    "priority": "high",
+    "id": "vault-api-endpoints"
+  },
+  {
+    "content": "Phase 1: Create Market Data API endpoints",
+    "status": "completed",
+    "priority": "high",
+    "id": "market-data-endpoints"
+  },
+  {
+    "content": "Phase 1: Create Trading Overview API endpoints",
+    "status": "completed",
+    "priority": "high",
+    "id": "trading-overview-endpoints"
+  },
+  {
+    "content": "Phase 2: Create database schema for Goals",
+    "status": "completed",
+    "priority": "high",
+    "id": "goals-database-schema"
+  },
+  {
+    "content": "Phase 2: Create database schema for Farms",
+    "status": "completed",
+    "priority": "high",
+    "id": "farms-database-schema"
+  },
+  {
+    "content": "Phase 2: Create database schema for Vaults",
+    "status": "completed",
+    "priority": "high",
+    "id": "vaults-database-schema"
+  },
+  {
+    "content": "Phase 3: Update Goals frontend to use real APIs",
+    "status": "completed",
+    "priority": "high",
+    "id": "goals-frontend-update"
+  },
+  {
+    "content": "Phase 3: Update Live Market Data frontend",
+    "status": "completed",
+    "priority": "high",
+    "id": "market-data-frontend-update"
+  },
+  {
+    "content": "Phase 3: Update Vault frontend",
+    "status": "completed",
+    "priority": "high",
+    "id": "vault-frontend-update"
+  },
+  {
+    "content": "Phase 3: Update Farms Dashboard frontend",
+    "status": "completed",
+    "priority": "high",
+    "id": "farms-frontend-update"
+  },
+  {
+    "content": "Phase 3: Update Trading Overview frontend",
+    "status": "completed",
+    "priority": "high",
+    "id": "trading-overview-frontend-update"
+  },
+  {
+    "content": "Phase 4: Implement Goal Management Service",
+    "status": "completed",
+    "priority": "medium",
+    "id": "goal-service-implementation"
+  },
+  {
+    "content": "Phase 4: Implement Farm Management Service",
+    "status": "completed",
+    "priority": "medium",
+    "id": "farm-service-implementation"
+  },
+  {
+    "content": "Phase 4: Implement Vault Management Service",
+    "status": "in_progress",
+    "priority": "medium",
+    "id": "vault-service-implementation"
+  },
+  {
+    "content": "Phase 4: Implement Market Data Service",
+    "status": "pending",
+    "priority": "medium",
+    "id": "market-data-service-implementation"
+  },
+  {
+    "content": "Phase 5: Implement WebSocket real-time updates",
+    "status": "pending",
+    "priority": "medium",
+    "id": "websocket-implementation"
+  },
+  {
+    "content": "Phase 6: Implement AG-UI Chat Terminal",
+    "status": "pending",
+    "priority": "medium",
+    "id": "chat-terminal-implementation"
+  },
+  {
+    "content": "Phase 7: Implement real calculations and aggregations",
+    "status": "pending",
+    "priority": "medium",
+    "id": "real-calculations-implementation"
+  }
+]

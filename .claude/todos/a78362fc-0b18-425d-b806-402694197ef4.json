@@ -1,0 +1,62 @@
+[
+  {
+    "content": "Phase 1: Install dependencies and extend app-store with component state",
+    "status": "completed",
+    "priority": "high",
+    "id": "phase1-deps"
+  },
+  {
+    "content": "Phase 1: Extend AG-UI Protocol v2 and create new API endpoints",
+    "status": "completed",
+    "priority": "high",
+    "id": "phase1-websocket"
+  },
+  {
+    "content": "Phase 2: Build crypto-charts component with ApexCharts and Material Design",
+    "status": "completed",
+    "priority": "high",
+    "id": "phase2-crypto-charts"
+  },
+  {
+    "content": "Phase 2: Create linked-chart with chart-table synchronization",
+    "status": "completed",
+    "priority": "high",
+    "id": "phase2-linked-chart"
+  },
+  {
+    "content": "Phase 3: Build enhanced-button with trading actions and confirmations",
+    "status": "completed",
+    "priority": "medium",
+    "id": "phase3-enhanced-button"
+  },
+  {
+    "content": "Phase 3: Create auto-form with dynamic Zod schema generation",
+    "status": "completed",
+    "priority": "medium",
+    "id": "phase3-auto-form"
+  },
+  {
+    "content": "Phase 4: Build fancy-area with @mention support for agent communication",
+    "status": "completed",
+    "priority": "medium",
+    "id": "phase4-fancy-area"
+  },
+  {
+    "content": "Phase 4: Create image-upload and file-uploader components",
+    "status": "completed",
+    "priority": "medium",
+    "id": "phase4-uploads"
+  },
+  {
+    "content": "Phase 5: Build big-calendar with trading event scheduling",
+    "status": "completed",
+    "priority": "low",
+    "id": "phase5-calendar"
+  },
+  {
+    "content": "Phase 5: Final integration testing and documentation",
+    "status": "completed",
+    "priority": "low",
+    "id": "phase5-integration"
+  }
+]
