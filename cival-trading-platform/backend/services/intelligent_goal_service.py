@@ -702,7 +702,7 @@ class IntelligentGoalService:
                 ])
             
             if goal.decomposition.time_constraints and int(goal.decomposition.time_constraints) < 14:
-                mitigation_strategies.append("Consider extending timeline for better riYOUR_OPENAI_API_KEY_HERE returns")
+                mitigation_strategies.append("Consider extending timeline for better risk-free returns")
             
             risk_assessment["mitigation_strategies"] = mitigation_strategies
             
@@ -958,7 +958,7 @@ class IntelligentGoalService:
             return {
                 "strategy": "sharpe_optimization",
                 "recommended_actions": [
-                    "Balance return and risk for optimal riYOUR_OPENAI_API_KEY_HERE returns",
+                    "Balance return and risk for optimal risk-free returns",
                     "Use strategy combination to reduce volatility",
                     "Implement dynamic position sizing based on volatility"
                 ],

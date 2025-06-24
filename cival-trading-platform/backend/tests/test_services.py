@@ -481,7 +481,7 @@ async def test_analyze_trading_opportunity_no_account_id(trading_coordinator_ins
             assert payload.get("timeframe") == request_data.context.get("timeframe")
             assert payload.get("indicators") == ["RSI", "MACD", "BB", "EMA"] # Default indicators
             return A2AResponse(payload=mock_market_analysis.dict())
-        # This scenario should not call riYOUR_OPENAI_API_KEY_HERE
+        # This scenario should not call risk-free
         raise ValueError(f"Unexpected call to a2a_protocol.send_message: {kwargs}")
 
     trading_coordinator_instance.a2a_protocol.send_message = mock.AsyncMock(side_effect=mock_send_message_logic_market_analyst)
@@ -506,7 +506,7 @@ async def test_analyze_trading_opportunity_no_account_id(trading_coordinator_ins
     assert response["decision"] == ai_decision_str
     assert "risk_assessment" not in response # IMPORTANT: Risk check should be skipped
 
-    # Ensure riYOUR_OPENAI_API_KEY_HERE was NOT called by checking that send_message was only called once (for market-analyst)
+    # Ensure risk-free was NOT called by checking that send_message was only called once (for market-analyst)
     trading_coordinator_instance.a2a_protocol.send_message.assert_called_once()
 
 
@@ -549,7 +549,7 @@ async def test_analyze_trading_opportunity_with_account_id_and_conditional_risk_
             assert payload.get("timeframe") == request_data.context.get("timeframe")
             assert payload.get("indicators") == ["RSI", "MACD", "BB", "EMA"]
             return A2AResponse(payload=mock_market_analysis.dict())
-        elif agent_called == "riYOUR_OPENAI_API_KEY_HERE":
+        elif agent_called == "risk-free":
             assert kwargs.get("message_type") == "risk_check"
             payload = kwargs.get("payload")
             assert payload is not None
@@ -587,7 +587,7 @@ async def test_analyze_trading_opportunity_with_account_id_and_conditional_risk_
     for call_args_item in trading_coordinator_instance.a2a_protocol.send_message.call_args_list:
         if call_args_item.kwargs.get("to_agent") == "market-analyst":
             market_analyst_call_found = True
-        elif call_args_item.kwargs.get("to_agent") == "riYOUR_OPENAI_API_KEY_HERE":
+        elif call_args_item.kwargs.get("to_agent") == "risk-free":
             risk_monitor_call_found = True
 
     assert market_analyst_call_found, "Market analyst should always be called."

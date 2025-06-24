@@ -137,7 +137,7 @@ async def test_flow_user_initiates_trading_analysis(trading_coordinator_fixture:
     async def send_message_side_effect(*args, **kwargs):
         if kwargs.get("to_agent") == "market-analyst":
             return A2AResponse(payload=mock_market_analysis.dict())
-        elif kwargs.get("to_agent") == "riYOUR_OPENAI_API_KEY_HERE":
+        elif kwargs.get("to_agent") == "risk-free":
             return A2AResponse(payload=mock_risk_assessment.dict())
         return A2AResponse(payload={}) # Should not happen in this test if logic is correct
 
@@ -165,7 +165,7 @@ async def test_flow_user_initiates_trading_analysis(trading_coordinator_fixture:
             market_analyst_called = True
             assert call.kwargs.get("payload")["symbol"] == request_symbol
             assert call.kwargs.get("payload")["timeframe"] == "1h"
-        elif call.kwargs.get("to_agent") == "riYOUR_OPENAI_API_KEY_HERE":
+        elif call.kwargs.get("to_agent") == "risk-free":
             risk_monitor_called = True
             assert call.kwargs.get("payload")["portfolio_id"] == request_account_id
             assert call.kwargs.get("payload")["proposed_trade"]["action"] == "buy" # From "Strong buy signal"

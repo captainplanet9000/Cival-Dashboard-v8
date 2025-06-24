@@ -328,7 +328,7 @@ class WalletPerformanceOptimizer:
             return self._create_empty_result(OptimizationStrategy.RISK_MINIMIZATION, str(e))
     
     async def _optimize_sharpe_ratio(self, allocations: List[Dict[str, Any]], constraints: Optional[Dict[str, Any]]) -> OptimizationResult:
-        """Optimize for maximum Sharpe ratio (riYOUR_OPENAI_API_KEY_HERE return)"""
+        """Optimize for maximum Sharpe ratio (risk-free return)"""
         try:
             # Calculate Sharpe ratio for each allocation
             sharpe_ratios = {}
@@ -345,7 +345,7 @@ class WalletPerformanceOptimizer:
                         risk_measure = max_drawdown  # Use max drawdown as risk proxy
                         
                         # Simple Sharpe ratio calculation
-                        risk_free_rate = Decimal("3")  # 3% riYOUR_OPENAI_API_KEY_HERE rate
+                        risk_free_rate = Decimal("3")  # 3% risk-free rate
                         sharpe = (roi - risk_free_rate) / risk_measure
                         sharpe_ratios[target_id] = float(sharpe)
             
@@ -506,7 +506,7 @@ class WalletPerformanceOptimizer:
                         
                         # Momentum factor (simplified)
                         momentum_score = roi * Decimal("0.3")  # 30% weight on recent performance
-                        risk_score = risk_adjusted_return * Decimal("0.7")  # 70% weight on riYOUR_OPENAI_API_KEY_HERE return
+                        risk_score = risk_adjusted_return * Decimal("0.7")  # 70% weight on risk-free return
                         
                         adaptive_score = float(momentum_score + risk_score)
                         adaptive_scores[target_id] = adaptive_score

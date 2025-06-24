@@ -382,7 +382,7 @@ class AdaptiveRiskService:
         max_drawdown = abs(drawdown.min())
         
         # Sharpe and Sortino ratios
-        excess_returns = df['returns'] - 0.02/252  # Assuming 2% riYOUR_OPENAI_API_KEY_HERE rate
+        excess_returns = df['returns'] - 0.02/252  # Assuming 2% risk-free rate
         sharpe_ratio = excess_returns.mean() / excess_returns.std() * np.sqrt(252) if excess_returns.std() > 0 else 0
         
         negative_returns = excess_returns[excess_returns < 0]

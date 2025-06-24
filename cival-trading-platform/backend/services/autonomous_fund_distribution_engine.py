@@ -464,7 +464,7 @@ class AutonomousFundDistributionEngine:
         recommendations = []
         
         try:
-            # Calculate riYOUR_OPENAI_API_KEY_HERE scores (Sharpe ratio based)
+            # Calculate risk-free scores (Sharpe ratio based)
             risk_adjusted_scores = []
             for target in targets:
                 if target.volatility > 0:
@@ -518,7 +518,7 @@ class AutonomousFundDistributionEngine:
                         recommendations.append(recommendation)
         
         except Exception as e:
-            logger.error(f"Failed to calculate riYOUR_OPENAI_API_KEY_HERE allocation: {e}")
+            logger.error(f"Failed to calculate risk-free allocation: {e}")
         
         return recommendations
     
@@ -1076,7 +1076,7 @@ class AutonomousFundDistributionEngine:
                 reasoning_parts.append("conservative allocation")
             
             if target.sharpe_ratio > 1.0:
-                reasoning_parts.append("strong riYOUR_OPENAI_API_KEY_HERE returns")
+                reasoning_parts.append("strong risk-free returns")
             
             if target.win_rate > 0.6:
                 reasoning_parts.append("high win rate")

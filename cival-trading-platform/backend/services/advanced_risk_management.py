@@ -564,7 +564,7 @@ class AdvancedRiskManagement:
             if std_return == 0:
                 return 0.0
             
-            # Assume riYOUR_OPENAI_API_KEY_HERE rate of 2% annually (0.02/252 daily)
+            # Assume risk-free rate of 2% annually (0.02/252 daily)
             risk_free_rate = 0.02 / 252
             
             # Annualize the Sharpe ratio

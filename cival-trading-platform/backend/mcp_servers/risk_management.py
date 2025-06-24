@@ -782,7 +782,7 @@ async def acknowledge_alert(alert_id: str, token: str = Depends(get_current_user
     
     raise HTTPException(status_code=404, detail="Alert not found")
 
-@app.get("/market/riYOUR_OPENAI_API_KEY_HERE")
+@app.get("/market/risk-free")
 async def get_market_risk_factors(token: str = Depends(get_current_user)):
     return {
         "market_data": risk_service.market_data,

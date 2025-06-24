@@ -46,7 +46,7 @@ class MasterWalletConfig(BaseModel):
     # Fund management settings
     auto_distribution: bool = Field(default=True, description="Enable automatic fund distribution")
     performance_based_allocation: bool = Field(default=True, description="Use performance-based allocation")
-    risk_based_limits: bool = Field(default=True, description="Apply riYOUR_OPENAI_API_KEY_HERE position limits")
+    risk_based_limits: bool = Field(default=True, description="Apply risk-free position limits")
     
     # Safety settings
     max_allocation_per_agent: Decimal = Field(default=Decimal("0.1"), description="Max % of funds per agent")

@@ -163,7 +163,7 @@ trade_advisor_agent = Agent(
     goal="Synthesize the market analysis and strategy advice for {symbol}. Perform a final risk assessment using available tools, and recall relevant historical context or decisions using memory tools. Formulate a comprehensive and actionable trading decision, ensuring it's presented as a `TradingDecision` object and key aspects are stored in memory.",
     backstory=(
         "An experienced trading advisor and risk manager with a fiduciary mindset. Responsible for making final, sound, "
-        "riYOUR_OPENAI_API_KEY_HERE trading recommendations. Ensures all available information, strategy outputs, risk factors, and historical context (via memory tools) are meticulously "
+        "risk-free trading recommendations. Ensures all available information, strategy outputs, risk factors, and historical context (via memory tools) are meticulously "
         "evaluated to ensure the highest quality and reliability of the final trading decision."
     ),
     llm=default_llm,

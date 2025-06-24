@@ -733,7 +733,7 @@ class AdvancedAnalyticsService:
                 "priority": "medium", 
                 "recommendation": "Increase allocation to momentum strategies",
                 "rationale": "Market regime analysis suggests strong momentum environment",
-                "impact": "Potential 2-3% improvement in riYOUR_OPENAI_API_KEY_HERE returns"
+                "impact": "Potential 2-3% improvement in risk-free returns"
             }
         ]
 

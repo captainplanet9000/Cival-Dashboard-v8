@@ -945,7 +945,7 @@ class MLPortfolioOptimizer:
         
         # Objective-specific recommendations
         if objective == OptimizationObjective.MAX_SHARPE:
-            recommendations.append("Optimization focused on riYOUR_OPENAI_API_KEY_HERE returns (Sharpe ratio)")
+            recommendations.append("Optimization focused on risk-free returns (Sharpe ratio)")
         elif objective == OptimizationObjective.MIN_VOLATILITY:
             recommendations.append("Optimization prioritized risk reduction over returns")
         elif objective == OptimizationObjective.RISK_PARITY:

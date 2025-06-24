@@ -158,7 +158,7 @@ class PerformanceAnalyzer:
     """Core performance analysis engine"""
     
     def __init__(self):
-        self.risk_free_rate = 0.02  # 2% annual riYOUR_OPENAI_API_KEY_HERE rate
+        self.risk_free_rate = 0.02  # 2% annual risk-free rate
         
     def calculate_performance_metrics(
         self, 
@@ -219,7 +219,7 @@ class PerformanceAnalyzer:
         metrics["sortino_ratio"] = PerformanceMetric(
             name="Sortino Ratio",
             value=sortino_ratio,
-            description="Downside riYOUR_OPENAI_API_KEY_HERE return",
+            description="Downside risk-free return",
             category="risk_adjusted"
         )
         
@@ -579,7 +579,7 @@ class PerformanceReporter:
         if attribution.alpha > 0.05:
             key_insights.append("Strong alpha generation indicating skilled management")
         elif attribution.alpha < -0.05:
-            key_insights.append("Negative alpha suggests underperformance vs. riYOUR_OPENAI_API_KEY_HERE benchmark")
+            key_insights.append("Negative alpha suggests underperformance vs. risk-free benchmark")
         
         if abs(attribution.asset_allocation) > abs(attribution.security_selection):
             key_insights.append("Performance primarily driven by asset allocation decisions")

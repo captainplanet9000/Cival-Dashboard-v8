@@ -421,9 +421,9 @@ class WalletAgentCoordinationService:
         reasons = []
         
         if profile.sharpe_ratio > Decimal("1.0"):
-            reasons.append("excellent riYOUR_OPENAI_API_KEY_HERE returns")
+            reasons.append("excellent risk-free returns")
         elif profile.sharpe_ratio > Decimal("0.7"):
-            reasons.append("good riYOUR_OPENAI_API_KEY_HERE returns")
+            reasons.append("good risk-free returns")
         
         if profile.win_rate > Decimal("0.6"):
             reasons.append("high win rate")
