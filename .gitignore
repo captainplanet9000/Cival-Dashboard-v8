@@ -1,0 +1,38 @@
+# Claude Code files (contain sensitive conversation data)
+.claude/
+.cache/
+
+# Node.js dependencies and cache
+node_modules/
+.npm/
+npm-debug.log*
+
+# Environment files
+.env
+.env.local
+.env.production
+.env.staging
+
+# API Keys and secrets
+*.key
+*secret*
+*credential*
+
+# Logs
+logs/
+*.log
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Build directories
+dist/
+build/
+.next/
