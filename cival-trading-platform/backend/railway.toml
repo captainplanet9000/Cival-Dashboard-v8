@@ -1,12 +1,8 @@
-[build]
-builder = "nixpacks"
-
 [deploy]
 healthcheckPath = "/health"
 healthcheckTimeout = 300
 restartPolicyType = "on_failure"
 numReplicas = 1
-startCommand = "python main_consolidated.py"
 
 [networking]
 serviceName = "autonomous-trading-platform"

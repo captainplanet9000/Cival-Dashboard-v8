@@ -1,0 +1,16 @@
+[phases.setup]
+nixPkgs = ['python311', 'python311Packages.pip']
+
+[phases.install]
+cmds = ['pip install -r backend/requirements.txt']
+
+[phases.build]
+cmds = ['echo "Build phase complete"']
+
+[start]
+cmd = 'cd backend && python main_consolidated.py'
+
+[variables]
+PYTHONPATH = '/app/backend'
+PORT = '8000'
+ENVIRONMENT = 'production'
