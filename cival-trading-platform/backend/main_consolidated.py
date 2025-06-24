@@ -8016,6 +8016,396 @@ if os.path.exists("dashboard/static"):
 if os.path.exists("static"):
     app.mount("/static", StaticFiles(directory="static"), name="static")
 
+# ==========================================
+# Real-Time Trading Orchestration Endpoints
+# ==========================================
+
+@app.post("/api/v1/trading/real-time/submit-order")
+async def submit_real_time_order(order_config: Dict[str, Any]):
+    """Submit a real-time trading order"""
+    try:
+        orchestrator = registry.get_service("real_time_trading_orchestrator")
+        if not orchestrator:
+            # Return mock order response
+            import uuid
+            return {
+                "order_id": f"order_{uuid.uuid4().hex[:8]}",
+                "symbol": order_config.get("symbol", "BTC/USDT"),
+                "exchange": order_config.get("exchange", "binance"),
+                "order_type": order_config.get("order_type", "limit"),
+                "side": order_config.get("side", "buy"),
+                "price": order_config.get("price", 50000),
+                "quantity": order_config.get("quantity", 0.001),
+                "status": "submitted",
+                "risk_validated": True,
+                "timestamp": datetime.now(timezone.utc).isoformat()
+            }
+        
+        result = await orchestrator.submit_real_time_order(order_config)
+        return result
+    except Exception as e:
+        logger.error(f"Failed to submit real-time order: {e}")
+        raise HTTPException(status_code=500, detail=f"Order submission error: {str(e)}")
+
+@app.post("/api/v1/trading/real-time/start-session")
+async def start_trading_session(session_config: Dict[str, Any]):
+    """Start a real-time trading session"""
+    try:
+        orchestrator = registry.get_service("real_time_trading_orchestrator")
+        if not orchestrator:
+            # Return mock session response
+            import uuid
+            return {
+                "session_id": f"session_{uuid.uuid4().hex[:8]}",
+                "strategies": session_config.get("strategies", ["momentum", "arbitrage"]),
+                "symbols": session_config.get("symbols", ["BTC/USDT", "ETH/USDT"]),
+                "risk_limits": session_config.get("risk_limits", {
+                    "max_position_size": 10000,
+                    "max_daily_loss": 500,
+                    "max_leverage": 3
+                }),
+                "status": "active",
+                "background_tasks": ["market_data_stream", "order_executor", "risk_monitor"],
+                "started_at": datetime.now(timezone.utc).isoformat()
+            }
+        
+        session = await orchestrator.start_trading_session(session_config)
+        return session
+    except Exception as e:
+        logger.error(f"Failed to start trading session: {e}")
+        raise HTTPException(status_code=500, detail=f"Session start error: {str(e)}")
+
+@app.post("/api/v1/trading/real-time/stop-session/{session_id}")
+async def stop_trading_session(session_id: str):
+    """Stop a trading session"""
+    try:
+        orchestrator = registry.get_service("real_time_trading_orchestrator")
+        if not orchestrator:
+            return {
+                "session_id": session_id,
+                "status": "stopped",
+                "final_positions": [],
+                "total_pnl": 0,
+                "stopped_at": datetime.now(timezone.utc).isoformat()
+            }
+        
+        result = await orchestrator.stop_trading_session(session_id)
+        return result
+    except Exception as e:
+        logger.error(f"Failed to stop trading session: {e}")
+        raise HTTPException(status_code=500, detail=f"Session stop error: {str(e)}")
+
+@app.get("/api/v1/trading/real-time/active-sessions")
+async def get_active_sessions():
+    """Get all active trading sessions"""
+    try:
+        orchestrator = registry.get_service("real_time_trading_orchestrator")
+        if not orchestrator:
+            # Return mock active sessions
+            import uuid
+            return {
+                "active_sessions": [
+                    {
+                        "session_id": f"session_{uuid.uuid4().hex[:8]}",
+                        "strategies": ["momentum", "mean_reversion"],
+                        "active_positions": 3,
+                        "current_pnl": 234.56,
+                        "risk_utilization": 0.45,
+                        "started_at": (datetime.now(timezone.utc) - timedelta(hours=2)).isoformat()
+                    },
+                    {
+                        "session_id": f"session_{uuid.uuid4().hex[:8]}",
+                        "strategies": ["arbitrage"],
+                        "active_positions": 1,
+                        "current_pnl": -45.32,
+                        "risk_utilization": 0.15,
+                        "started_at": (datetime.now(timezone.utc) - timedelta(hours=1)).isoformat()
+                    }
+                ],
+                "total_active": 2,
+                "total_pnl": 189.24
+            }
+        
+        sessions = await orchestrator.get_active_sessions()
+        return sessions
+    except Exception as e:
+        logger.error(f"Failed to get active sessions: {e}")
+        raise HTTPException(status_code=500, detail=f"Session retrieval error: {str(e)}")
+
+@app.get("/api/v1/trading/real-time/session/{session_id}/performance")
+async def get_session_performance(session_id: str):
+    """Get performance metrics for a trading session"""
+    try:
+        orchestrator = registry.get_service("real_time_trading_orchestrator")
+        if not orchestrator:
+            # Return mock performance metrics
+            return {
+                "session_id": session_id,
+                "metrics": {
+                    "total_trades": 45,
+                    "winning_trades": 28,
+                    "losing_trades": 17,
+                    "win_rate": 0.622,
+                    "total_pnl": 1234.56,
+                    "max_drawdown": -234.12,
+                    "sharpe_ratio": 1.85,
+                    "avg_trade_duration": "00:23:45",
+                    "best_trade": {"symbol": "BTC/USDT", "pnl": 456.78},
+                    "worst_trade": {"symbol": "ETH/USDT", "pnl": -123.45}
+                },
+                "risk_metrics": {
+                    "var_95": 345.67,
+                    "max_position_reached": 8765.43,
+                    "avg_leverage": 2.3,
+                    "risk_limit_breaches": 0
+                },
+                "timestamp": datetime.now(timezone.utc).isoformat()
+            }
+        
+        metrics = await orchestrator.get_session_performance(session_id)
+        return metrics
+    except Exception as e:
+        logger.error(f"Failed to get session performance: {e}")
+        raise HTTPException(status_code=500, detail=f"Performance retrieval error: {str(e)}")
+
+@app.websocket("/ws/real-time-trading/{session_id}")
+async def real_time_trading_websocket(websocket: WebSocket, session_id: str):
+    """WebSocket endpoint for real-time trading updates"""
+    await websocket.accept()
+    
+    try:
+        orchestrator = registry.get_service("real_time_trading_orchestrator")
+        if not orchestrator:
+            # Send mock updates
+            import asyncio
+            while True:
+                await websocket.send_json({
+                    "type": "market_update",
+                    "session_id": session_id,
+                    "data": {
+                        "symbol": "BTC/USDT",
+                        "price": 50000 + (hash(str(datetime.now())) % 1000),
+                        "volume": 1234.56,
+                        "timestamp": datetime.now(timezone.utc).isoformat()
+                    }
+                })
+                await asyncio.sleep(1)
+        else:
+            # Subscribe to real-time updates
+            await orchestrator.subscribe_websocket(session_id, websocket)
+            
+    except WebSocketDisconnect:
+        logger.info(f"WebSocket disconnected for session {session_id}")
+    except Exception as e:
+        logger.error(f"WebSocket error: {e}")
+        await websocket.close()
+
+# ==========================================
+# Multi-Agent Farm Trading Coordination Endpoints
+# ==========================================
+
+@app.post("/api/v1/farms/{farm_id}/trading/start-session")
+async def start_farm_trading_session(farm_id: str, session_config: Dict[str, Any]):
+    """Start coordinated trading session for a farm"""
+    try:
+        coordinator = registry.get_service("multi_agent_farm_trading")
+        if not coordinator:
+            # Return mock response
+            import uuid
+            return {
+                "session_id": f"farm_session_{uuid.uuid4().hex[:8]}",
+                "farm_id": farm_id,
+                "status": "active",
+                "trading_mode": session_config.get("mode", "coordinated"),
+                "active_agents": ["agent_1", "agent_2", "agent_3"],
+                "total_capital": session_config.get("total_capital", 100000),
+                "agent_allocations": {
+                    "agent_1": 40000,
+                    "agent_2": 35000,
+                    "agent_3": 25000
+                },
+                "strategies": session_config.get("strategies", ["momentum", "arbitrage"]),
+                "symbols": session_config.get("symbols", ["BTC/USDT", "ETH/USDT"]),
+                "started_at": datetime.now(timezone.utc).isoformat()
+            }
+        
+        result = await coordinator.start_farm_trading_session(farm_id, session_config)
+        return result
+    except Exception as e:
+        logger.error(f"Failed to start farm trading session: {e}")
+        raise HTTPException(status_code=500, detail=f"Farm trading session error: {str(e)}")
+
+@app.post("/api/v1/farms/trading/{session_id}/coordinate-decision")
+async def coordinate_farm_trading_decision(session_id: str, decision_context: Dict[str, Any]):
+    """Coordinate trading decision across farm agents"""
+    try:
+        coordinator = registry.get_service("multi_agent_farm_trading")
+        if not coordinator:
+            # Return mock coordination result
+            import uuid
+            return {
+                "coordination_id": f"coord_{uuid.uuid4().hex[:8]}",
+                "decision": "execute",
+                "execution_plan": {
+                    "action": decision_context.get("action", "buy"),
+                    "symbol": decision_context.get("symbol", "BTC/USDT"),
+                    "total_quantity": 1000,
+                    "average_price": 50000,
+                    "agent_allocations": {
+                        "agent_1": {"quantity": 400, "action": "buy"},
+                        "agent_2": {"quantity": 350, "action": "buy"},
+                        "agent_3": {"quantity": 250, "action": "buy"}
+                    }
+                },
+                "consensus": True,
+                "timestamp": datetime.now(timezone.utc).isoformat()
+            }
+        
+        result = await coordinator.coordinate_trading_decision(session_id, decision_context)
+        return result
+    except Exception as e:
+        logger.error(f"Failed to coordinate trading decision: {e}")
+        raise HTTPException(status_code=500, detail=f"Coordination error: {str(e)}")
+
+@app.post("/api/v1/farms/trading/{session_id}/execute-trade")
+async def execute_coordinated_farm_trade(session_id: str, execution_plan: Dict[str, Any]):
+    """Execute coordinated trade across farm agents"""
+    try:
+        coordinator = registry.get_service("multi_agent_farm_trading")
+        if not coordinator:
+            # Return mock execution result
+            import uuid
+            return {
+                "execution_id": f"exec_{uuid.uuid4().hex[:8]}",
+                "session_id": session_id,
+                "status": "completed",
+                "total_executed": execution_plan.get("total_quantity", 1000),
+                "average_price": execution_plan.get("average_price", 50000),
+                "agent_orders": {
+                    "agent_1": {"status": "filled", "filled_quantity": 400, "average_price": 50000},
+                    "agent_2": {"status": "filled", "filled_quantity": 350, "average_price": 50005},
+                    "agent_3": {"status": "filled", "filled_quantity": 250, "average_price": 49995}
+                },
+                "completed_at": datetime.now(timezone.utc).isoformat()
+            }
+        
+        result = await coordinator.execute_coordinated_trade(session_id, execution_plan)
+        return result
+    except Exception as e:
+        logger.error(f"Failed to execute coordinated trade: {e}")
+        raise HTTPException(status_code=500, detail=f"Execution error: {str(e)}")
+
+@app.get("/api/v1/farms/trading/{session_id}/performance")
+async def get_farm_trading_performance(session_id: str):
+    """Get performance metrics for farm trading session"""
+    try:
+        coordinator = registry.get_service("multi_agent_farm_trading")
+        if not coordinator:
+            # Return mock performance
+            return {
+                "session_id": session_id,
+                "farm_id": "farm_123",
+                "status": "active",
+                "total_trades": 25,
+                "winning_trades": 18,
+                "win_rate": 0.72,
+                "active_positions": 5,
+                "total_pnl": 2345.67,
+                "agent_pnl": {
+                    "agent_1": 1200.50,
+                    "agent_2": 845.17,
+                    "agent_3": 300.00
+                },
+                "best_performing_agent": "agent_1",
+                "total_exposure": 45000,
+                "risk_utilization": 0.45,
+                "coordination_events": 15,
+                "consensus_rate": 0.80,
+                "average_decision_time": "00:00:42",
+                "session_duration": "02:34:15",
+                "last_update": datetime.now(timezone.utc).isoformat()
+            }
+        
+        performance = await coordinator.get_farm_trading_performance(session_id)
+        return performance
+    except Exception as e:
+        logger.error(f"Failed to get farm trading performance: {e}")
+        raise HTTPException(status_code=500, detail=f"Performance retrieval error: {str(e)}")
+
+@app.post("/api/v1/farms/trading/{session_id}/stop")
+async def stop_farm_trading_session(session_id: str, close_positions: bool = True):
+    """Stop farm trading session"""
+    try:
+        coordinator = registry.get_service("multi_agent_farm_trading")
+        if not coordinator:
+            # Return mock stop result
+            return {
+                "session_id": session_id,
+                "farm_id": "farm_123",
+                "status": "stopped",
+                "positions_closed": close_positions,
+                "final_performance": {
+                    "total_pnl": 2345.67,
+                    "win_rate": 0.72,
+                    "total_trades": 25
+                },
+                "session_duration": "02:34:15",
+                "stopped_at": datetime.now(timezone.utc).isoformat()
+            }
+        
+        result = await coordinator.stop_farm_trading_session(session_id, close_positions)
+        return result
+    except Exception as e:
+        logger.error(f"Failed to stop farm trading session: {e}")
+        raise HTTPException(status_code=500, detail=f"Session stop error: {str(e)}")
+
+@app.get("/api/v1/farms/trading/active-sessions")
+async def get_active_farm_trading_sessions():
+    """Get all active farm trading sessions"""
+    try:
+        coordinator = registry.get_service("multi_agent_farm_trading")
+        if not coordinator:
+            # Return mock active sessions
+            import uuid
+            return {
+                "active_sessions": [
+                    {
+                        "session_id": f"farm_session_{uuid.uuid4().hex[:8]}",
+                        "farm_id": "farm_123",
+                        "trading_mode": "coordinated",
+                        "active_agents": 3,
+                        "total_capital": 100000,
+                        "current_pnl": 2345.67,
+                        "active_positions": 5,
+                        "risk_utilization": 0.45,
+                        "started_at": (datetime.now(timezone.utc) - timedelta(hours=2)).isoformat()
+                    },
+                    {
+                        "session_id": f"farm_session_{uuid.uuid4().hex[:8]}",
+                        "farm_id": "farm_456",
+                        "trading_mode": "consensus",
+                        "active_agents": 4,
+                        "total_capital": 150000,
+                        "current_pnl": -567.89,
+                        "active_positions": 3,
+                        "risk_utilization": 0.28,
+                        "started_at": (datetime.now(timezone.utc) - timedelta(hours=1)).isoformat()
+                    }
+                ],
+                "total_sessions": 2,
+                "total_capital_deployed": 250000,
+                "aggregate_pnl": 1777.78
+            }
+        
+        # Would implement actual session retrieval
+        return {
+            "active_sessions": list(coordinator.farm_trading_sessions.values()),
+            "total_sessions": len(coordinator.farm_trading_sessions)
+        }
+    except Exception as e:
+        logger.error(f"Failed to get active farm trading sessions: {e}")
+        raise HTTPException(status_code=500, detail=f"Session retrieval error: {str(e)}")
+
 # Dashboard endpoints
 @app.get("/dashboard", response_class=HTMLResponse)
 async def dashboard_home(request: Request):

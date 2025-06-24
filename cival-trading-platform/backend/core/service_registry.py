@@ -339,7 +339,9 @@ class ServiceRegistry:
             "master_wallet_service",
             "farm_management_service",
             "farm_coordination_service",
-            "farm_performance_service"
+            "farm_performance_service",
+            "real_time_trading_orchestrator",
+            "multi_agent_farm_trading"
         ]
         
         for service_name in service_order:
@@ -370,6 +372,11 @@ class ServiceRegistry:
             register_autonomous_services()
         except ImportError:
             logger.info("⚠️ Autonomous services not available")
+        
+        try:
+            register_real_time_trading_services()
+        except ImportError:
+            logger.info("⚠️ Real-time trading services not available")
     
     async def cleanup_all_services(self):
         """Cleanup all services"""
@@ -462,6 +469,54 @@ def register_autonomous_services():
         logger.info("⚠️ Phase 8 Goal Management Service not available")
     
     logger.info("Registered Phase 6-8 autonomous services")
+
+# Import and register real-time trading services
+def register_real_time_trading_services():
+    """Register real-time trading orchestration services"""
+    try:
+        from services.real_time_trading_orchestrator import create_real_time_trading_orchestrator
+        
+        def create_orchestrator():
+            # Get required services
+            exchange_service = registry.get_service("multi_exchange_integration")
+            risk_service = registry.get_service("advanced_risk_management")
+            agent_coordinator = registry.get_service("autonomous_agent_coordinator")
+            trading_orchestrator = registry.get_service("advanced_trading_orchestrator")
+            
+            return create_real_time_trading_orchestrator(
+                exchange_service,
+                risk_service,
+                agent_coordinator,
+                trading_orchestrator
+            )
+        
+        registry.register_service_factory("real_time_trading_orchestrator", create_orchestrator)
+        logger.info("Registered Real-Time Trading Orchestrator")
+    except ImportError:
+        logger.info("⚠️ Real-time trading orchestrator not available")
+    
+    # Register Multi-Agent Farm Trading Coordinator
+    try:
+        from services.multi_agent_farm_trading_coordinator import create_multi_agent_farm_trading_coordinator
+        
+        def create_farm_trading_coordinator():
+            # Get required services
+            farm_coordination = registry.get_service("farm_coordination_service")
+            trading_orchestrator = registry.get_service("real_time_trading_orchestrator")
+            farm_performance = registry.get_service("farm_performance_service")
+            master_wallet = registry.get_service("master_wallet_service")
+            
+            return create_multi_agent_farm_trading_coordinator(
+                farm_coordination,
+                trading_orchestrator,
+                farm_performance,
+                master_wallet
+            )
+        
+        registry.register_service_factory("multi_agent_farm_trading", create_farm_trading_coordinator)
+        logger.info("Registered Multi-Agent Farm Trading Coordinator")
+    except ImportError:
+        logger.info("⚠️ Multi-agent farm trading coordinator not available")
 
 # Global registry instance
 registry = ServiceRegistry()
