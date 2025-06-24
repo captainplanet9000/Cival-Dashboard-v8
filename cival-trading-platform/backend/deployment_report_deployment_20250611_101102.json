@@ -1,0 +1,242 @@
+{
+  "deployment_id": "deployment_20250611_101102",
+  "start_time": "2025-06-11T10:11:02.496030",
+  "end_time": "2025-06-11T10:11:02.901363",
+  "status": "failed",
+  "total_steps": 14,
+  "completed_steps": 2,
+  "failed_steps": 2,
+  "steps": [
+    {
+      "id": "system_checks",
+      "name": "System Environment Checks",
+      "description": "Verify system requirements and dependencies",
+      "status": "completed",
+      "start_time": "2025-06-11T10:11:02.496237",
+      "end_time": "2025-06-11T10:11:02.826285",
+      "duration": 0.330048,
+      "details": {
+        "python_version": "3.12.3",
+        "python_compatible": true,
+        "memory_check": "psutil not available - skipping memory check",
+        "memory_sufficient": true,
+        "total_disk_gb": 1006.85,
+        "free_disk_gb": 950.94,
+        "disk_sufficient": true,
+        "network_connectivity": true,
+        "required_ports_available": true,
+        "port_check_details": {
+          "8001": true,
+          "8002": true,
+          "8003": true,
+          "8010": true,
+          "8013": true,
+          "8014": true,
+          "8015": true,
+          "8016": true,
+          "8020": true,
+          "8021": true,
+          "8022": true,
+          "8030": true,
+          "8040": true
+        }
+      },
+      "error": null
+    },
+    {
+      "id": "code_validation",
+      "name": "Code Quality Validation",
+      "description": "Run code quality checks and linting",
+      "status": "completed",
+      "start_time": "2025-06-11T10:11:02.826678",
+      "end_time": "2025-06-11T10:11:02.874496",
+      "duration": 0.047818,
+      "details": {
+        "missing_files": [],
+        "all_files_present": true,
+        "syntax_errors": [],
+        "syntax_valid": true
+      },
+      "error": null
+    },
+    {
+      "id": "security_scan",
+      "name": "Security Vulnerability Scan",
+      "description": "Scan for security vulnerabilities",
+      "status": "failed",
+      "start_time": "2025-06-11T10:11:02.874689",
+      "end_time": "2025-06-11T10:11:02.885915",
+      "duration": 0.011226,
+      "details": {
+        "security_issues": [
+          "Potential hardcoded secret: api_key = \""
+        ],
+        "security_clean": false,
+        "scan_notes": "Demo credentials are acceptable for development environment",
+        "permission_issues": [],
+        "permissions_secure": true
+      },
+      "error": null
+    },
+    {
+      "id": "dependency_check",
+      "name": "Dependency Verification",
+      "description": "Verify all dependencies are installed and compatible",
+      "status": "failed",
+      "start_time": "2025-06-11T10:11:02.886101",
+      "end_time": "2025-06-11T10:11:02.901207",
+      "duration": 0.015106,
+      "details": {
+        "missing_packages": [
+          "fastapi",
+          "uvicorn",
+          "aiohttp",
+          "pandas",
+          "numpy",
+          "pydantic",
+          "websockets"
+        ],
+        "all_dependencies_available": false
+      },
+      "error": null
+    },
+    {
+      "id": "configuration_validation",
+      "name": "Configuration Validation",
+      "description": "Validate all configuration files and settings",
+      "status": "pending",
+      "start_time": null,
+      "end_time": null,
+      "duration": null,
+      "details": null,
+      "error": null
+    },
+    {
+      "id": "database_preparation",
+      "name": "Database Preparation",
+      "description": "Prepare databases and data storage systems",
+      "status": "pending",
+      "start_time": null,
+      "end_time": null,
+      "duration": null,
+      "details": null,
+      "error": null
+    },
+    {
+      "id": "server_deployment",
+      "name": "MCP Server Deployment",
+      "description": "Deploy all MCP servers with production configurations",
+      "status": "pending",
+      "start_time": null,
+      "end_time": null,
+      "duration": null,
+      "details": null,
+      "error": null
+    },
+    {
+      "id": "integration_testing",
+      "name": "Integration Testing",
+      "description": "Run comprehensive integration tests",
+      "status": "pending",
+      "start_time": null,
+      "end_time": null,
+      "duration": null,
+      "details": null,
+      "error": null
+    },
+    {
+      "id": "load_testing",
+      "name": "Load Testing",
+      "description": "Perform load testing on critical systems",
+      "status": "pending",
+      "start_time": null,
+      "end_time": null,
+      "duration": null,
+      "details": null,
+      "error": null
+    },
+    {
+      "id": "monitoring_setup",
+      "name": "Monitoring Setup",
+      "description": "Configure monitoring and alerting systems",
+      "status": "pending",
+      "start_time": null,
+      "end_time": null,
+      "duration": null,
+      "details": null,
+      "error": null
+    },
+    {
+      "id": "backup_procedures",
+      "name": "Backup Procedures",
+      "description": "Setup automated backup procedures",
+      "status": "pending",
+      "start_time": null,
+      "end_time": null,
+      "duration": null,
+      "details": null,
+      "error": null
+    },
+    {
+      "id": "disaster_recovery",
+      "name": "Disaster Recovery",
+      "description": "Configure disaster recovery procedures",
+      "status": "pending",
+      "start_time": null,
+      "end_time": null,
+      "duration": null,
+      "details": null,
+      "error": null
+    },
+    {
+      "id": "documentation",
+      "name": "Documentation Generation",
+      "description": "Generate production documentation",
+      "status": "pending",
+      "start_time": null,
+      "end_time": null,
+      "duration": null,
+      "details": null,
+      "error": null
+    },
+    {
+      "id": "final_validation",
+      "name": "Final System Validation",
+      "description": "Final end-to-end system validation",
+      "status": "pending",
+      "start_time": null,
+      "end_time": null,
+      "duration": null,
+      "details": null,
+      "error": null
+    }
+  ],
+  "system_info": {
+    "python_version": "3.12.3",
+    "python_compatible": true,
+    "memory_check": "psutil not available - skipping memory check",
+    "memory_sufficient": true,
+    "total_disk_gb": 1006.85,
+    "free_disk_gb": 950.94,
+    "disk_sufficient": true,
+    "network_connectivity": true,
+    "required_ports_available": true,
+    "port_check_details": {
+      "8001": true,
+      "8002": true,
+      "8003": true,
+      "8010": true,
+      "8013": true,
+      "8014": true,
+      "8015": true,
+      "8016": true,
+      "8020": true,
+      "8021": true,
+      "8022": true,
+      "8030": true,
+      "8040": true
+    }
+  },
+  "environment_checks": {},
+  "final_recommendations": []
+}

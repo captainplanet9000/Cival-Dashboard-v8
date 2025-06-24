@@ -1,0 +1,24 @@
+[build]
+builder = "nixpacks"
+
+[deploy]
+healthcheckPath = "/health"
+healthcheckTimeout = 300
+restartPolicyType = "on_failure"
+numReplicas = 1
+startCommand = "python main_consolidated.py"
+
+[networking]
+serviceName = "autonomous-trading-platform"
+
+[variables]
+ENVIRONMENT = "production"
+LOG_LEVEL = "INFO"
+WORKERS = "1"
+PORT = "8000"
+HOST = "0.0.0.0"
+ENABLE_DASHBOARD = "true"
+ENABLE_WEBSOCKETS = "true"
+MAX_AGENTS = "50"
+MAX_GOALS = "100"
+AUTONOMOUS_MODE = "true"

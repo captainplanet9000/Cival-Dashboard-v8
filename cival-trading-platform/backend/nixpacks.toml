@@ -1,0 +1,15 @@
+[phases.setup]
+nixPkgs = ['python311', 'python311Packages.pip']
+
+[phases.install]
+cmds = ['pip install -r requirements.txt']
+
+[phases.build]
+cmds = ['echo "Build phase complete"']
+
+[start]
+cmd = 'python main_consolidated.py'
+
+[variables]
+PYTHONPATH = '/app'
+PORT = '8000'

@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ title }}</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: #333;
+            min-height: 100vh;
+        }
+        
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        .header {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            border-radius: 15px;
+            padding: 30px;
+            margin-bottom: 30px;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+        }
+        
+        .header h1 {
+            color: #2c3e50;
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            text-align: center;
+        }
+        
+        .header .subtitle {
+            text-align: center;
+            color: #7f8c8d;
+            font-size: 1.2em;
+            margin-bottom: 20px;
+        }
+        
+        .status-bar {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin-top: 20px;
+        }
+        
+        .status-item {
+            text-align: center;
+            padding: 15px;
+            background: rgba(255, 255, 255, 0.7);
+            border-radius: 10px;
+            min-width: 120px;
+        }
+        
+        .status-item .label {
+            font-size: 0.9em;
+            color: #666;
+            margin-bottom: 5px;
+        }
+        
+        .status-item .value {
+            font-size: 1.4em;
+            font-weight: bold;
+            color: #2c3e50;
+        }
+        
+        .status-healthy { color: #27ae60 !important; }
+        .status-warning { color: #f39c12 !important; }
+        .status-error { color: #e74c3c !important; }
+        
+        .dashboard-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+            gap: 30px;
+            margin-bottom: 30px;
+        }
+        
+        .card {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            border-radius: 15px;
+            padding: 25px;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 12px 40px rgba(0, 0, 0, 0.15);
+        }
+        
+        .card h3 {
+            color: #2c3e50;
+            margin-bottom: 20px;
+            font-size: 1.4em;
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 10px;
+        }
+        
+        .metric-row {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 12px;
+            padding: 8px 0;
+            border-bottom: 1px solid #ecf0f1;
+        }
+        
+        .metric-row:last-child {
+            border-bottom: none;
+        }
+        
+        .metric-label {
+            font-weight: 500;
+            color: #5d6d7e;
+        }
+        
+        .metric-value {
+            font-weight: bold;
+            color: #2c3e50;
+        }
+        
+        .service-list {
+            max-height: 300px;
+            overflow-y: auto;
+        }
+        
+        .service-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px;
+            margin-bottom: 8px;
+            background: rgba(52, 152, 219, 0.1);
+            border-radius: 8px;
+            border-left: 4px solid #3498db;
+        }
+        
+        .service-name {
+            font-weight: 500;
+            color: #2c3e50;
+        }
+        
+        .service-status {
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 0.8em;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+        
+        .status-active {
+            background: #d5f4e6;
+            color: #27ae60;
+        }
+        
+        .status-inactive {
+            background: #fadbd8;
+            color: #e74c3c;
+        }
+        
+        .refresh-btn {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            background: #3498db;
+            color: white;
+            border: none;
+            border-radius: 50px;
+            padding: 15px 25px;
+            font-size: 1em;
+            cursor: pointer;
+            box-shadow: 0 4px 15px rgba(52, 152, 219, 0.3);
+            transition: all 0.3s ease;
+        }
+        
+        .refresh-btn:hover {
+            background: #2980b9;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(52, 152, 219, 0.4);
+        }
+        
+        .endpoint-list {
+            margin-top: 15px;
+        }
+        
+        .endpoint-item {
+            background: rgba(155, 89, 182, 0.1);
+            padding: 8px 12px;
+            margin: 5px 0;
+            border-radius: 6px;
+            font-family: 'Courier New', monospace;
+            font-size: 0.9em;
+            color: #8e44ad;
+            border-left: 3px solid #9b59b6;
+        }
+        
+        .loading {
+            text-align: center;
+            padding: 40px;
+            color: #7f8c8d;
+            font-style: italic;
+        }
+        
+        .error {
+            background: rgba(231, 76, 60, 0.1);
+            border: 1px solid #e74c3c;
+            border-radius: 8px;
+            padding: 15px;
+            color: #c0392b;
+            margin: 10px 0;
+        }
+        
+        @media (max-width: 768px) {
+            .dashboard-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .status-bar {
+                flex-direction: column;
+                gap: 10px;
+            }
+            
+            .status-item {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <div class="header">
+            <h1>🚀 MCP Trading Platform</h1>
+            <div class="subtitle">Consolidated Monorepo Dashboard v2.0.0</div>
+            
+            <div class="status-bar">
+                <div class="status-item">
+                    <div class="label">Status</div>
+                    <div class="value status-{{ 'healthy' if overview.status == 'healthy' else 'error' }}">
+                        {{ overview.status.upper() }}
+                    </div>
+                </div>
+                
+                <div class="status-item">
+                    <div class="label">Uptime</div>
+                    <div class="value">{{ overview.uptime_formatted or '0s' }}</div>
+                </div>
+                
+                <div class="status-item">
+                    <div class="label">Services</div>
+                    <div class="value">{{ overview.registry.services_count or 0 }}</div>
+                </div>
+                
+                <div class="status-item">
+                    <div class="label">Connections</div>
+                    <div class="value">{{ overview.registry.connections_count or 0 }}</div>
+                </div>
+                
+                <div class="status-item">
+                    <div class="label">Architecture</div>
+                    <div class="value">Monorepo</div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Dashboard Grid -->
+        <div class="dashboard-grid">
+            <!-- System Overview -->
+            <div class="card">
+                <h3>🔧 System Overview</h3>
+                <div class="metric-row">
+                    <span class="metric-label">Version:</span>
+                    <span class="metric-value">{{ overview.version or '2.0.0' }}</span>
+                </div>
+                <div class="metric-row">
+                    <span class="metric-label">Architecture:</span>
+                    <span class="metric-value">{{ overview.architecture or 'monorepo' }}</span>
+                </div>
+                <div class="metric-row">
+                    <span class="metric-label">Environment:</span>
+                    <span class="metric-value">{{ overview.environment or 'production' }}</span>
+                </div>
+                <div class="metric-row">
+                    <span class="metric-label">Registry:</span>
+                    <span class="metric-value status-{{ 'healthy' if overview.registry.initialized else 'error' }}">
+                        {{ 'Initialized' if overview.registry.initialized else 'Not Initialized' }}
+                    </span>
+                </div>
+                <div class="metric-row">
+                    <span class="metric-label">Database:</span>
+                    <span class="metric-value status-{{ 'healthy' if overview.database.initialized else 'error' }}">
+                        {{ 'Connected' if overview.database.initialized else 'Disconnected' }}
+                    </span>
+                </div>
+            </div>
+            
+            <!-- Active Services -->
+            <div class="card">
+                <h3>⚙️ Active Services</h3>
+                <div class="service-list">
+                    {% if overview.registry.services %}
+                        {% for service in overview.registry.services %}
+                        <div class="service-item">
+                            <span class="service-name">{{ service }}</span>
+                            <span class="service-status status-active">Active</span>
+                        </div>
+                        {% endfor %}
+                    {% else %}
+                        <div class="loading">No services found</div>
+                    {% endif %}
+                </div>
+            </div>
+            
+            <!-- Database Connections -->
+            <div class="card">
+                <h3>🗄️ Database Connections</h3>
+                <div class="service-list">
+                    {% if overview.registry.connections %}
+                        {% for connection in overview.registry.connections %}
+                        <div class="service-item">
+                            <span class="service-name">{{ connection }}</span>
+                            <span class="service-status status-active">Connected</span>
+                        </div>
+                        {% endfor %}
+                    {% else %}
+                        <div class="loading">No connections found</div>
+                    {% endif %}
+                </div>
+            </div>
+            
+            <!-- Performance Metrics -->
+            {% if overview.performance %}
+            <div class="card">
+                <h3>📊 Performance Metrics</h3>
+                {% if overview.performance.error %}
+                    <div class="error">{{ overview.performance.error }}</div>
+                {% else %}
+                    <div class="metric-row">
+                        <span class="metric-label">CPU Usage:</span>
+                        <span class="metric-value">{{ "%.1f"|format(overview.performance.cpu_percent or 0) }}%</span>
+                    </div>
+                    {% if overview.performance.memory %}
+                    <div class="metric-row">
+                        <span class="metric-label">Memory Usage:</span>
+                        <span class="metric-value">{{ "%.1f"|format(overview.performance.memory.percent or 0) }}%</span>
+                    </div>
+                    {% endif %}
+                    {% if overview.performance.disk %}
+                    <div class="metric-row">
+                        <span class="metric-label">Disk Usage:</span>
+                        <span class="metric-value">{{ "%.1f"|format(overview.performance.disk.percent or 0) }}%</span>
+                    </div>
+                    {% endif %}
+                {% endif %}
+            </div>
+            {% endif %}
+            
+            <!-- API Endpoints -->
+            <div class="card">
+                <h3>🌐 API Endpoints</h3>
+                <div class="endpoint-list">
+                    <div class="endpoint-item">GET /health</div>
+                    <div class="endpoint-item">GET /api/v1/market-data/*</div>
+                    <div class="endpoint-item">POST /api/v1/trading/orders</div>
+                    <div class="endpoint-item">GET /api/v1/portfolio/*</div>
+                    <div class="endpoint-item">POST /api/v1/agents</div>
+                    <div class="endpoint-item">POST /api/v1/agents/execute-trade</div>
+                    <div class="endpoint-item">GET /api/v1/ai/predict/*</div>
+                    <div class="endpoint-item">GET /api/v1/stream/agent-events</div>
+                </div>
+            </div>
+            
+            <!-- Quick Actions -->
+            <div class="card">
+                <h3>⚡ Quick Actions</h3>
+                <div style="display: flex; flex-direction: column; gap: 10px;">
+                    <button onclick="window.open('/docs', '_blank')" 
+                            style="padding: 12px; background: #3498db; color: white; border: none; border-radius: 8px; cursor: pointer;">
+                        📚 API Documentation
+                    </button>
+                    <button onclick="refreshDashboard()" 
+                            style="padding: 12px; background: #27ae60; color: white; border: none; border-radius: 8px; cursor: pointer;">
+                        🔄 Refresh Dashboard
+                    </button>
+                    <button onclick="window.open('/api/overview', '_blank')" 
+                            style="padding: 12px; background: #9b59b6; color: white; border: none; border-radius: 8px; cursor: pointer;">
+                        📊 JSON Overview
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Refresh Button -->
+    <button class="refresh-btn" onclick="refreshDashboard()">🔄 Refresh</button>
+    
+    <script>
+        function refreshDashboard() {
+            window.location.reload();
+        }
+        
+        // Auto-refresh every 30 seconds
+        setInterval(refreshDashboard, 30000);
+        
+        // Add loading states
+        document.addEventListener('DOMContentLoaded', function() {
+            console.log('MCP Trading Platform Dashboard Loaded');
+            console.log('System Status:', '{{ overview.status }}');
+            console.log('Services Count:', {{ overview.registry.services_count or 0 }});
+        });
+    </script>
+</body>
+</html>

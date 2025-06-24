@@ -1,0 +1,138 @@
+# MCP Trading Platform - Consolidated Monorepo Requirements
+# Complete dependencies for the unified application
+
+# Core Web Framework
+fastapi==0.115.6
+uvicorn[standard]==0.32.1
+python-multipart==0.0.20
+python-dotenv>=1.0.0
+pydantic==2.10.4
+httpx==0.28.1
+websockets==14.1
+
+# SSE for real-time updates
+sse-starlette>=1.6.0
+
+# CORS middleware
+python-jose[cryptography]>=3.3.0
+
+# Database and ORM
+SQLAlchemy>=2.0.0,<2.1.0
+supabase>=1.0.0
+psycopg2-binary>=2.9.0
+
+# Cache and Message Queue
+redis==5.2.1
+asyncio-mqtt==0.16.2
+
+# AI and Machine Learning
+pydantic-ai[openai,anthropic,gemini]==0.0.14
+openai>=1.0.0
+anthropic>=0.25.0
+scikit-learn==1.6.0
+numpy==2.2.1
+pandas==2.2.3
+scipy==1.14.1
+
+# Agent Frameworks
+pyautogen>=0.2.0
+autogen-agentchat>=0.2.0
+crewai>=0.28.0
+crewai_tools>=0.1.6
+
+# Language Models and AI Tools
+langchain-openai>=0.1.0
+langchain-google-genai>=0.1.0
+langchain-core>=0.1.0
+langchain-community>=0.1.0
+
+# Trading and Financial Data
+ta-lib==0.4.32
+yfinance==0.2.50
+alpha-vantage==2.3.1
+ccxt>=4.0.0
+
+# Hyperliquid Integration
+hyperliquid>=0.1.9
+hyperliquid-python-sdk>=0.2.0
+
+# Web3 and DeFi
+web3>=6.0,<7.0
+
+# Google Cloud Services
+google-cloud-aiplatform==1.78.0
+google-cloud-pubsub==2.30.1
+google-cloud-functions==1.19.2
+google-cloud-firestore==2.20.0
+
+# Data Processing and Analysis
+feedparser>=6.0.0,<7.0.0
+beautifulsoup4>=4.11.0
+requests>=2.28.0
+
+# Scheduling and Background Tasks
+APScheduler>=3.0.0,<4.0.0
+celery>=5.3.0
+
+# Logging and Monitoring
+loguru==0.7.3
+structlog==24.4.0
+psutil==6.1.0
+
+# Serialization and Data Formats
+orjson==3.10.12
+msgpack>=1.0.0
+
+# Code Generation and Validation
+datamodel-code-generator>=0.25.2
+
+# Memory and Agent Systems
+letta-client
+
+# Development and Testing
+pytest==8.3.4
+pytest-asyncio==0.25.0
+black==24.10.0
+isort==5.13.2
+mypy==1.13.0
+ruff>=0.1.0
+
+# Security and Authentication
+passlib[bcrypt]>=1.7.0
+python-jose[cryptography]>=3.3.0
+bcrypt>=4.0.0
+
+# Environment and Configuration
+environs>=10.0.0
+click>=8.0.0
+
+# Async HTTP and Networking
+aiohttp>=3.8.0
+aiofiles>=23.0.0
+
+# Time and Date Utilities
+python-dateutil>=2.8.0
+pytz>=2023.3
+
+# Image and Media Processing (for future UI)
+Pillow>=10.0.0
+
+# Crypto and Hashing
+cryptography>=41.0.0
+hashlib-compat>=1.0.0
+
+# JSON Schema and Validation
+jsonschema>=4.17.0
+
+# Math and Statistics
+matplotlib>=3.7.0
+seaborn>=0.12.0
+
+# Performance and Profiling
+py-spy>=0.3.0
+memory-profiler>=0.61.0
+
+# Utilities
+tqdm>=4.64.0
+python-slugify>=8.0.0
+humanize>=4.6.0

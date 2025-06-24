@@ -1,0 +1,24 @@
+[build]
+builder = "nixpacks"
+
+[deploy]
+healthcheckPath = "/health"
+healthcheckTimeout = 300
+restartPolicyType = "on_failure"
+numReplicas = 1
+startCommand = "python main_consolidated.py"
+
+[variables]
+ENVIRONMENT = "production"
+LOG_LEVEL = "INFO"
+WORKERS = "1"
+PORT = "8000"
+HOST = "0.0.0.0"
+ENABLE_DASHBOARD = "true"
+ENABLE_WEBSOCKETS = "true"
+ENABLE_TRADING = "true"
+ENABLE_AGENTS = "true"
+SOLO_OPERATOR_MODE = "true"
+REQUIRE_AUTH = "false"
+MOCK_EXTERNAL_APIS = "true"
+SIMULATION_MODE = "true"
