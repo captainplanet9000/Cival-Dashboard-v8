@@ -460,11 +460,11 @@ class AutonomousFundDistributionEngine:
         targets: List[AllocationTarget], 
         available_funds: Decimal
     ) -> List[DistributionRecommendation]:
-        """Risk-adjusted allocation strategy"""
+        """RiYOUR_OPENAI_API_KEY_HERE allocation strategy"""
         recommendations = []
         
         try:
-            # Calculate risk-adjusted scores (Sharpe ratio based)
+            # Calculate riYOUR_OPENAI_API_KEY_HERE scores (Sharpe ratio based)
             risk_adjusted_scores = []
             for target in targets:
                 if target.volatility > 0:
@@ -511,14 +511,14 @@ class AutonomousFundDistributionEngine:
                             recommended_allocation=recommended_allocation,
                             allocation_change=allocation_change,
                             confidence_score=min(risk_adjusted_scores[i] / 5.0, 1.0),
-                            reasoning=f"Risk-adjusted allocation. Sharpe: {target.sharpe_ratio:.3f}, Max DD: {target.max_drawdown:.3f}",
+                            reasoning=f"RiYOUR_OPENAI_API_KEY_HERE allocation. Sharpe: {target.sharpe_ratio:.3f}, Max DD: {target.max_drawdown:.3f}",
                             risk_assessment=f"Risk Score: {target.risk_score:.3f}, Volatility: {target.volatility:.3f}"
                         )
                         
                         recommendations.append(recommendation)
         
         except Exception as e:
-            logger.error(f"Failed to calculate risk-adjusted allocation: {e}")
+            logger.error(f"Failed to calculate riYOUR_OPENAI_API_KEY_HERE allocation: {e}")
         
         return recommendations
     
@@ -1076,7 +1076,7 @@ class AutonomousFundDistributionEngine:
                 reasoning_parts.append("conservative allocation")
             
             if target.sharpe_ratio > 1.0:
-                reasoning_parts.append("strong risk-adjusted returns")
+                reasoning_parts.append("strong riYOUR_OPENAI_API_KEY_HERE returns")
             
             if target.win_rate > 0.6:
                 reasoning_parts.append("high win rate")

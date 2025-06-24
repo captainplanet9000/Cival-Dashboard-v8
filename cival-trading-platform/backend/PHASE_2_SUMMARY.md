@@ -39,7 +39,7 @@ Phase 2 successfully implements comprehensive agent trading integration with ope
 **File:** `services/agent_performance_service.py`
 - **Comprehensive Metrics**: 25+ performance indicators per agent
 - **Real-time P&L**: Live profit/loss tracking with drawdown monitoring
-- **Risk-Adjusted Returns**: Sharpe ratio, Sortino ratio, and risk metrics
+- **RiYOUR_OPENAI_API_KEY_HERE Returns**: Sharpe ratio, Sortino ratio, and risk metrics
 - **Strategy Performance**: Individual strategy effectiveness analysis
 - **Agent Rankings**: Competitive performance leaderboards
 

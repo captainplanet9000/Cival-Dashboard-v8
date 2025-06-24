@@ -168,7 +168,7 @@ class AdvancedTradingOrchestrator:
 
 ### Strategy Coordination Features
 - **Signal Conflict Resolution:** AI-driven signal prioritization
-- **Risk-Adjusted Sizing:** Dynamic position sizing based on risk
+- **RiYOUR_OPENAI_API_KEY_HERE Sizing:** Dynamic position sizing based on risk
 - **Performance Attribution:** Strategy-level P&L tracking
 - **Adaptive Parameters:** ML-driven parameter optimization
 

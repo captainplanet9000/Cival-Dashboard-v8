@@ -809,7 +809,7 @@ async def market_deep_analysis(request: MarketAnalysisRequest):
         logger.error(f"Market analysis error: {e}") # Keep specific log
         raise # Re-raise for global handler
 
-@app.post("/api/agents/risk-monitor/assess")
+@app.post("/api/agents/riYOUR_OPENAI_API_KEY_HERE/assess")
 async def risk_assessment(request: RiskAssessmentRequest):
     """Enhanced risk monitoring with PydanticAI validation"""
     risk_monitor = services.get("risk_monitor")

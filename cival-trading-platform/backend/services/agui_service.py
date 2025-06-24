@@ -414,7 +414,7 @@ class AGUIService:
                 "reasoning": [
                     "Technical momentum confirming bullish trend",
                     "Volume supporting the breakout pattern",
-                    "Risk-reward ratio favorable at current levels"
+                    "RiYOUR_OPENAI_API_KEY_HERE ratio favorable at current levels"
                 ],
                 "risk_level": "medium"
             }

@@ -51,7 +51,7 @@ class CalculationService:
         self.logger = logger
         self.db = DatabaseManager()
         
-        # Risk-free rate for calculations (annualized)
+        # RiYOUR_OPENAI_API_KEY_HERE rate for calculations (annualized)
         self.risk_free_rate = 0.05  # 5%
         
         # Market parameters
@@ -256,7 +256,7 @@ class CalculationService:
             avg_pnl = total_pnl / len(agent_performances)
             win_rate = (winning_trades / total_trades * 100) if total_trades > 0 else 0
             
-            # Risk-adjusted returns
+            # RiYOUR_OPENAI_API_KEY_HERE returns
             returns = [agent.get('return_rate', 0) for agent in agent_performances]
             farm_return = sum(returns) / len(returns) if returns else 0
             return_volatility = self._calculate_volatility(returns) if len(returns) > 1 else 0

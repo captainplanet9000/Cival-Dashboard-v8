@@ -123,7 +123,7 @@ class ElizaAIIntegrationService:
                 "communication_style": "methodical, thorough"
             },
             ElizaPersonality.CAUTIOUS: {
-                "tone": "careful, risk-aware, measured",
+                "tone": "careful, riYOUR_OPENAI_API_KEY_HERE, measured",
                 "response_style": "conservative recommendations",
                 "risk_tolerance": "low", 
                 "communication_style": "warning-focused, protective"
@@ -584,7 +584,7 @@ class ElizaAIIntegrationService:
         # Mock AI response generation
         response_templates = {
             ConversationMode.TRADING_ASSISTANT: [
-                "Based on current market conditions and your portfolio, I recommend focusing on {analysis}. The risk-reward ratio looks favorable for {opportunity}.",
+                "Based on current market conditions and your portfolio, I recommend focusing on {analysis}. The riYOUR_OPENAI_API_KEY_HERE ratio looks favorable for {opportunity}.",
                 "Looking at the technical indicators, {symbol} is showing {pattern}. Given your risk tolerance, consider {recommendation}.",
                 "Your portfolio performance has been {performance}. I suggest {suggestion} to optimize your allocation."
             ],
@@ -625,7 +625,7 @@ class ElizaAIIntegrationService:
             strategy="momentum trading with RSI confirmation",
             parameters="14-period RSI and volume filters",
             aspect="position sizing",
-            metric="risk-adjusted returns",
+            metric="riYOUR_OPENAI_API_KEY_HERE returns",
             estimate="10-15%",
             assessment="well within target parameters",
             enhancement="entry timing",

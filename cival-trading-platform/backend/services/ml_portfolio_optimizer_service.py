@@ -205,7 +205,7 @@ class MLPortfolioOptimizerService:
         period: str = '1y'
     ) -> Dict[str, Any]:
         """
-        Calculate risk-adjusted returns for assets
+        Calculate riYOUR_OPENAI_API_KEY_HERE returns for assets
         
         Args:
             assets: List of assets to analyze
@@ -257,7 +257,7 @@ class MLPortfolioOptimizerService:
             }
             
         except Exception as e:
-            logger.error(f"Error calculating risk-adjusted returns: {e}")
+            logger.error(f"Error calculating riYOUR_OPENAI_API_KEY_HERE returns: {e}")
             return {'error': str(e)}
     
     async def _get_historical_data(self, assets: List[str], period: str = '1y') -> Optional[Dict[str, Any]]:
@@ -578,7 +578,7 @@ class MLPortfolioOptimizerService:
             
             expected_volatility = np.sqrt(expected_volatility)
             
-            # Calculate Sharpe ratio (assuming 0% risk-free rate)
+            # Calculate Sharpe ratio (assuming 0% riYOUR_OPENAI_API_KEY_HERE rate)
             sharpe_ratio = expected_return / expected_volatility if expected_volatility > 0 else 0
             
             return {

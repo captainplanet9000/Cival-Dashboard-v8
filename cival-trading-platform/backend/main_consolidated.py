@@ -5028,7 +5028,7 @@ async def get_trading_performance(timeframe: str = "30d"):
         logger.error(f"Failed to get trading performance: {e}")
         raise HTTPException(status_code=500, detail=f"Trading performance error: {str(e)}")
 
-@app.get("/api/v1/trading/risk-metrics")
+@app.get("/api/v1/trading/riYOUR_OPENAI_API_KEY_HERE")
 async def get_trading_risk_metrics():
     """Get comprehensive risk metrics for trading"""
     try:

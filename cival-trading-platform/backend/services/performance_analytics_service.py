@@ -158,7 +158,7 @@ class PerformanceAnalyzer:
     """Core performance analysis engine"""
     
     def __init__(self):
-        self.risk_free_rate = 0.02  # 2% annual risk-free rate
+        self.risk_free_rate = 0.02  # 2% annual riYOUR_OPENAI_API_KEY_HERE rate
         
     def calculate_performance_metrics(
         self, 
@@ -206,7 +206,7 @@ class PerformanceAnalyzer:
         metrics["sharpe_ratio"] = PerformanceMetric(
             name="Sharpe Ratio",
             value=sharpe_ratio,
-            description="Risk-adjusted return measure",
+            description="RiYOUR_OPENAI_API_KEY_HERE return measure",
             category="risk_adjusted"
         )
         
@@ -219,7 +219,7 @@ class PerformanceAnalyzer:
         metrics["sortino_ratio"] = PerformanceMetric(
             name="Sortino Ratio",
             value=sortino_ratio,
-            description="Downside risk-adjusted return",
+            description="Downside riYOUR_OPENAI_API_KEY_HERE return",
             category="risk_adjusted"
         )
         
@@ -327,7 +327,7 @@ class PerformanceAnalyzer:
             metrics["alpha"] = PerformanceMetric(
                 name="Alpha",
                 value=alpha,
-                description="Risk-adjusted excess return",
+                description="RiYOUR_OPENAI_API_KEY_HERE excess return",
                 category="relative"
             )
         
@@ -579,7 +579,7 @@ class PerformanceReporter:
         if attribution.alpha > 0.05:
             key_insights.append("Strong alpha generation indicating skilled management")
         elif attribution.alpha < -0.05:
-            key_insights.append("Negative alpha suggests underperformance vs. risk-adjusted benchmark")
+            key_insights.append("Negative alpha suggests underperformance vs. riYOUR_OPENAI_API_KEY_HERE benchmark")
         
         if abs(attribution.asset_allocation) > abs(attribution.security_selection):
             key_insights.append("Performance primarily driven by asset allocation decisions")
@@ -702,7 +702,7 @@ class PerformanceReporter:
         if abs(attribution.asset_allocation) > 0.05:
             recommendations.append("Asset allocation is a significant driver - consider tactical allocation models")
         
-        # Risk-based recommendations
+        # RiYOUR_OPENAI_API_KEY_HERE recommendations
         max_drawdown = metrics.get("max_drawdown", PerformanceMetric("", 0.0)).value
         if max_drawdown > 0.15:
             recommendations.append("Consider implementing better risk management to reduce drawdowns")

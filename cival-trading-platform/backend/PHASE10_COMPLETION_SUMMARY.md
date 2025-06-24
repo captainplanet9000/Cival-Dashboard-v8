@@ -40,7 +40,7 @@
    - Multi-exchange order management and execution
    - Smart order routing with execution quality monitoring
    - Real-time position tracking and P&L calculation
-   - Risk-validated trade execution pipeline
+   - RiYOUR_OPENAI_API_KEY_HERE trade execution pipeline
 
 6. **Strategy Coordination Service** (`services/strategy_coordination_service.py`)
    - Multi-agent signal conflict resolution

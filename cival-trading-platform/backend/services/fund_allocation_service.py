@@ -228,7 +228,7 @@ class FundAllocationService:
         risk_tolerance: float = 0.05
     ) -> List[AllocationRecommendation]:
         """
-        Allocate funds based on risk-adjusted returns (Sharpe ratio optimization)
+        Allocate funds based on riYOUR_OPENAI_API_KEY_HERE returns (Sharpe ratio optimization)
         """
         
         targets = await self.get_allocation_targets(master_wallet_id)
@@ -279,7 +279,7 @@ class FundAllocationService:
                     name=target.name,
                     recommended_amount=allocation_amount,
                     confidence_score=confidence,
-                    reasoning=f"Sharpe ratio: {target.sharpe_ratio:.2f}, excellent risk-adjusted returns",
+                    reasoning=f"Sharpe ratio: {target.sharpe_ratio:.2f}, excellent riYOUR_OPENAI_API_KEY_HERE returns",
                     risk_assessment=f"Volatility: {target_volatility:.1%}, Risk score: {target.risk_score:.2f}",
                     expected_return=target.sharpe_ratio * target_volatility
                 ))
@@ -625,7 +625,7 @@ class FundAllocationService:
             expected_return = target.performance_score * 0.1
             risk = target.risk_score * target.risk_score  # Variance approximation
             
-            # Weight by risk-adjusted return
+            # Weight by riYOUR_OPENAI_API_KEY_HERE return
             if risk > 0:
                 weight = (expected_return / risk) / sum((t.performance_score * 0.1) / (t.risk_score * t.risk_score) for t in targets if t.risk_score > 0)
             else:

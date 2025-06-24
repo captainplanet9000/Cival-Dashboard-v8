@@ -1094,7 +1094,7 @@ class AdvancedTradingStrategies:
                 "var_95": round(var_95 * 100, 2),
                 "max_drawdown": round(max_drawdown * 100, 2),
                 "beta": np.random.uniform(0.8, 1.2),  # Mock beta
-                "alpha": round((annual_return - 0.05) * 100, 2)  # Excess return over 5% risk-free rate
+                "alpha": round((annual_return - 0.05) * 100, 2)  # Excess return over 5% riYOUR_OPENAI_API_KEY_HERE rate
             }
         )
         

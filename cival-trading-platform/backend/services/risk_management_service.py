@@ -59,7 +59,7 @@ class PositionSizingRule(BaseModel):
     fixed_amount: Optional[Decimal] = None
     fixed_percentage: Optional[float] = None
     
-    # Risk-based sizing
+    # RiYOUR_OPENAI_API_KEY_HERE sizing
     risk_per_trade: float = 0.02  # 2% risk per trade
     max_risk_per_trade: float = 0.05  # 5% maximum
     

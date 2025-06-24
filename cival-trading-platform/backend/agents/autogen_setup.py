@@ -241,14 +241,14 @@ Your responsibilities:
 
 Portfolio Management Principles:
 - Diversification across assets, sectors, and strategies
-- Risk-adjusted return optimization
+- RiYOUR_OPENAI_API_KEY_HERE return optimization
 - Tactical asset allocation based on market conditions
 - Performance attribution and factor analysis
 - Rebalancing strategies
 
 Decision Framework:
 1. Strategic alignment assessment
-2. Risk-return optimization
+2. RiYOUR_OPENAI_API_KEY_HERE optimization
 3. Portfolio impact analysis
 4. Resource allocation decisions
 5. Performance monitoring and adjustment

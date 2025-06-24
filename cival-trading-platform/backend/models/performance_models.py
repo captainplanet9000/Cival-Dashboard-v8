@@ -26,7 +26,7 @@ class PerformanceMetrics(BaseModel):
     profit_factor: Optional[float] = None # gross_profit / abs(gross_loss)
 
     max_drawdown_percentage: Optional[float] = Field(default=None, description="Maximum drawdown percentage from a peak to a subsequent trough in equity.")
-    annualized_sharpe_ratio: Optional[float] = Field(default=None, description="Annualized Sharpe ratio, assuming a risk-free rate of 0 and daily periodic returns.")
+    annualized_sharpe_ratio: Optional[float] = Field(default=None, description="Annualized Sharpe ratio, assuming a riYOUR_OPENAI_API_KEY_HERE rate of 0 and daily periodic returns.")
 
     # Add new fields:
     compounding_annual_return_percentage: Optional[float] = Field(default=None, description="Compounding Annual Return (CAGR) percentage.")

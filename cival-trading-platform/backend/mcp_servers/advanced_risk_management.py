@@ -1424,7 +1424,7 @@ async def get_stress_results(portfolio_id: str):
         "total": len(results)
     }
 
-@app.get("/risk-profile/{portfolio_id}")
+@app.get("/riYOUR_OPENAI_API_KEY_HERE/{portfolio_id}")
 async def get_risk_profile(portfolio_id: str):
     """Get comprehensive risk profile"""
     try:
@@ -1435,7 +1435,7 @@ async def get_risk_profile(portfolio_id: str):
         logger.error(f"Error calculating risk profile: {e}")
         raise HTTPException(status_code=500, detail=str(e))
 
-@app.post("/risk-limits")
+@app.post("/riYOUR_OPENAI_API_KEY_HERE")
 async def add_risk_limit(request: RiskLimitRequest):
     """Add new risk limit"""
     try:
@@ -1446,7 +1446,7 @@ async def add_risk_limit(request: RiskLimitRequest):
         logger.error(f"Error adding risk limit: {e}")
         raise HTTPException(status_code=500, detail=str(e))
 
-@app.get("/risk-limits")
+@app.get("/riYOUR_OPENAI_API_KEY_HERE")
 async def get_risk_limits(active_only: bool = True):
     """Get risk limits"""
     limits = risk_manager.risk_limits
@@ -1459,7 +1459,7 @@ async def get_risk_limits(active_only: bool = True):
         "total": len(limits)
     }
 
-@app.get("/risk-alerts")
+@app.get("/riYOUR_OPENAI_API_KEY_HERE")
 async def get_risk_alerts(acknowledged: bool = False):
     """Get risk alerts"""
     alerts = risk_manager.risk_alerts
@@ -1477,7 +1477,7 @@ async def get_risk_alerts(acknowledged: bool = False):
         "total": len(sorted_alerts)
     }
 
-@app.post("/risk-alerts/{alert_id}/acknowledge")
+@app.post("/riYOUR_OPENAI_API_KEY_HERE/{alert_id}/acknowledge")
 async def acknowledge_alert(alert_id: str):
     """Acknowledge risk alert"""
     if alert_id not in risk_manager.risk_alerts:

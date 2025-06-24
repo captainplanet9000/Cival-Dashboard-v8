@@ -409,7 +409,7 @@ class PortfolioManagementService:
         # Calculate metrics
         portfolio.volatility = np.std(returns_array) * np.sqrt(252)  # Annualized
         
-        # Risk-free rate (assume 2%)
+        # RiYOUR_OPENAI_API_KEY_HERE rate (assume 2%)
         risk_free_rate = 0.02
         excess_returns = returns_array - (risk_free_rate / 252)
         

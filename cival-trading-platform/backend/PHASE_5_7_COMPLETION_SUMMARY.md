@@ -176,7 +176,7 @@ Ready for integration with:
 ### **Optimization Systems**
 - Automated capital rebalancing
 - Performance-based allocation
-- Risk-adjusted optimization
+- RiYOUR_OPENAI_API_KEY_HERE optimization
 - Efficiency improvements
 
 ## 🎉 **COMPLETION MILESTONE**

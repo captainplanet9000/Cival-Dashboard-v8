@@ -263,12 +263,12 @@ class SystemIntegrationTests:
         
         # Test risk limits
         limits_result = await self._test_endpoint(
-            "risk_management_advanced", "/risk-limits", "GET"
+            "risk_management_advanced", "/riYOUR_OPENAI_API_KEY_HERE", "GET"
         )
         
         # Test portfolio risk profile
         profile_result = await self._test_endpoint(
-            "risk_management_advanced", "/risk-profile/test_portfolio", "GET"
+            "risk_management_advanced", "/riYOUR_OPENAI_API_KEY_HERE/test_portfolio", "GET"
         )
         
         self.test_results["risk_management"] = {

@@ -364,7 +364,7 @@ class StrategyPerformance(BaseModel):
     average_loss: float
     profit_factor: float
     
-    # Risk-adjusted metrics
+    # RiYOUR_OPENAI_API_KEY_HERE metrics
     information_ratio: float
     treynor_ratio: float
     jensen_alpha: float

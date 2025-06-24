@@ -49,7 +49,7 @@
    - ✅ Momentum-based allocation
    - ✅ Kelly Criterion optimization
    - ✅ Performance-based allocation
-   - ✅ Risk-adjusted allocation
+   - ✅ RiYOUR_OPENAI_API_KEY_HERE allocation
    - ✅ Diversified allocation strategies
 
 3. **`WalletTransactionService`** (integrated in wallet_hierarchy_service.py)
