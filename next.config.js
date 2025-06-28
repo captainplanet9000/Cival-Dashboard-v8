@@ -25,25 +25,25 @@ const nextConfig = {
     }
     
     // Optimize chunk splitting to prevent circular dependencies
-    config.optimization = {
-      ...config.optimization,
-      splitChunks: {
-        chunks: 'all',
-        cacheGroups: {
-          langchain: {
-            test: /[\\/]src[\\/]lib[\\/]langchain[\\/]/,
-            name: 'langchain',
-            priority: 10,
-            reuseExistingChunk: true,
-          },
-          default: {
-            minChunks: 2,
-            priority: -20,
-            reuseExistingChunk: true,
-          },
-        },
-      },
-    };
+    // config.optimization = {
+    //   ...config.optimization,
+    //   splitChunks: {
+    //     chunks: 'all',
+    //     cacheGroups: {
+    //       langchain: {
+    //         test: /[\\/]src[\\/]lib[\\/]langchain[\\/]/,
+    //         name: 'langchain',
+    //         priority: 10,
+    //         reuseExistingChunk: true,
+    //       },
+    //       default: {
+    //         minChunks: 2,
+    //         priority: -20,
+    //         reuseExistingChunk: true,
+    //       },
+    //     },
+    //   },
+    // };
     
     return config;
   },

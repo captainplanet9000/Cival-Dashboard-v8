@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
-import ErrorBoundary from "@/lib/error-handling/error-boundary";
+import MinimalErrorBoundary from "@/lib/error-handling/minimal-error-boundary";
 import { ThemeProvider } from "@/components/theme/theme-provider";
 
 const inter = Inter({
@@ -31,11 +31,11 @@ export default function RootLayout({
         className={`${inter.variable} font-sans antialiased bg-background text-foreground`}
       >
         <ThemeProvider>
-          <ErrorBoundary>
+          <MinimalErrorBoundary>
             <div id="root" className="min-h-screen">
               {children}
             </div>
-          </ErrorBoundary>
+          </MinimalErrorBoundary>
         </ThemeProvider>
       </body>
     </html>
