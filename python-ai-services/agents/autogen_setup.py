@@ -17,7 +17,7 @@ try:
     from autogen.agentchat.contrib.retrieve_user_proxy_agent import RetrieveUserProxyAgent
     AUTOGEN_AVAILABLE = True
 except ImportError:
-    logger.warning("AutoGen not available - install with: pip install pyautogen autogen-agentchat")
+    logger.warning("AutoGen not available - install with: pip install ag2 autogen-agentchat")
     AUTOGEN_AVAILABLE = False
 
 # Import existing tools from CrewAI implementation
